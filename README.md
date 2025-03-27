@@ -26,7 +26,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repo-link.git
-   cd Esperanza-2k25
+   cd Esperanza_2k25
    ```
 2. Install dependencies:
    ```bash
