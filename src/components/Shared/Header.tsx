@@ -19,7 +19,7 @@ const Header = () => {
           <Link href={""}>Technical Events</Link>
           <Link href={""}>Cultural Events</Link>
           <Link href={""}>About</Link>
-          <Link href={""}>Login</Link>
+          <Link href={"/login"}>Login</Link>
         </div>
       </div>
     </div>
