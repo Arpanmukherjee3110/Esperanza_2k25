@@ -49,3 +49,8 @@ body {
 }
 
 
+.bg-hexagon-white{
+  background-image: url('../assets/background/HexagonWhite.png');
+  background-position: center;
+  background-size: cover;
+}
