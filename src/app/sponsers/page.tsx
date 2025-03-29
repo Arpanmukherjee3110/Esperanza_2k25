@@ -1,7 +1,7 @@
 
 const Sponsers = () => {
   return (
-    <div>Sponsers</div>
+    <div className="mt-[125px] min-h-screen">Sponsers</div>
   )
 }
 

@@ -1,5 +1,7 @@
 import img from "@/assets/images/banner.png";
 
+import sayan from "@/assets/images/developers/sayan.png";
+
 export const events = [
   {
     eventName: "Event 1",
@@ -39,3 +41,6 @@ export const events = [
     location: "Location 4",
   },
 ];
+
+
+
