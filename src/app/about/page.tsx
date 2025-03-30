@@ -14,7 +14,7 @@ import contactUs from "@/assets/images/CONTACT US.png";
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
-});
+})
 
 const About = () => {
   const locationInfo = "https://www.google.com/maps/place/Cooch+Behar+Government+Engineering+College/data=!4m2!3m1!1s0x0:0xe4952b5891bb2389?sa=X&ved=1t:2428&ictx=111";
@@ -70,7 +70,7 @@ const About = () => {
               </div>
 
               <div onClick={() => window.open(locationInfo)} className="mt-8 lg:mt-12">
-                <div className="bg-gray-800 hover:cursor-pointer rounded-3xl overflow-hidden border-2 border-white/20 h-[280px] lg:h-[350px] w-full relative">
+                <div className="bg-gray-900 hover:cursor-pointer rounded-3xl overflow-hidden border-2 border-white/20 h-[280px] lg:h-[350px] w-full relative">
                   <Image 
                     src={MapImage} 
                     alt="Map Image" 
