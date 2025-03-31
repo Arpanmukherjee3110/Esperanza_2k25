@@ -1,8 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import espLogo from "@/assets/images/espLogo.png";
+import { auth } from "@/auth";
 
-const Header = () => {
+const Header = async() => {
+
+  const session = await auth()
+  console.log(session);
+  
+
   return (
     <div className="fixed top-0 h-[125px] w-screen z-50 bg-black/10 backdrop-blur-sm">
       <div className="flex justify-between items-center h-full md:px-10">
@@ -19,7 +25,12 @@ const Header = () => {
           <Link href={"/events/technical"}>Technical Events</Link>
           <Link href={"/events/cultural"}>Cultural Events</Link>
           <Link href={"/about"}>About</Link>
-          <Link href={"/login"}>Login</Link>
+          {/* <Link href={"/login"}>Login</Link> */}
+          {session?.user? (
+            <Link href={"/profile"}>Profile</Link>
+          ) : (
+            <Link href={"/login"}>Login</Link>
+          )}
         </div>
       </div>
     </div>
