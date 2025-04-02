@@ -1,5 +1,5 @@
 import espHeading from "@/assets/images/espHeading.png";
-import EspStrip from "@/components/Home/EspStrip";
+import MarqueeText from "@/components/Home/EspStrip";
 import Container from "@/components/Shared/Container";
 import Header from "@/components/Shared/Header";
 import Image from "next/image";
@@ -16,7 +16,7 @@ const Home = () => {
         <Image src={espHeading} alt="" />
       </div>
       <div className="bg-home-content-main">
-        <EspStrip />
+      <MarqueeText />
         <Container>{null}</Container>
       </div>
     </div>
