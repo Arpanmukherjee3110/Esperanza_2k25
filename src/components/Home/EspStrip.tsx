@@ -1,16 +1,3 @@
-// import Image from "next/image";
-// import espStrip from "@/assets/images/Strip.png";
-
-// const EspStrip = () => {
-//   return (
-//     <div className="w-full">
-//       <Image src={espStrip} alt="" height={50} className="w-full p-0 relative top-[-14px]" />
-//     </div>
-//   );
-// };
-
-// export default EspStrip;
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -32,12 +19,9 @@ export default function MarqueeText() {
 
   return (
     <div className="w-full overflow-hidden bg-black py-4">
-      {/* Marquee Container */}
       <div className="marquee text-white text-4xl font-bold tracking-wider flex items-center">
-        {/* Repeat the content 10 times */}
         {[...Array(8)].map((_, i) => (
           <span key={i} className="flex whitespace-nowrap items-center">
-            {/* Render the text with color transition */}
             {letters.map((letter, index) => (
               <span
                 key={index}
