@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import espLogo from "@/assets/images/espLogo.png";
 import { auth } from "@/auth";
+import Logo from "@/components/Shared/espLogoAnim";
 
 const Header = async() => {
 
@@ -19,7 +19,7 @@ const Header = async() => {
           <Link href={"/sponsers"}>Sponser</Link>
         </div>
         <div>
-          <Image src={espLogo} alt="" height={125} width={125} />
+          <Logo/>
         </div>
         <div className="md:flex flex-1 justify-around hidden gap-4 items-center">
           <Link href={"/events/technical"}>Technical Events</Link>
@@ -33,6 +33,7 @@ const Header = async() => {
           )}
         </div>
       </div>
+      
     </div>
   );
 };
