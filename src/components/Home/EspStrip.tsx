@@ -12,7 +12,7 @@ export default function MarqueeText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveLetter((prev) => (prev + 1) % letters.length);
-    }, 600); 
+    }, 400); 
 
     return () => clearInterval(interval);
   }, [letters.length]);
@@ -37,7 +37,7 @@ export default function MarqueeText() {
               alt="Logo"
               width={50}
               height={70}
-              className="mx-15"
+              className="mx-12"
               
             />
           </span>
