@@ -52,7 +52,7 @@ export default function MarqueeText() {
           animation: marquee 10s linear infinite;
         }
           .marquee:hover{
-          animation: paused;
+          animation: step-end;
           cursor:pointer;
           }
         @keyframes marquee {
