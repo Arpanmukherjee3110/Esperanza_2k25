@@ -1,38 +1,42 @@
 "use client";
 import Image from "next/image";
-import e from "@/assets/images/e.png";
-import s from "@/assets/images/s.png";
-import p from "@/assets/images/p.png";
-import r from "@/assets/images/r.png";
-import pyramid from "@/assets/images/pyramid.png";
-import n from "@/assets/images/n.png";
-import z from "@/assets/images/z.png";
-import a from "@/assets/images/a.png";
+import e2 from "@/assets/images/e1.png";
+import s2 from "@/assets/images/s1.png";
+import p2 from "@/assets/images/p1.png";
+import e3 from "@/assets/images/e4.png";
+import r2 from "@/assets/images/r1.png";
+import pyramid2 from "@/assets/images/pyramid1.png";
+import n2 from "@/assets/images/n1.png";
+import z2 from "@/assets/images/z1.png";
+import a2 from "@/assets/images/a1.png";
+import k25 from "@/assets/images/k251.png";
 
 const EspAnimation = () => {
     return (
         <div className="flex items-center front">
             <div className="flex items-center box-border ">
 
-                <span className="letter"><Image src={e} alt="" /></span>
-                <span className="letter"><Image src={s} alt="" /></span>
-                <span className="letter"><Image src={p} alt="" /></span>
-                <span className="letter"><Image src={e} alt="" /></span>
-                <span className="letter"><Image src={r} alt="" /></span>
-                <span className="letter"><Image src={pyramid} alt="" /></span>
-                <span className="letter"><Image src={n} alt="" /></span>
-                <span className="letter"><Image src={z} alt="" /></span>
-                <span className="letter"><Image src={a} alt="" /></span>
+                <span className="letter"><Image src={e2} alt="" /></span>
+                <span className="letter"><Image src={s2} alt="" /></span>
+                <span className="letter"><Image src={p2} alt="" /></span>
+                <span className="letter"><Image src={e3} alt="" /></span>
+                <span className="letter"><Image src={r2} alt="" /></span>
+                <span className="letter"><Image src={pyramid2} alt="" /></span>
+                <span className="letter"><Image src={n2} alt="" /></span>
+                <span className="letter"><Image src={z2} alt="" /></span>
+                <span className="letter"><Image src={a2} alt="" /></span>
+                <span className="letter"><Image src={k25} alt="" /></span>
             </div>
             <style jsx>{`
         .letter{
             width: auto;
             height: max-content;
+            position: relative;
             }
         .front span{
 	text-shadow: #f22d2d 1px 0vh 10px;
 	margin:4px;
-	animation: amin 6s linear infinite;
+	animation: amin 6.6s linear infinite;
 }
 @keyframes amin{
 	0%{
@@ -53,35 +57,39 @@ const EspAnimation = () => {
             }
 .front span:nth-child(2){
   animation-delay: 1.2s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(3){
   animation-delay: 1.8s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(4){
   animation-delay: 2.4s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(5){
   animation-delay: 3.0s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(6){
   animation-delay: 3.6s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(7){
   animation-delay: 4.2s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(8){
   animation-delay: 4.8s;
-  transition-duration: 0.6s;
+  
 }
 .front span:nth-child(9){
   animation-delay: 5.4s;
-  transition-duration: 0.6s;
+  
+}
+  .front span:nth-child(10){
+  animation-delay: 6s;
+  
 }
 
 .front:hover{

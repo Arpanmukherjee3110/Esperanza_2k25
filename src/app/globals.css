@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&family=VT323&display=swap');
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
@@ -23,6 +25,8 @@
 }
 
 
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -36,11 +40,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-home-main{
-  background-image: url('../assets/background/HomeMain.png');
+/* .bg-home-main{
+  background-video: url('../assets/background/HomeMain.png');
   background-position: center;
   background-size: cover;
-}
+} */
 
 .bg-home-content-main{
   background-image: url('../assets/background/BackgroundHome.png');
@@ -53,4 +57,10 @@ body {
   background-image: url('../assets/background/HexagonWhite.png');
   background-position: center;
   background-size: cover;
+}
+
+.underdog {
+  font-family: "Underdog", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
