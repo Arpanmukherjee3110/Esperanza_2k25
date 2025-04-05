@@ -3,12 +3,12 @@ import AboutUs from "@/assets/images/about us.png";
 
 import contactUs from "@/assets/images/CONTACT US.png";
 import Hexagon from "@/assets/images/Hexagon.png";
-
+import Image from "next/image";
 import ContactUsForm from "@/components/About/ContactUsForm";
 import Container from "@/components/Shared/Container";
 import Map from "@/components/Shared/Map";
 import { Katibeh } from "next/font/google";
-import Image from "next/image";
+
 
 const katibeh = Katibeh({
   subsets: ["arabic"],
