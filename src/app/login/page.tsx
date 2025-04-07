@@ -3,7 +3,9 @@ import LoginSignUpForm from "@/components/Login/LoginSignUpForm";
 import Container from "@/components/Shared/Container";
 import { Karla } from "next/font/google";
 import Image from "next/image";
-
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 const karla = Karla({
   subsets: ["latin"],
   weight: "700",
@@ -51,6 +53,14 @@ const Login = () => {
 
   return (
     <div className="min-h-[90vh] bg-black text-white relative">
+        <div className="mb-8 flex items-center">
+        <Link href="/">
+  <Button variant="ghost" className="text-white hover:text-red-400">
+    <ArrowLeft className="mr-2 h-4 w-4" />
+    HOME
+  </Button>
+</Link>
+        </div>
       <Image
         src={rocket}
         alt=""

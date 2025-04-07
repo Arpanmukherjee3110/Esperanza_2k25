@@ -1,56 +1,102 @@
+"use client";
+import React from "react";
 import Image from "next/image";
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import Hexagon from "@/assets/images/Hexagon.png";
 import Container from "@/components/Shared/Container";
 import GalleryHeading from "@/assets/images/GALLERY.png";
+import TechGalary from "@/assets/images/techGalary.png";
 import { Katibeh } from "next/font/google";
-import { cards, GalleryGrid } from "@/components/Gallery/LayoutGrid";
-
+import MasonryGallery from "@/components/galary/masonary";
+import CulturalGalary from "@/assets/images/culturalGalary.png";
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
 });
 
-const Gallery = () => {
+// ✅ Optional styling overrides — kept valid
+const galleryHeadingStyle = "translate-y-43 "; // no translation for fixed center
+const techGalleryStyle = "mt-73"; // consistent and compact
+
+const About = () => {
   return (
-    <div className="mt-[125px] min-h-screen relative">
+    <div className="mt-[125px] min-h-[90vh] relative overflow-hidden">
+      {/* Backgrounds */}
       <Image
         src={RadialBgRed}
-        alt=""
-        className="opacity-20 sm:opacity-40 md:opacity-55 lg:opacity-65 absolute left-[50%] translate-x-[-50%]  z-[-1]"
+        alt="background"
+        className="opacity-20 sm:opacity-40 md:opacity-55 lg:opacity-65 absolute left-1/2 transform -translate-x-1/2 z-0"
       />
-      <Image src={Hexagon} alt="" className="absolute " />
-      <div className="flex justify-center relative">
+      <Image
+        src={Hexagon}
+        alt="hexagon decoration"
+        className="absolute top-0 left-0 z-0"
+      />
+
+      {/* Gallery Heading Section */}
+      <div className="flex flex-col items-center pt-10 sm:pt-12 relative z-20">
         <Container>
-          <Image
-            src={GalleryHeading}
-            alt=""
-            className="w-[400px] sm:w-[500px] md:w-[800px] lg:w-[1000px] mt-10"
-          />
+          <div
+            className={`flex justify-center relative z-30 w-full max-w-[700px] mx-auto transition-all duration-300 ${galleryHeadingStyle}`}
+          >
+            <Image
+              src={GalleryHeading}
+              alt="Gallery Heading"
+              className="object-contain"
+              priority
+            />
+          </div>
         </Container>
       </div>
-      <div className="flex justify-center items-center mt-7">
-        {/* Tech Gallery */}
 
-        <h1 className={`${katibeh.className} px-1 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}>
-          Tech Gallery
-        </h1>
+      {/* Tech Gallery Section */}
+      <div
+        className={`px-4 sm:px-8 pb-8 sm:pb-10 relative z-10 transition-all duration-300 ${techGalleryStyle}`}
+      >
+        <Container>
+          <div className="flex justify-center mb-6 sm:mb-8">
+            <Image
+              src={TechGalary}
+              alt="Tech Gallery"
+              className="object-contain w-full max-w-[600px]"
+              priority
+            />
+          </div>
+        </Container>
       </div>
-      <div className="mt-6">
-        <GalleryGrid cards={cards}/>
-      </div>
-      <div className="flex justify-center items-center mt-7">
-        {/* Cultural Gallery */}
 
-        <h1 className={`${katibeh.className} px-1 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}>
-          Cultural Gallery
-        </h1>
+      {/* Masonry Gallery */}
+      <div className="w-full mx-auto px-4 sm:px-8 pt-0 pb-10 relative z-10">
+        <MasonryGallery />
       </div>
-      <div className="mt-6">
-        <GalleryGrid cards={cards}/>
+      <div>
+      <Image
+        src={RadialBgRed}
+        alt="background"
+        className="opacity-20 sm:opacity-40 md:opacity-55 lg:opacity-65 absolute left-1/2 transform -translate-x-1/2 z-0"
+      />
+      </div>
+      <div
+        className={`px-4 sm:px-8 pb-8 sm:pb-10 relative z-10 transition-all duration-300 ${techGalleryStyle}`}
+      >
+        <Container>
+      <div className="flex justify-center mb-6 sm:mb-8">
+            <Image
+              src={CulturalGalary}
+              alt="Tech Gallery"
+              className="object-contain w-full max-w-[600px]"
+              priority
+            />
+          </div>
+        </Container>
+      </div>
+
+      {/* Masonry Gallery */}
+      <div className="w-full mx-auto px-4 sm:px-8 pt-0 pb-10 relative z-10">
+        <MasonryGallery />
       </div>
     </div>
   );
 };
 
-export default Gallery;
+export default About;

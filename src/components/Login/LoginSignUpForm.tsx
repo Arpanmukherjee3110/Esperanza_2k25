@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaGithub, FaGoogle, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaGoogle, FaLinkedin, FaEye, FaEyeSlash } from "react-icons/fa";
 
 const LoginSignUpForm = () => {
   const [loginTabActive, SetLoginTabActive] = useState<boolean>(true);
@@ -31,10 +31,14 @@ const LoginSignUpForm = () => {
 };
 
 const LoginForm = () => {
+  
   const [loginCredentials,setLoginCredentials] = useState({
     email : "",
     password : "",
   })
+  
+  const [showPassword, setShowPassword] = useState(false);
+
 
   return (
     <form className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
@@ -48,16 +52,21 @@ const LoginForm = () => {
           setLoginCredentials({...loginCredentials,email:e.target.value})
         }}
       />
-      <input
-        type="password"
-        placeholder="Enter Password"
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
-        required
-        value={loginCredentials.password}
-        onChange={(e)=>{
-          setLoginCredentials({...loginCredentials,password:e.target.value})
-        }}
-      />
+      <div className="relative">
+        <input
+          type={showPassword ? "text" : "password"}
+          placeholder="Enter Password"
+          className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full"
+          required
+        />
+        <button
+          type="button"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black"
+          onClick={() => setShowPassword(!showPassword)}
+        >
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
       <button
         type="submit"
         className="bg-red-700 rounded-2xl cursor-pointer px-6 py-4"
@@ -85,6 +94,8 @@ const LoginForm = () => {
 };
 
 const SignUpForm = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <form className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
       <input
@@ -116,12 +127,21 @@ const SignUpForm = () => {
         required
         className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
       />
-      <input
-        type="password"
-        placeholder="Password"
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
-        required
-      />
+      <div className="relative">
+        <input
+          type={showPassword ? "text" : "password"}
+          placeholder="Password"
+          className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full"
+          required
+        />
+        <button
+          type="button"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black"
+          onClick={() => setShowPassword(!showPassword)}
+        >
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
       <button
         type="submit"
         className="bg-red-700 rounded-2xl cursor-pointer px-6 py-4"
