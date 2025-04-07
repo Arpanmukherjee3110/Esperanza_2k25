@@ -31,7 +31,14 @@ const LoginSignUpForm = () => {
 };
 
 const LoginForm = () => {
+  
+  const [loginCredentials,setLoginCredentials] = useState({
+    email : "",
+    password : "",
+  })
+  
   const [showPassword, setShowPassword] = useState(false);
+
 
   return (
     <form className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
@@ -40,6 +47,10 @@ const LoginForm = () => {
         placeholder="Enter your Email address"
         required
         className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        value={loginCredentials.email}
+        onChange={(e)=>{
+          setLoginCredentials({...loginCredentials,email:e.target.value})
+        }}
       />
       <div className="relative">
         <input

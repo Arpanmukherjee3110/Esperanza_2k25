@@ -39,6 +39,7 @@
     "@radix-ui/react-toggle-group": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "@tabler/icons-react": "^3.31.0",
+    "bcryptjs": "^3.0.2",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -51,6 +52,7 @@
     "esperanza2k25website": "file:",
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.484.0",
+    "mongoose": "^8.13.1",
     "motion": "^12.6.2",
     "next": "15.2.4",
     "next-auth": "^5.0.0-beta.25",
@@ -64,6 +66,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
