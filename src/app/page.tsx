@@ -6,8 +6,8 @@ import EspAnimation from "@/components/Shared/EspAnim";
 import PhotoContainer from "@/components/Home/PhotoContainer";
 import HeroSection from "@/components/Home/HeroSection";
 import Band from "@/components/Home/Band";
-import Tech from "@/components/Home/Tech";
-import Cultural from "@/components/Home/Cultural";
+//import Tech from "@/components/Home/Tech";
+//import Cultural from "@/components/Home/Cultural";
 
 
 const Home = () => {
@@ -32,12 +32,12 @@ const Home = () => {
         <div>
           <Band/>
         </div>
-        <div>
+        {/* <div>
           <Tech/>
         </div>
         <div>
           <Cultural/>
-        </div>
+        </div> */}
     </div>
     
   );
