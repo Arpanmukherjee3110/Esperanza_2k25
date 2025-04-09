@@ -80,7 +80,7 @@ const About = () => {
         className={`px-4 sm:px-8 pb-8 sm:pb-10 relative z-10 transition-all duration-300 ${techGalleryStyle}`}
       >
         <Container>
-          <div className="flex justify-center mb-6 sm:mb-8">
+      <div className="flex justify-center mb-6 sm:mb-8">
             <Image
               src={CulturalGalary}
               alt="Tech Gallery"
