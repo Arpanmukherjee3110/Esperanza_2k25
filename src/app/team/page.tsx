@@ -1,7 +1,7 @@
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import TeamBg from "@/assets/images/Group 163057[1].png";
 
-import Card,{CardContainer, cards,} from "@/components/sponsors/card";
+import Card,{CardContainer, cards,} from "@/components/Sponsors/card";
 import Hexagon from "@/assets/images/Hexagon.png";
 
 
@@ -9,7 +9,7 @@ import Container from "@/components/Shared/Container";
 
 
 import Image from "next/image"
-const Sponsers = () => {
+const Team = () => {
   return (
     <div className="mt-[125px] min-h-[90vh] relative overflow-hidden">
     <Image
@@ -46,4 +46,4 @@ const Sponsers = () => {
   )
 }
 
-export default Sponsers
+export default Team

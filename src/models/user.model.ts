@@ -1,5 +1,5 @@
-import mongoose, { Document, Schema } from "mongoose";
 import { hash } from "bcryptjs";
+import mongoose, { Schema } from "mongoose";
 
 const userSchema = new Schema({
   name: {
@@ -8,13 +8,14 @@ const userSchema = new Schema({
   },
   year: {
     type: String,
-    required: true,
     enum: ["1st", "2nd", "3rd", "4th"],
   },
   department: {
     type: String,
-    required: true,
     enum: ["CE", "CSE", "ECE", "EE", "ME"],
+  },
+  rollNumber : {
+    type : String,
   },
   bio: {
     type: String,
@@ -32,7 +33,6 @@ const userSchema = new Schema({
     },
     phoneNumber: {
       type: String,
-      required: true,
       unique: true,
     },
   },

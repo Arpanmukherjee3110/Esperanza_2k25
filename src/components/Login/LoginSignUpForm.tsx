@@ -1,7 +1,16 @@
 "use client";
 
+import { signUp } from "@/actions/signup.action";
+import { SignUpFormPayload } from "@/interfaces/signup.interface";
 import { useState } from "react";
-import { FaGithub, FaGoogle, FaLinkedin, FaEye, FaEyeSlash } from "react-icons/fa";
+import {
+  FaEye,
+  FaEyeSlash,
+  FaGithub,
+  FaGoogle,
+  FaLinkedin,
+} from "react-icons/fa";
+import Swal from "sweetalert2"; 
 
 const LoginSignUpForm = () => {
   const [loginTabActive, SetLoginTabActive] = useState<boolean>(true);
@@ -31,14 +40,12 @@ const LoginSignUpForm = () => {
 };
 
 const LoginForm = () => {
-  
-  const [loginCredentials,setLoginCredentials] = useState({
-    email : "",
-    password : "",
-  })
-  
-  const [showPassword, setShowPassword] = useState(false);
+  const [loginCredentials, setLoginCredentials] = useState({
+    email: "",
+    password: "",
+  });
 
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <form className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
@@ -48,8 +55,8 @@ const LoginForm = () => {
         required
         className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
         value={loginCredentials.email}
-        onChange={(e)=>{
-          setLoginCredentials({...loginCredentials,email:e.target.value})
+        onChange={(e) => {
+          setLoginCredentials({ ...loginCredentials, email: e.target.value });
         }}
       />
       <div className="relative">
@@ -96,24 +103,107 @@ const LoginForm = () => {
 const SignUpForm = () => {
   const [showPassword, setShowPassword] = useState(false);
 
+  const [signUpCredentials, setSignUpCredentials] = useState<SignUpFormPayload>(
+    {
+      name: "",
+      year: "",
+      department: "",
+      rollNumber: "",
+      credentials: {
+        email: "",
+        password: "",
+        phoneNumber: "",
+      },
+    }
+  );
+
+  const handleFormSubmit = async()=>{
+    const response = await signUp(signUpCredentials);
+    if(response?.success){
+      Swal.fire({
+        title: "User Created Successfully",
+        text: `User Email: ${response?.userEmail}`,
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        setSignUpCredentials({
+          name: "",
+          year: "",
+          department: "",
+          rollNumber: "",
+          credentials: {
+            email: "",
+            password: "",
+            phoneNumber: "",
+          },
+        })
+      })
+    }else{
+      Swal.fire({
+        title: "User Creation Failed",
+        text: response?.message || "Something went wrong",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  }
+
   return (
-    <form className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
+    <form action={handleFormSubmit}  className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
+      <input
+        type="email"
+        placeholder="Email"
+        required
+        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        value={signUpCredentials?.credentials.email}
+        onChange={(e) => {
+          setSignUpCredentials({
+            ...signUpCredentials,
+            credentials: {
+              ...signUpCredentials?.credentials,
+              email: e.target.value,
+            },
+          });
+        }}
+      />
       <input
         type="text"
         placeholder="Full Name"
         required
         className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        value={signUpCredentials.name}
+        onChange={(e) => {
+          setSignUpCredentials({
+            ...signUpCredentials,
+            name: e.target.value,
+          });
+        }}
       />
       <div className="flex justify-between gap-3 md:items-center flex-col md:flex-row">
         <span>Year</span>
-        <select className="p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none">
+        <select
+          value={signUpCredentials.year}
+          onChange={(e) =>
+            setSignUpCredentials({ ...signUpCredentials, year: e.target.value })
+          }
+          className="p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        >
           <option value="1st">1st</option>
           <option value="2nd">2nd</option>
           <option value="3rd">3rd</option>
           <option value="4th">4th</option>
         </select>
         <span>Department</span>
-        <select className="p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none">
+        <select
+          value={signUpCredentials.department}
+          onChange={(e) =>
+            setSignUpCredentials({
+              ...signUpCredentials,
+              department: e.target.value,
+            })
+          }
+          className="p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        >
           <option value="CE">CE</option>
           <option value="CSE">CSE</option>
           <option value="ECE">ECE</option>
@@ -126,6 +216,29 @@ const SignUpForm = () => {
         placeholder="Roll Number"
         required
         className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        value={signUpCredentials.rollNumber}
+        onChange={(e) =>
+          setSignUpCredentials({
+            ...signUpCredentials,
+            rollNumber: e.target.value,
+          })
+        }
+      />
+      <input
+        type="text"
+        placeholder="Phone Number"
+        required
+        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        value={signUpCredentials.credentials.phoneNumber}
+        onChange={(e) =>
+          setSignUpCredentials({
+            ...signUpCredentials,
+            credentials : {
+              ...signUpCredentials.credentials,
+              phoneNumber : e.target.value
+            }
+          })
+        }
       />
       <div className="relative">
         <input
@@ -133,6 +246,16 @@ const SignUpForm = () => {
           placeholder="Password"
           className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full"
           required
+          value={signUpCredentials.credentials.password}
+          onChange={(e) =>
+            setSignUpCredentials({
+              ...signUpCredentials,
+              credentials: {
+                ...signUpCredentials.credentials,
+                password: e.target.value,
+              },
+            })
+          }
         />
         <button
           type="button"

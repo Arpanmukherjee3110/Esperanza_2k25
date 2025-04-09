@@ -1,16 +1,14 @@
 import Container from "@/components/Shared/Container";
 import Image from "next/image";
 
+import HexagonWhite from "@/assets/background/HexagonWhite.png";
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import Hexagon from "@/assets/images/Hexagon.png";
-import HexagonWhite from "@/assets/background/HexagonWhite.png";
-import CulturalHeading from "@/assets/images/CulturalHeading.png";
 import TechnicalHeading from "@/assets/images/TechnicalHeading.png";
 import { CardDiv } from "@/components/Shared/Card";
 import { events } from "@/utils/dummy-data/events";
-
-import { Katibeh } from "next/font/google";
 import { CarouselCompoment } from "@/components/Shared/Carousel";
+import { Katibeh } from "next/font/google";
 
 const katibeh = Katibeh({
   subsets: ["arabic"],
@@ -34,18 +32,6 @@ const Technical = () => {
             className="w-[400px] sm:w-[500px] md:w-[800px] lg:w-[1000px] mt-10"
           />
         </Container>
-      </div>
-      <div className="flex justify-between items-center">
-
-        {/* Meet Our Developers */}
-        
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${katibeh.className} px-1 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
-          Meet Our Developers
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
       <Container>
         <CarouselCompoment/>

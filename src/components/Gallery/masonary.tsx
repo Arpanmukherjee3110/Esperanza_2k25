@@ -51,7 +51,7 @@ const galleryItems = [
   },
   {
     id: 8,
-    src: "",
+    src: "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?auto=format&fit=crop&w=1740",
     span: "col-span-2 sm:col-span-1",
     height: "h-[125px] sm:h-[150px]"
   },
