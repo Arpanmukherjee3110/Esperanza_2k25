@@ -19,7 +19,7 @@ export default function MarqueeText() {
 
   return (
     <div className="w-full overflow-hidden bg-black py-4">
-      <div className="marquee text-white text-4xl font-bold tracking-wider flex items-center">
+      <div className="marquee text-white text-4xl font-bold tracking-wider flex items-center underdog">
         {[...Array(8)].map((_, i) => (
           <span key={i} className="flex whitespace-nowrap items-center">
             {letters.map((letter, index) => (

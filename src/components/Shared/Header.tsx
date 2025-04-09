@@ -49,6 +49,7 @@ import { Katibeh } from "next/font/google";
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
+  // style: "normal"
 });
 
 const Header = () => {
@@ -92,7 +93,7 @@ const Header = () => {
         </div>
 
         {/* Right nav for desktop */}
-        <nav className="hidden md:flex flex-1 justify-around items-center gap-4">
+        <nav className="hidden md:flex flex-1 justify-around items-center gap-4 ">
           {["/events/technical", "/events/cultural", "/about", "/login"].map(
             (href, idx) => (
               <Link
