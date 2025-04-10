@@ -32,6 +32,10 @@ const eventSchema = new Schema({
     required: true,
     enum: ["technical", "cultural"],
   },
+  ruleBook : {
+    type : String,
+    required : true,
+  },
   participants: [
     {
       type: Schema.Types.ObjectId,

@@ -8,13 +8,18 @@ import Container from "@/components/Shared/Container";
 import Image from "next/image";
 
 import { CardDiv } from "@/components/Shared/Card";
-import { Katibeh } from "next/font/google";
+import { Katibeh, Sedgwick_Ave_Display } from "next/font/google";
 import { events } from "@/utils/dummy-data/events";
 
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
 });
+
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 
 const Cultural = () => {
   return (
@@ -40,7 +45,7 @@ const Cultural = () => {
         
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
         <h1
-          className={`${katibeh.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
         >
           Band at a glance
         </h1>

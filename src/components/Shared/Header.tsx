@@ -3,6 +3,8 @@ import Logo from "@/components/Shared/espLogoAnim";
 import { Katibeh } from "next/font/google";
 import { auth } from "@/auth";
 import Sidebar from "./Sidebar";
+import Image from "next/image";
+import logoTransparent from "@/assets/images/logoTransparent.png"
 
 const katibeh = Katibeh({
   subsets: ["arabic"],
@@ -51,7 +53,7 @@ const Header = async() => {
             <span className={underline}></span>
           </Link>
         </nav>
-        <div className="">
+        <div>
           <Logo />
         </div>
         <nav className="hidden md:flex flex-1 justify-around items-center gap-4">

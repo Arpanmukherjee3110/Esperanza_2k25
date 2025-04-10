@@ -1,7 +1,7 @@
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import TeamBg from "@/assets/images/Group 163057[1].png";
 
-import Card,{CardContainer, cards,} from "@/components/Sponsors/card";
+import Card,{CardContainer, cards,} from "@/components/sponsors/card";
 import Hexagon from "@/assets/images/Hexagon.png";
 
 
