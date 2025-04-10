@@ -80,7 +80,7 @@ export default function EditProfile() {
         <Card className="mx-auto max-w-2xl bg-black/40 backdrop-blur-sm border-none text-white">
           <CardHeader className="space-y-2 p-4 sm:p-6">
             <div className="flex items-center justify-between">
-              <CardTitle className={`${karla.className}text-4xl sm:text-2xl font-extrabold`}>Edit profile</CardTitle>
+              <CardTitle className={`${karla.className} text-4xl sm:text-2xl font-extrabold`}>Edit profile</CardTitle>
               <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-gray-800 flex items-center justify-center">
                 <UserCircle2 className="h-8 w-8 sm:h-12 sm:w-12" />
               </div>
