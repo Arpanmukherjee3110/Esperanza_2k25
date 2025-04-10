@@ -11,3 +11,8 @@ export interface Credentials {
   password: string;
   phoneNumber: string;
 }
+
+export interface LoginCredentials{
+  email: string;
+  password: string;
+}

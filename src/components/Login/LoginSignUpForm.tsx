@@ -1,7 +1,10 @@
 "use client";
 
+import { login } from "@/actions/login.action";
 import { signUp } from "@/actions/signup.action";
+import { signIn } from "@/auth";
 import { SignUpFormPayload } from "@/interfaces/signup.interface";
+import { redirect } from "next/navigation";
 import { useState } from "react";
 import {
   FaEye,
@@ -10,7 +13,7 @@ import {
   FaGoogle,
   FaLinkedin,
 } from "react-icons/fa";
-import Swal from "sweetalert2"; 
+import Swal from "sweetalert2";
 
 const LoginSignUpForm = () => {
   const [loginTabActive, SetLoginTabActive] = useState<boolean>(true);
@@ -47,8 +50,31 @@ const LoginForm = () => {
 
   const [showPassword, setShowPassword] = useState(false);
 
+  const handleFormSubmit = async () => {
+    const err = await login(loginCredentials)
+
+    if(!err){
+      Swal.fire({
+        title: "Login Successful",
+        text: `Welcome back!`,
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        setLoginCredentials({ email: "", password: "" });
+        redirect("/")
+      });
+    } else {
+      Swal.fire({
+        title: "Login Failed",
+        text: String(err) || "Something went wrong",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+  }
+
   return (
-    <form className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
+    <form action={handleFormSubmit} className="relative z-50 h-full flex flex-col p-4 sm:p-6 md:py-8 md:px-12 max-w-[500px] m-auto gap-3 sm:gap-5 md:gap-8">
       <input
         type="email"
         placeholder="Enter your Email address"
@@ -65,6 +91,13 @@ const LoginForm = () => {
           placeholder="Enter Password"
           className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full"
           required
+          value={loginCredentials.password}
+          onChange={(e) => {
+            setLoginCredentials({
+              ...loginCredentials,
+              password: e.target.value,
+            });
+          }}
         />
         <button
           type="button"
@@ -86,7 +119,7 @@ const LoginForm = () => {
         <span className="h-[1px] flex flex-1 bg-red-400"></span>
       </div>
       <div className="flex justify-around">
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer">
+        <button className="text-4xl bg-white p-2 rounded cursor-pointer" >
           <FaGoogle color="black" />
         </button>
         <button className="text-4xl bg-white p-2 rounded cursor-pointer">
