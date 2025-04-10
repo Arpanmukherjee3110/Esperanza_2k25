@@ -2,9 +2,8 @@ import NextAuth, { CredentialsSignin } from "next-auth";
 import CredentialProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 import { User } from "@/models/user.model";
-import { connectDB } from "./utils/db/connect";
+import { connectDB } from "@/utils/db/connect";
 import { compare } from "bcryptjs";
-import { loginError } from "./utils/functions/error";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
