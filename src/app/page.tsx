@@ -6,11 +6,18 @@ import EspAnimation from "@/components/Shared/EspAnim";
 import PhotoContainer from "@/components/Home/PhotoContainer";
 import HeroSection from "@/components/Home/HeroSection";
 import Band from "@/components/Home/Band";
-//import Tech from "@/components/Home/Tech";
-//import Cultural from "@/components/Home/Cultural";
+import { auth } from "@/auth";
 
 
-const Home = () => {
+const Home = async() => {
+
+  const session = await auth()
+  if (session) {
+    console.log("User is logged in:", session);
+  } else {
+    console.log("User is not logged in");
+  }
+
   return (
     <div className="min-h-screen relative overflow-hidden">
       <Header />

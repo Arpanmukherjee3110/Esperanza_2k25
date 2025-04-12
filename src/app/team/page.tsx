@@ -9,7 +9,7 @@ import Container from "@/components/Shared/Container";
 
 
 import Image from "next/image"
-const Sponsers = () => {
+const Team = () => {
   return (
     <div className="mt-[125px] min-h-[90vh] relative overflow-hidden">
     <Image
@@ -46,4 +46,4 @@ const Sponsers = () => {
   )
 }
 
-export default Sponsers
+export default Team

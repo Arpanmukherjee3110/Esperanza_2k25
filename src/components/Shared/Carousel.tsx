@@ -1,12 +1,11 @@
 "use client";
 
-import {Carousel} from "@/components/ui/carousel";
-import { developers } from "@/utils/dummy-data/developers";
-export function CarouselCompoment() {
+import { Carousel } from "@/components/ui/carousel";
+import { StaticImageData } from "next/image";
+export function CarouselCompoment({developers}: {developers: {name: string; avatar: StaticImageData; profile: string; role?: string}[]}) {
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
-      <Carousel slides={developers} />
-
+      <Carousel slides={developers}/>
     </div>
   );
 }

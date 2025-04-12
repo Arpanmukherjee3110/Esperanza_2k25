@@ -4,13 +4,14 @@ import { NextResponse, type NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
   // console.log(await req.json());
-  const { name, year, department, email, password, phoneNumber } =
+  const { name, year, department, rollNumber, email, password, phoneNumber } =
     await req.json();
     await connectDB()
   const user = await User.create({
     name,
     year,
     department,
+    rollNumber,
     credentials: {
       email,
       password,

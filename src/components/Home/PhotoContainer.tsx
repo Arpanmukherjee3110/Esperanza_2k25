@@ -1,4 +1,3 @@
-"use client";
 import banner from "@/assets/images/image8.png";
 import banner2 from "@/assets/images/ESPERANZA.png";
 import star3 from "@/assets/images/Star 3.png";

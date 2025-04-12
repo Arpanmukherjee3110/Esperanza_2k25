@@ -2,7 +2,7 @@ import NextAuth, { CredentialsSignin } from "next-auth";
 import CredentialProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
 import { User } from "@/models/user.model";
-import { connectDB } from "./utils/db/connect";
+import { connectDB } from "@/utils/db/connect";
 import { compare } from "bcryptjs";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
@@ -21,45 +21,41 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const email = credentials.email as string;
         const password = credentials.password as string;
 
-        console.log(email, password);
-        
-
         if (!email || !password) {
-          throw new CredentialsSignin("Invalid credentials");
+          throw new CredentialsSignin({
+            cause : "Missing credentials",
+          })
         }
         await connectDB();
-        const user = await User.findOne({ email: email });
-        console.log(user);
+        
+        const user = await User.findOne({ "credentials.email": email }).select("+credentials.password");
         
         if (!user) {
           throw new CredentialsSignin({
-            cause: "User not found",
-          });
+            cause : "User not found",
+          })
         }
         if (!user.credentials?.password) {
           throw new CredentialsSignin({
-            cause: "Invalid Credentials",
-          });
+            cause : "Password not found",
+          })
         }
-        const isMatch = compare(password, user.credentials.password);
+        const isMatch = await compare(password, user.credentials.password);
         if (!isMatch) {
+          console.log("Wrong Password");
           throw new CredentialsSignin({
-            cause: "Invalid password",
-          });
+            cause : "Wrong Password",
+          })
         } else {
           return {
-            name: user.name,
-            department: user.department,
-            email: user.credentials.email,
-            phoneNumber: user.credentials.phoneNumber,
-            bio: user.bio,
-            registeredEvents: user.registeredEvents,
+            name : user.name,
+            email : user.credentials.email,
           };
         }
       },
     }),
   ],
-  // pages: {
-  //   signIn: "/login",
-  // },
+  pages: {
+    signIn : "/login"
+  },
 });
