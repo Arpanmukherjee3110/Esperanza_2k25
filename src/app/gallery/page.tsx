@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import Image from "next/image";
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
@@ -7,7 +7,7 @@ import Container from "@/components/Shared/Container";
 import GalleryHeading from "@/assets/images/GALLERY.png";
 import TechGalary from "@/assets/images/techGalary.png";
 import { Katibeh } from "next/font/google";
-import MasonryGallery from "@/components/galary/masonary";
+import MasonryGallery from "@/components/Gallery/masonary";
 import CulturalGalary from "@/assets/images/culturalGalary.png";
 const katibeh = Katibeh({
   subsets: ["arabic"],

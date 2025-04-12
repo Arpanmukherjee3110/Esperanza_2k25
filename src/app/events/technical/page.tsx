@@ -1,23 +1,24 @@
 import Container from "@/components/Shared/Container";
 import Image from "next/image";
 
+import HexagonWhite from "@/assets/background/HexagonWhite.png";
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import Hexagon from "@/assets/images/Hexagon.png";
-import HexagonWhite from "@/assets/background/HexagonWhite.png";
-import CulturalHeading from "@/assets/images/CulturalHeading.png";
 import TechnicalHeading from "@/assets/images/TechnicalHeading.png";
 import { CardDiv } from "@/components/Shared/Card";
-import { events } from "@/utils/dummy-data/events";
 
-import { Katibeh } from "next/font/google";
-import { CarouselCompoment } from "@/components/Shared/Carousel";
+import { fetchAllEvents } from "@/actions/fetch.action";
+import img from "@/assets/images/banner.png"; // Temp
+import { auth } from "@/auth";
 
-const katibeh = Katibeh({
-  subsets: ["arabic"],
-  weight: ["400"],
-});
 
-const Technical = () => {
+
+const Technical = async() => {
+
+  const events = await fetchAllEvents("technical")
+  const session = await auth()
+  
+
   return (
     <div className="min-h-[90vh] mt-[125px] relative">
       <Image
@@ -35,21 +36,6 @@ const Technical = () => {
           />
         </Container>
       </div>
-      <div className="flex justify-between items-center">
-
-        {/* Meet Our Developers */}
-        
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${katibeh.className} px-1 text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
-          Meet Our Developers
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-      </div>
-      <Container>
-        <CarouselCompoment/>
-      </Container>
       <Container>
         <div className="min-h-screen relative">
           <Image
@@ -69,19 +55,19 @@ const Technical = () => {
           />
           <div className="bg-gray-500/50 h-full w-[1px] absolute top-0 left-[-8px] md:left-[50%] md:translate-x-[-50%] animate-pulse" />
           <div className=" flex flex-col gap-1">
-            {events.map((event, i) => {
-              console.log(i);
-
+            {events?.map((event, i) => {
               if (i % 2 === 0) {
                 return (
                   <CardDiv
                     reverseAlign
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={event.poster}
-                    redirect={event.redirect}
+                    poster={img}
+                    redirect={""}
                     key={i}
-                    DateContent={event.date}
+                    DateContent={event.eventDate}
+                    uniqueId={event.uniqueId!}
+                    userEmail={session?.user?.email as string}
                   />
                 );
               } else {
@@ -89,10 +75,12 @@ const Technical = () => {
                   <CardDiv
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={event.poster}
-                    redirect={event.redirect}
+                    poster={img}
+                    redirect={""}
                     key={i}
-                    DateContent={event.date}
+                    DateContent={event.eventDate}
+                    uniqueId={event.uniqueId!}
+                    userEmail={session?.user?.email as string}
                   />
                 );
               }

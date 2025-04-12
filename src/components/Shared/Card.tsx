@@ -6,6 +6,9 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 import CalenderBlank from "@/assets/icons/CalendarBlank.png";
 import {Saira_Condensed} from "next/font/google";
+import { eventRegister } from "@/actions/eventRegister.action";
+import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
 
 const saira_condensed = Saira_Condensed({
   subsets: ["vietnamese"],
@@ -17,15 +20,54 @@ function Card({
   eventDescription,
   poster,
   redirect,
+  uniqueId,
+  userEmail,
 }: {
   eventName: string;
   eventDescription: string;
   poster?: string;
   redirect?: string;
+  uniqueId:number;
+  userEmail?: string;
 }) {
+
+  const router = useRouter()
+
+  const handleRegisterForEvent = async ()=>{
+    if(!userEmail){
+      Swal.fire({
+        icon: "warning",
+        title: "Oops...",
+        text: "You need to login first!",
+        confirmButtonText: "Okay",
+      }).then(()=>{
+        router.push("/login")
+      })
+    }
+    const res = await eventRegister(uniqueId,userEmail)
+    if(res){
+      if(res.error){
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: res.error,
+          confirmButtonText: "Okay",
+        })
+      }else{
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: res.message,
+          confirmButtonText: "Okay",
+        })
+      }
+    }
+    console.log(res);
+  }
+
   return (
     <CardContainer className="inter-var">
-      <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/50 border-white/[0.1] w-auto sm:w-[26rem] md:w-[28rem] lg:w-[30rem] h-auto rounded-xl p-5 border-[1px]  ">
+      <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/50 border-white/[0.1] w-auto sm:w-[18rem] md:w-[20rem] lg:w-[25rem] h-auto rounded-xl p-5 border-[1px]  ">
         <CardItem
           translateZ="50"
           className={`text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold text-neutral-600 dark:text-white ${saira_condensed.className}`}
@@ -57,9 +99,7 @@ function Card({
           </CardItem>
           <button
             className="px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold cursor-pointer"
-            onClick={() => {
-              console.log("Read More");
-            }}
+            onClick={handleRegisterForEvent}
           >
             Register
           </button>
@@ -76,6 +116,8 @@ export const CardDiv = ({
   eventDescription,
   poster,
   redirect,
+  uniqueId,
+  userEmail,
 }: {
   reverseAlign?: boolean;
   DateContent: any;
@@ -83,6 +125,8 @@ export const CardDiv = ({
   eventDescription: string;
   poster?: StaticImageData | string;
   redirect?: string;
+  uniqueId:number;
+  userEmail?: string;
 }) => {
   return (
     <div
@@ -107,6 +151,8 @@ export const CardDiv = ({
         eventName={eventName}
         poster={poster as string}
         redirect={redirect}
+        uniqueId={uniqueId}
+        userEmail={userEmail}
       />
     </div>
   );

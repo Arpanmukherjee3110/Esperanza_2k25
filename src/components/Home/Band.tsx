@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import bandataglance from "@/assets/images/BANDATAGLANCE.png"
 import band from "@/assets/images/BandPic.png"

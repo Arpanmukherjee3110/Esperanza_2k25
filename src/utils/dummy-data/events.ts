@@ -1,6 +1,5 @@
 import img from "@/assets/images/banner.png";
 
-import sayan from "@/assets/images/developers/sayan.png";
 
 export const events = [
   {
