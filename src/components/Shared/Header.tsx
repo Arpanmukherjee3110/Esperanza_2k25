@@ -28,6 +28,7 @@ const Header = async() => {
           <Link
             href={"/"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             Home
             <span className={underline}></span>
@@ -35,6 +36,7 @@ const Header = async() => {
           <Link
             href={"/team"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             Team
             <span className={underline}></span>
@@ -42,6 +44,7 @@ const Header = async() => {
           <Link
             href={"/gallery"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             Gallery
             <span className={underline}></span>
@@ -49,6 +52,7 @@ const Header = async() => {
           <Link
             href={"/sponsers"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             Sponsers
             <span className={underline}></span>
@@ -61,6 +65,7 @@ const Header = async() => {
           <Link
             href={"/events/technical"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             Technical
             <span className={underline}></span>
@@ -68,6 +73,7 @@ const Header = async() => {
           <Link
             href={"/events/cultural"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             Cultural
             <span className={underline}></span>
@@ -75,6 +81,7 @@ const Header = async() => {
           <Link
             href={"/about"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             About
             <span className={underline}></span>
@@ -82,6 +89,7 @@ const Header = async() => {
           <Link
             href={session?.user ? "/profile" : "/login"}
             className={`group ${linkClass} ${katibeh.className} text-xl`}
+            prefetch
           >
             {
               session?.user ? "Profile" : "Login"
