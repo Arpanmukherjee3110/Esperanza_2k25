@@ -6,16 +6,18 @@ import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import Hexagon from "@/assets/images/Hexagon.png";
 import TechnicalHeading from "@/assets/images/TechnicalHeading.png";
 import { CardDiv } from "@/components/Shared/Card";
-import { events } from "@/utils/dummy-data/events";
 
-import img from "@/assets/images/banner.png"; // Temp
 import { fetchAllEvents } from "@/actions/fetch.action";
+import img from "@/assets/images/banner.png"; // Temp
+import { auth } from "@/auth";
 
 
 
 const Technical = async() => {
 
-  const events = await fetchAllEvents()
+  const events = await fetchAllEvents("technical")
+  const session = await auth()
+  
 
   return (
     <div className="min-h-[90vh] mt-[125px] relative">
@@ -64,6 +66,8 @@ const Technical = async() => {
                     redirect={""}
                     key={i}
                     DateContent={event.eventDate}
+                    uniqueId={event.uniqueId!}
+                    userEmail={session?.user?.email as string}
                   />
                 );
               } else {
@@ -75,6 +79,8 @@ const Technical = async() => {
                     redirect={""}
                     key={i}
                     DateContent={event.eventDate}
+                    uniqueId={event.uniqueId!}
+                    userEmail={session?.user?.email as string}
                   />
                 );
               }

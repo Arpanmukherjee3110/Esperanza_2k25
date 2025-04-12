@@ -34,7 +34,6 @@ const eventSchema = new Schema({
   },
   ruleBookLink: {
     type: String,
-    required: true,
   },
   leads: [
     {

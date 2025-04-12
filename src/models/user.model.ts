@@ -14,8 +14,8 @@ const userSchema = new Schema({
     type: String,
     enum: ["CE", "CSE", "ECE", "EE", "ME"],
   },
-  rollNumber : {
-    type : String,
+  rollNumber: {
+    type: String,
   },
   bio: {
     type: String,
@@ -40,9 +40,12 @@ const userSchema = new Schema({
     type: Boolean,
     default: false,
   },
-  registeredEvents: {
-    type: [],
-  },
+  registeredEvents: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Events",
+    },
+  ],
 });
 
 userSchema.pre("save", async function (next) {
@@ -59,4 +62,4 @@ userSchema.pre("save", async function (next) {
   }
 });
 
-export const User = mongoose.models?.User || mongoose.model("User",userSchema)
+export const User = mongoose.models?.User || mongoose.model("User", userSchema);

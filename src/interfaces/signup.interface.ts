@@ -8,8 +8,8 @@ export interface SignUpFormPayload {
 
 export interface Credentials {
   email: string;
-  password: string;
-  phoneNumber: string;
+  password?: string;
+  phoneNumber?: string;
 }
 
 export interface LoginCredentials{

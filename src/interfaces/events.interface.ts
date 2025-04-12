@@ -1,5 +1,6 @@
 export interface Event {
-  uniqueId?: string;
+  _id?: string;
+  uniqueId?: number;
   eventName: string;
   eventDescription: string;
   eventDate: string;
@@ -11,7 +12,7 @@ export interface Event {
   leads: {
     name: string;
     year: "1st" | "2nd" | "3rd" | "4th";
-    department: "CSE" | "ECE" | "EEE" | "ME" | "CE" | "IT";
+    department: "CSE" | "ECE" | "EE" | "ME" | "CE";
     contact: string;
   }[];
   participants: any[];
