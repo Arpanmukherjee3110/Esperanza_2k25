@@ -7,15 +7,16 @@ import Hexagon from "@/assets/images/Hexagon.png";
 import TechnicalHeading from "@/assets/images/TechnicalHeading.png";
 import { CardDiv } from "@/components/Shared/Card";
 import { events } from "@/utils/dummy-data/events";
-import { CarouselCompoment } from "@/components/Shared/Carousel";
-import { Katibeh } from "next/font/google";
 
-const katibeh = Katibeh({
-  subsets: ["arabic"],
-  weight: ["400"],
-});
+import img from "@/assets/images/banner.png"; // Temp
+import { fetchAllEvents } from "@/actions/fetch.action";
 
-const Technical = () => {
+
+
+const Technical = async() => {
+
+  const events = await fetchAllEvents()
+
   return (
     <div className="min-h-[90vh] mt-[125px] relative">
       <Image
@@ -33,9 +34,6 @@ const Technical = () => {
           />
         </Container>
       </div>
-      <Container>
-        <CarouselCompoment/>
-      </Container>
       <Container>
         <div className="min-h-screen relative">
           <Image
@@ -55,19 +53,17 @@ const Technical = () => {
           />
           <div className="bg-gray-500/50 h-full w-[1px] absolute top-0 left-[-8px] md:left-[50%] md:translate-x-[-50%] animate-pulse" />
           <div className=" flex flex-col gap-1">
-            {events.map((event, i) => {
-              console.log(i);
-
+            {events?.map((event, i) => {
               if (i % 2 === 0) {
                 return (
                   <CardDiv
                     reverseAlign
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={event.poster}
-                    redirect={event.redirect}
+                    poster={img}
+                    redirect={""}
                     key={i}
-                    DateContent={event.date}
+                    DateContent={event.eventDate}
                   />
                 );
               } else {
@@ -75,10 +71,10 @@ const Technical = () => {
                   <CardDiv
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={event.poster}
-                    redirect={event.redirect}
+                    poster={img}
+                    redirect={""}
                     key={i}
-                    DateContent={event.date}
+                    DateContent={event.eventDate}
                   />
                 );
               }

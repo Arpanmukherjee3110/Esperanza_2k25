@@ -14,14 +14,14 @@ const eventSchema = new Schema({
     type: String,
   },
   eventDate: {
-    type: Date,
+    type: String,
     required: true,
   },
   eventStartTime: {
-    type: Date,
+    type: String,
   },
   eventEndTime: {
-    type: Date,
+    type: String,
   },
   venue: {
     type: String,
@@ -32,10 +32,21 @@ const eventSchema = new Schema({
     required: true,
     enum: ["technical", "cultural"],
   },
-  ruleBook : {
-    type : String,
-    required : true,
+  ruleBookLink: {
+    type: String,
+    required: true,
   },
+  leads: [
+    {
+      name: {
+        type: String,
+        required: true,
+      },
+      year: String,
+      department: String,
+      contact : String
+    },
+  ],
   participants: [
     {
       type: Schema.Types.ObjectId,

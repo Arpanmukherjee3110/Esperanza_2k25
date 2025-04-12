@@ -25,7 +25,7 @@ function Card({
 }) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/50 border-white/[0.1] w-auto sm:w-[26rem] md:w-[28rem] lg:w-[30rem] h-auto rounded-xl p-5 border-[1px]  ">
+      <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/50 border-white/[0.1] w-auto sm:w-[18rem] md:w-[20rem] lg:w-[25rem] h-auto rounded-xl p-5 border-[1px]  ">
         <CardItem
           translateZ="50"
           className={`text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold text-neutral-600 dark:text-white ${saira_condensed.className}`}
