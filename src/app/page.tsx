@@ -7,6 +7,9 @@ import PhotoContainer from "@/components/Home/PhotoContainer";
 import HeroSection from "@/components/Home/HeroSection";
 import Band from "@/components/Home/Band";
 import { auth } from "@/auth";
+import Tech from "@/components/Home/Tech";
+import Cultural from "@/components/Home/Cultural";
+import ClubGrid from "@/components/Home/Club";
 
 
 const Home = async() => {
@@ -39,12 +42,15 @@ const Home = async() => {
         <div>
           <Band/>
         </div>
-        {/* <div>
+       <div>
           <Tech/>
         </div>
-        <div>
+         <div>
           <Cultural/>
-        </div> */}
+        </div>
+        <div>
+          <ClubGrid/>
+        </div>
     </div>
     
   );

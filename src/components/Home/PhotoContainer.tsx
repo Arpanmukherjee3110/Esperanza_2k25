@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const PhotoContainer = () => {
   return (
-    <div className="relative flex items-center justify-center pt-[8%]">
-    <div className="h-[20%] w-[25%] md:h-[40%] md:w-[40%] border-[1px] border-white relative ml-5 mb-5 right-[11%] ">
+    <div className="flex flex-col relative md:flex-row items-center justify-center pt-[8%]">
+    <div className="w-[80%] md:h-[40%] md:w-[40%] border-[1px] border-white relative ml-5 mb-5 right-[11%] ">
       <div className="absolute top-[-50%] right-[2%] w-[110%]">
       <Image src={star3} alt="" />
       </div>
@@ -19,14 +19,14 @@ const PhotoContainer = () => {
       </span>
       </div>
       <div className="relative h-full w-full md:h-[30%] md:w-[30%] ml-5 mb-5 top-[4%] right-[-9%]">
-        <div className="relative right-[8%] pb-[18%] w-[55%] md:w-[60%]">
+        <div className="relative right-[0%] md:right-[8%] pb-[18%] pt-[8%] md:pt-[0%] md:pb-[18%] w-[45%] md:w-[60%]">
           <Image src={banner2} alt="" />
         </div>
-        <span className="relative h-full w-full md:h-[30%] md:w-[30%] ml-5 mb-5 top-[4%] underdog">
+        <span className="relative h-full w-full md:h-[30%] md:w-[30%] ml-5 mb-5 md:mb-5 md:pl-5 top-[4%] underdog">
           We are a dynamic group of tech enthusiasts, innovators, and problem-solvers passionate about shaping the future.we thrive on creativity and collaboration. 
           At Esperanza, we aim to push boundaries, showcase groundbreaking ideas, and inspire innovation. Join us on this exciting journey as we turn bold ideas into reality!
           
-          <Image src={group12} alt="" className="pt-15 w-[62%] hover:cursor-pointer"/>
+          <Image src={group12} alt="" className="pt-15 w-[62%] hover:scale-108 transition-transform duration-400 cursor-pointer"/>
           
         </span>
         
