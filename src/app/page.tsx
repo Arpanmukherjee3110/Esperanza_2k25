@@ -39,6 +39,12 @@ const Home = async() => {
         <div>
           <Band/>
         </div>
+        {/* <div>
+          <Tech/>
+        </div>
+        <div>
+          <Cultural/>
+        </div> */}
     </div>
     
   );

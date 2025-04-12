@@ -9,6 +9,7 @@ import logoTransparent from "@/assets/images/logoTransparent.png"
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
+  // style: "normal"
 });
 
 const Header = async() => {
