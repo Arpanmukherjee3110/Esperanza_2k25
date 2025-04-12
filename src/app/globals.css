@@ -133,3 +133,16 @@ body {
 .animate-grow-line {
   animation: grow-line 0.5s ease-out forwards;
 }
+
+@keyframes esperanza-blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.esperanza-blink {
+  animation: esperanza-blink 0.9s linear infinite;
+}

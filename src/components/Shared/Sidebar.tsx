@@ -42,8 +42,9 @@ const Sidebar = ({user}:any) => {
             <Link
               key={i}
               href={link.href}
-            //   onClick={closeMenu}
+              onClick={closeMenu}
               className={`relative group text-white text-xl sm:text-2xl transition-all ${katibeh.className}`}
+              prefetch
             >
               <span className="group-hover:text-red-400 transition-colors duration-300">
                 {link.label}

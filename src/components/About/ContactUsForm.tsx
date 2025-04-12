@@ -1,21 +1,44 @@
-"use client"
-import { FormEvent, useState } from "react";
+"use client";
+import { contactMessage } from "@/actions/contact.action";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactUsForm = () => {
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-    const [errorMessage, setErrorMessage] = useState("");
-  
-    const handleSubmit = (e: FormEvent) => {
-      e.preventDefault();
-      if (!formData.name || !formData.email || !formData.message) {
-        setErrorMessage("All fields are required.");
-        return;
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async () => {
+    if (!formData.name || !formData.email || !formData.message) {
+      Swal.fire({
+        icon: "warning",
+        title: "Oops...",
+        text: "Please fill all the fields",
+      })
+      return;
+    }
+    setErrorMessage("");
+    const response = await contactMessage(
+      formData.name,
+      formData.email,
+      formData.message
+    );
+    Swal.fire({
+      icon: response.success ? "success" : "error",
+      title: response.success ? "Success" : "Error",
+      text: response.message,
+      confirmButtonText: "Okay",
+    }).then(() => {
+      if (response.success) {
+        setFormData({ name: "", email: "", message: "" });
       }
-      setErrorMessage("");
-      console.log("Form submitted", formData);
-    };
+    });
+  };
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form action={handleSubmit} className="space-y-6">
       <div>
         <label className="block text-lg font-medium mb-2">Name</label>
         <input

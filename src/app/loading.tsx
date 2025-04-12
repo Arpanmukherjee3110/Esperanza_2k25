@@ -1,8 +1,11 @@
+import LoaderComponent from "@/components/Shared/Loader";
 
 const loading = () => {
   return (
-    <div>loading</div>
-  )
-}
+    <div className="fixed h-screen z-[100]">
+      <LoaderComponent />
+    </div>
+  );
+};
 
-export default loading
+export default loading;
