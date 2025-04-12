@@ -7,9 +7,12 @@ import RevolutionImg from "@/assets/images/RevolutionImg.png";
 import Container from "@/components/Shared/Container";
 import Image from "next/image";
 
+import { fetchAllEvents } from "@/actions/fetch.action";
+import { auth } from "@/auth";
 import { CardDiv } from "@/components/Shared/Card";
 import { Katibeh, Sedgwick_Ave_Display } from "next/font/google";
-import { events } from "@/utils/dummy-data/events";
+
+import img from "@/assets/images/banner.png"; // Temp
 
 const katibeh = Katibeh({
   subsets: ["arabic"],
@@ -21,7 +24,11 @@ const sedgwick = Sedgwick_Ave_Display({
   weight: ["400"],
 })
 
-const Cultural = () => {
+const Cultural = async() => {
+  
+  const events = await fetchAllEvents("cultural")
+  const session = await auth()
+
   return (
     <div className="mt-[125px] min-h-[90vh] relative">
       <Image
@@ -75,19 +82,19 @@ const Cultural = () => {
           />
           <div className="bg-white/50 h-full w-[1px] absolute top-0 left-[-8px] md:left-[50%] md:translate-x-[-50%] animate-pulse" />
           <div className=" flex flex-col gap-1">
-            {events.map((event, i) => {
-              console.log(i);
-
+          {events?.map((event, i) => {
               if (i % 2 === 0) {
                 return (
                   <CardDiv
                     reverseAlign
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={event.poster}
-                    redirect={event.redirect}
+                    poster={img}
+                    redirect={""}
                     key={i}
-                    DateContent={event.date}
+                    DateContent={event.eventDate}
+                    uniqueId={event.uniqueId!}
+                    userEmail={session?.user?.email as string}
                   />
                 );
               } else {
@@ -95,10 +102,12 @@ const Cultural = () => {
                   <CardDiv
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={event.poster}
-                    redirect={event.redirect}
+                    poster={img}
+                    redirect={""}
                     key={i}
-                    DateContent={event.date}
+                    DateContent={event.eventDate}
+                    uniqueId={event.uniqueId!}
+                    userEmail={session?.user?.email as string}
                   />
                 );
               }
