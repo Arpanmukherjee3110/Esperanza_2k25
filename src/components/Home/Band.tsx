@@ -1,7 +1,7 @@
 import Image from "next/image";
 import bandataglance from "@/assets/images/BANDATAGLANCE.png"
-import band from "@/assets/images/image11.png"
-import revolution from "@/assets/images/trap.png"
+import band from "@/assets/images/fd_image.png"
+import revolution from "@/assets/images/fd.png"
 
 
 
@@ -14,8 +14,8 @@ const Band = ()=>{
                 <div className="bg-gray-200 w-[30%] h-[100%] absolute bottom-1 right-[102%]" />
             </div>
             <div className="mt-10 md:mt-50 relative">
-                    <Image src={band} alt="" className="object-cover pt-60" />
-                    <Image src={revolution} alt="" className="absolute bottom-1 left-[50%] translate-x-[-50%] w-[80%] h-[25%]" />
+                    <Image src={band} alt="" className="object-cover pt-55" />
+                    <Image src={revolution} alt="" className="absolute -bottom-10 md:-bottom-15 left-[50%] translate-x-[-50%] w-full " />
                     <div className="bg-red-600 w-full h-[30%] absolute bottom-0 z-[-1]" />
                   </div>
         </div>
