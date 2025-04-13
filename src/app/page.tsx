@@ -10,6 +10,8 @@ import { auth } from "@/auth";
 import Tech from "@/components/Home/Tech";
 import Cultural from "@/components/Home/Cultural";
 import ClubGrid from "@/components/Home/Club";
+import Gallery from "@/components/Home/Galleryh";
+import Extra from "@/components/Home/Extra";
 
 
 const Home = async() => {
@@ -50,6 +52,12 @@ const Home = async() => {
         </div>
         <div>
           <ClubGrid/>
+        </div>
+        <div>
+          <Gallery/>
+        </div>
+        <div>
+          <Extra/>
         </div>
     </div>
     

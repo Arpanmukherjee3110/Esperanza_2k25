@@ -54,6 +54,7 @@
     "esperanza2k25website": "file:",
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.484.0",
+    "mongodb": "^6.15.0",
     "mongoose": "^8.13.1",
     "motion": "^12.6.2",
     "next": "15.2.4",

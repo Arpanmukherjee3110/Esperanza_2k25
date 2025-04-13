@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import cultural from "@/assets/images/Group50.png";
 import explore from "@/assets/images/Group45.png";
 import rectangle from "@/assets/images/Rectangle81.png";
@@ -72,7 +73,7 @@ const Cultural = () => {
         </svg>
       </div>
       
-      <div className="flex flex-col md:flex-row gap-30 items-center">
+      <div className="flex flex-col md:flex-row gap-12 items-center">
 
         <div className="flex-1 min-w-[250px] relative top-20 left-[0] md:left-[-120]">
         <div className='absolute z-[-1] w-[120%] top-[-70] left-[-100]'> 
@@ -99,12 +100,16 @@ const Cultural = () => {
             for an exciting lineup of workshops, competitions, and networking opportunities 
             with industry leaders.
           </p>
+          <Link href="/events/cultural" passHref legacyBehavior>
+          <a target="_blank" className="inline-block">
           <Image
           src={explore}
           alt=""
           width={270}
           className='pt-[50] hover:scale-108 transition-transform duration-300 cursor-pointer'
           />
+          </a>
+          </Link>
         </div>
       </div>
     </section>

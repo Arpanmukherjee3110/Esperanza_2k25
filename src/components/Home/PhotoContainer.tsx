@@ -31,8 +31,13 @@ const PhotoContainer = () => {
           We are a dynamic group of tech enthusiasts, innovators, and problem-solvers passionate about shaping the future.we thrive on creativity and collaboration. 
           At Esperanza, we aim to push boundaries, showcase groundbreaking ideas, and inspire innovation. Join us on this exciting journey as we turn bold ideas into reality!
           
+          <a 
+  href="/brochure/brochure_merged.pdf"
+  target="_blank" 
+  rel="noopener noreferrer"
+>
           <Image src={group12} alt="" className="pt-15 w-[62%] hover:scale-108 transition-transform duration-400 cursor-pointer"/>
-          
+          </a>
         </span>
         
       </div>

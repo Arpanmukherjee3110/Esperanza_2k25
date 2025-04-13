@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import techImg from "@/assets/images/Group49.png";
 import babyrobot from "@/assets/images/babyrobot.png";
 import explore from "@/assets/images/Group45.png";
@@ -74,7 +75,9 @@ const Tech = () => {
         </svg>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-30 items-center">
+      
+      <div className="flex flex-col md:flex-row gap-20 items-center">
+
         <div className="flex-1 min-w-[300px] relative top-20">
           <p className={`${sedgwick.className} text-lg text-gray-200 leading-relaxed underdog`}>
             Our technical events showcase the latest innovations and provide a platform for
@@ -83,12 +86,16 @@ const Tech = () => {
             for an exciting lineup of workshops, competitions, and networking opportunities
             with industry leaders.
           </p>
+          <Link href="/events/technical" passHref legacyBehavior>
+          <a  target="_blank" className="inline-block">
           <Image
             src={explore}
             alt=""
             width={270}
             className='pt-[50] hover:scale-108 transition-transform duration-300 cursor-pointer'
           />
+          </a>
+          </Link>
         </div>
 
         <div className="flex-1 min-w-[250px] relative top-20 left-0 md:left-40">
