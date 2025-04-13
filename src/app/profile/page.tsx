@@ -21,7 +21,7 @@ export default async function Profile() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-red-900 to-gray-900">
       <div className="container mx-auto px-4 py-4 sm:py-8">
-        <div className="mb-4 sm:mb-8 flex items-center">
+        <div className="mb-4 sm:mb-8 justify-between flex items-center">
           <Link
             href="/"
             className="text-white flex items-center hover:text-red-400"
@@ -29,6 +29,7 @@ export default async function Profile() {
             <ArrowLeft className="mr-2 h-4 w-4" />
             <span className="hidden sm:inline">HOME</span>
           </Link>
+          {/* <LogOutButton/> */}
         </div>
         <div className="mb-4 sm:mb-8 flex items-center justify-center flex-col gap-2">
           <h1
