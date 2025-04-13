@@ -7,9 +7,12 @@ import Image from "next/image";
 import ContactUsForm from "@/components/About/ContactUsForm";
 import Container from "@/components/Shared/Container";
 import Map from "@/components/Shared/Map";
-import { Katibeh } from "next/font/google";
+import { Katibeh,Sedgwick_Ave_Display } from "next/font/google";
 
-
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
@@ -61,22 +64,22 @@ const About = () => {
             <div className="flex-1 w-full lg:max-w-[50%] xl:max-w-[55%]">
               <div className="mb-8">
                 <h3
-                  className={`${katibeh.className} text-4xl xl:text-5xl mb-6 relative inline-block`}
+                  className={`${sedgwick.className} text-4xl xl:text-5xl mb-6 relative inline-block`}
                 >
                   CONTACT US
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-current"></span>
                 </h3>
-                <h3>
+                <h3 className={`${sedgwick.className} `}>
                   PH.NO - 1234567891 <br />
                   MAIL - ABCD@GMAIL.COM
                 </h3>
               </div>
 
               <div className="bg-gray-900 text-white px-3 py-6 sm:p-8 rounded-lg w-full">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+                <h2 className={`${sedgwick.className} text-2xl sm:text-3xl font-bold mb-4 `}>
                   GET IN TOUCH
-                </h2>
-                <p className="text-lg sm:text-xl mb-6">
+                </h2 >
+                <p className={`${sedgwick.className} text-lg sm:text-xl mb-6 `}>
                   We are here for you! How can we help?
                 </p>
 

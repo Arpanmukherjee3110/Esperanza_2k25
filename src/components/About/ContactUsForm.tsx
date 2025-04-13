@@ -3,6 +3,11 @@ import { contactMessage } from "@/actions/contact.action";
 import { useState } from "react";
 import Swal from "sweetalert2";
 
+import { Katibeh,Sedgwick_Ave_Display } from "next/font/google";
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -40,7 +45,7 @@ const ContactUsForm = () => {
   return (
     <form action={handleSubmit} className="space-y-6">
       <div>
-        <label className="block text-lg font-medium mb-2">Name</label>
+        <label className={`${sedgwick.className} block text-lg font-medium mb-2`}>Name</label>
         <input
           type="text"
           className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500"
@@ -50,7 +55,7 @@ const ContactUsForm = () => {
         />
       </div>
       <div>
-        <label className="block text-lg font-medium mb-2">Email</label>
+      <label className={`${sedgwick.className} block text-lg font-medium mb-2`}>Email</label>
         <input
           type="email"
           className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500"
@@ -60,7 +65,7 @@ const ContactUsForm = () => {
         />
       </div>
       <div>
-        <label className="block text-lg font-medium mb-2">Message</label>
+      <label className={`${sedgwick.className} block text-lg font-medium mb-2`}>message</label>
         <textarea
           className="w-full p-3 bg-gray-800 border border-gray-700 rounded-lg h-32 focus:ring-2 focus:ring-blue-500"
           value={formData.message}
@@ -73,7 +78,7 @@ const ContactUsForm = () => {
       {errorMessage && <p className="text-red-500 text-lg">{errorMessage}</p>}
       <button
         type="submit"
-        className="w-full cursor-pointer p-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold text-white text-lg transition-colors duration-300"
+        className={`${sedgwick.className} w-full cursor-pointer p-3 bg-green-600 hover:bg-green-700 rounded-lg font-bold text-white text-lg transition-colors duration-300`}
       >
         Submit
       </button>
