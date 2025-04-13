@@ -15,7 +15,11 @@ import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-
+import { Sedgwick_Ave_Display} from "next/font/google";
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 
 const formSchema = z.object({
   firstName: z.string().min(2, "First name must be at least 2 characters"),
@@ -88,7 +92,7 @@ const ProfileForm = ({
             name="firstName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm sm:text-base">
+                <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>
                   First Name
                 </FormLabel>
                 <FormControl>
@@ -108,7 +112,7 @@ const ProfileForm = ({
             name="lastName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm sm:text-base">
+                <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>
                   Last Name
                 </FormLabel>
                 <FormControl>
@@ -130,7 +134,7 @@ const ProfileForm = ({
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm sm:text-base">Email</FormLabel>
+              <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>Email</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter email"
@@ -149,7 +153,7 @@ const ProfileForm = ({
           name="rollNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm sm:text-base">
+              <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>
                 Roll Number
               </FormLabel>
               <FormControl>
@@ -170,7 +174,7 @@ const ProfileForm = ({
           name="contactNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm sm:text-base">
+              <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>
                 Contact Number
               </FormLabel>
               <FormControl>
@@ -191,7 +195,7 @@ const ProfileForm = ({
             name="year"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm sm:text-base">Year</FormLabel>
+                <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>Year</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Enter contact number"
@@ -210,7 +214,7 @@ const ProfileForm = ({
             name="department"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm sm:text-base">
+                <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>
                   Department
                 </FormLabel>
                 <FormControl>
@@ -232,7 +236,7 @@ const ProfileForm = ({
           name="password"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm sm:text-base">Password</FormLabel>
+              <FormLabel className={`${sedgwick.className} text-sm sm:text-base`}>Password</FormLabel>
               <div className="relative">
                 <FormControl>
                   <Input
@@ -269,14 +273,14 @@ const ProfileForm = ({
           <Button
             variant="outline"
             type="button"
-            className="hover:bg-red-500/20 hover:text-red-500 order-2 sm:order-1"
+            className={`${sedgwick.className} hover:bg-red-500/20 hover:text-red-500 order-2 sm:order-1`}
             onClick={() => form.reset()}
           >
             Cancel
           </Button>
           <Button
             type="submit"
-            className="bg-red-500 hover:bg-red-600 order-1 sm:order-2"
+            className={`${sedgwick.className} bg-red-500 hover:bg-red-600 order-1 sm:order-2`}
             disabled={isSubmitting}
           >
             {isSubmitting ? "Saving..." : "Save Changes"}

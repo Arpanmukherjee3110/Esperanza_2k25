@@ -1,6 +1,6 @@
 "use client";
 
-import { Katibeh } from "next/font/google";
+import { Katibeh,Sedgwick_Ave_Display } from "next/font/google";
 import MapImage from "@/assets/images/map-image.png";
 import Cgec from "@/assets/images/CGEC-Logo-colorful.jpg";
 import Image from "next/image";
@@ -9,6 +9,10 @@ const katibeh = Katibeh({
     subsets: ["arabic"],
     weight: ["400"],
   });
+  const sedgwick = Sedgwick_Ave_Display({
+    subsets: ["latin"],
+    weight: ["400"],
+  })
 const Map = () => {
   const locationInfo =
     "https://www.google.com/maps/place/Cooch+Behar+Government+Engineering+College/data=!4m2!3m1!1s0x0:0xe4952b5891bb2389?sa=X&ved=1t:2428&ictx=111";
@@ -16,7 +20,7 @@ const Map = () => {
     <>
       <div className="mb-8">
         <h3
-          className={`${katibeh.className} text-4xl xl:text-5xl mb-6 relative inline-block`}
+          className={`${sedgwick.className} text-4xl xl:text-5xl mb-6 relative inline-block`}
         >
           ADDRESS
           <span className="absolute bottom-0 left-0 w-full h-1 bg-current"></span>
@@ -26,7 +30,7 @@ const Map = () => {
             href={locationInfo}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:underline"
+            className={`${sedgwick.className} text-blue-400 hover:underline `}
           >
             Cooch Behar Government Engineering College
             <br /> Vill-Harinchowrah, P.O-Ghughumari
