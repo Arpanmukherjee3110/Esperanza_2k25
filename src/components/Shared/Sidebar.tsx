@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import Hamburger from "./Hamburger";
-import { Katibeh } from "next/font/google";
+
 import { useState } from "react";
+import { Sedgwick_Ave_Display,Katibeh } from "next/font/google";
 
-const katibeh = Katibeh({
-    subsets: ["arabic"],
-    weight: ["400"],
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
 })
-
 const Sidebar = ({user}:any) => {
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Sidebar = ({user}:any) => {
               key={i}
               href={link.href}
               onClick={closeMenu}
-              className={`relative group text-white text-xl sm:text-2xl transition-all ${katibeh.className}`}
+              className={`relative group text-white text-xl sm:text-2xl transition-all ${sedgwick.className}`}
               prefetch
             >
               <span className="group-hover:text-red-400 transition-colors duration-300">
