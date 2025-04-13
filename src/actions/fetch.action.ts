@@ -39,7 +39,7 @@ const fetchUserByEmail = async (email?: string) => {
 };
 
 const fetchRegisteredEvents = async (eventsIds: any[]) => {
-    if (!eventsIds.length) {
+    if (!eventsIds?.length) {
       return null;
     }
   
