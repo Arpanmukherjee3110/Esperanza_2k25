@@ -1,11 +1,17 @@
 import Link from "next/link";
 import Logo from "@/components/Shared/espLogoAnim";
-import { Katibeh } from "next/font/google";
+
 import { auth } from "@/auth";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
 import logoTransparent from "@/assets/images/logoTransparent.png"
 
+import { Sedgwick_Ave_Display,Katibeh } from "next/font/google";
+
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
@@ -27,7 +33,7 @@ const Header = async() => {
         <nav className="hidden md:flex flex-1 justify-around items-center gap-4">
           <Link
             href={"/"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             Home
@@ -35,7 +41,7 @@ const Header = async() => {
           </Link>
           <Link
             href={"/team"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             Team
@@ -43,7 +49,7 @@ const Header = async() => {
           </Link>
           <Link
             href={"/gallery"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             Gallery
@@ -51,7 +57,7 @@ const Header = async() => {
           </Link>
           <Link
             href={"/sponsers"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             Sponsers
@@ -64,7 +70,7 @@ const Header = async() => {
         <nav className="hidden md:flex flex-1 justify-around items-center gap-4">
           <Link
             href={"/events/technical"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             Technical
@@ -72,7 +78,7 @@ const Header = async() => {
           </Link>
           <Link
             href={"/events/cultural"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             Cultural
@@ -80,7 +86,7 @@ const Header = async() => {
           </Link>
           <Link
             href={"/about"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             About
@@ -88,7 +94,7 @@ const Header = async() => {
           </Link>
           <Link
             href={session?.user ? "/profile" : "/login"}
-            className={`group ${linkClass} ${katibeh.className} text-xl`}
+            className={`group ${linkClass} ${sedgwick.className} text-xl`}
             prefetch
           >
             {

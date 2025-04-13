@@ -38,10 +38,12 @@
     "@radix-ui/react-toggle": "^1.1.0",
     "@radix-ui/react-toggle-group": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
+    "@react-three/fiber": "^9.1.2",
     "@tabler/icons-react": "^3.31.0",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "@types/three": "^0.175.0",
     "autoprefixer": "10.4.15",
     "bcryptjs": "^3.0.2",
     "class-variance-authority": "^0.7.0",
@@ -65,6 +67,7 @@
     "sweetalert2": "^11.17.2",
     "tabler": "^1.0.0",
     "tailwind-merge": "^3.0.2",
+    "three": "^0.175.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
