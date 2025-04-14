@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
@@ -11,7 +11,7 @@ import { Saira_Condensed, Sedgwick_Ave_Display } from "next/font/google";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 
-import img from "@/assets/images/ESPERANZA.png"
+import img from "@/assets/images/ESPERANZA.png";
 
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
