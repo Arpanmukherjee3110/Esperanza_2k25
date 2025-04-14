@@ -10,7 +10,7 @@ const RegisterButton = ({
   userEmail,
 }: {
   uniqueId: number;
-  userEmail: string;
+  userEmail?: string;
 }) => {
   const router = useRouter();
 

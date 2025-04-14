@@ -1,8 +1,7 @@
+import arpan from "@/assets/developers/arpan.jpg";
 import ayan from "@/assets/developers/ayan.jpg";
 import sayan from "@/assets/developers/sayan.jpg";
-import arpan from "@/assets/developers/arpan.jpg";
 import { TeamMember } from "@/interfaces/team.interface";
-import { FaLinkedin } from "react-icons/fa";
 
 export const teamMembers: TeamMember[] = [
   {

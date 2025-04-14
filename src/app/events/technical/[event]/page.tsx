@@ -9,11 +9,12 @@ import { staticEventsData } from "@/utils/static/events";
 import { Calendar, TimerIcon } from "lucide-react";
 import { Sedgwick_Ave } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const sedgwick = Sedgwick_Ave({
-  weight : "400",
-  subsets : ["latin-ext"]
-})
+  weight: "400",
+  subsets: ["latin-ext"],
+});
 
 const page = async ({ params }: any) => {
   const session = await auth();
@@ -51,6 +52,15 @@ const page = async ({ params }: any) => {
                 <span>{convertTo12HourFormat(event?.eventStartTime)}</span>
               </div>
               <div className="text-xl">{event?.eventDescription}</div>
+              {event?.ruleBookLink && event.ruleBookLink!=="" && (
+                <Link
+                  href={event.ruleBookLink}
+                  target="_blank"
+                  className="self-start p-2 duration-100 rounded bg-pink-600 hover:bg-pink-800"
+                >
+                  Check Rule Book
+                </Link>
+              )}
               <div className="font-bold text-pink-600 ">
                 Total Registrations : {event?.participants.length}
               </div>
@@ -62,7 +72,9 @@ const page = async ({ params }: any) => {
               )}
               <div className="flex flex-col gap-2">
                 <span className="font-bold text-2xl">
-                  {event?.leads && event.leads.length>1 ? "Event Leads" : "Event Lead"}
+                  {event?.leads && event.leads.length > 1
+                    ? "Event Leads"
+                    : "Event Lead"}
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {event?.leads.map((l, i) => (
@@ -71,7 +83,9 @@ const page = async ({ params }: any) => {
                       key={i}
                     >
                       <div>{l.name}</div>
-                      <div>{l.year} {l.department}</div>
+                      <div>
+                        {l.year} {l.department}
+                      </div>
                       <div>{l.contact}</div>
                     </div>
                   ))}
