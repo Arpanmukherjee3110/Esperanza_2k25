@@ -28,12 +28,14 @@ export const signUp = async (payload: SignUpFormPayload) => {
         userEmail: signUpResponse?.credentials?.email,
       };
     }
-  } catch (error) {
+  } catch (error:any) {
+    console.log(error);
+    
     return {
       success: false,
       status: "F",
       message: "User creation failed",
-      error: error,
+      error: error.message,
     };
   }
 };
