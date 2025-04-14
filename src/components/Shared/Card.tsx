@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
@@ -11,7 +11,7 @@ import { Saira_Condensed, Sedgwick_Ave_Display } from "next/font/google";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 
-import img from "@/assets/images/ESPERANZA.png"
+import img from "@/assets/images/ESPERANZA.png";
 
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
@@ -27,11 +27,13 @@ function Card({
   eventDescription,
   uniqueId,
   userEmail,
+  nonRegisterable=false,
 }: {
   eventName: string;
   eventDescription: string;
   uniqueId:number;
   userEmail?: string;
+  nonRegisterable?:boolean
 }) {
 
   const router = useRouter()
@@ -103,13 +105,16 @@ function Card({
           >
             Read More ...
           </CardItem>
-          <button
+          {
+            nonRegisterable ? null : <button
             className={`${sedgwick.className} px-4 py-2 rounded-xl bg-white text-black  text-xs font-bold cursor-pointer`}
 
             onClick={handleRegisterForEvent}
           >
             Register
           </button>
+          }
+          
         </div>
       </CardBody>
     </CardContainer>
@@ -123,6 +128,7 @@ export const CardDiv = ({
   eventDescription,
   uniqueId,
   userEmail,
+  nonRegisterable,
 }: {
   reverseAlign?: boolean;
   DateContent: any;
@@ -130,6 +136,7 @@ export const CardDiv = ({
   eventDescription: string;
   uniqueId:number;
   userEmail?: string;
+  nonRegisterable?:boolean
 }) => {
   return (
     <div
@@ -154,6 +161,7 @@ export const CardDiv = ({
         eventName={eventName}
         uniqueId={uniqueId}
         userEmail={userEmail}
+        nonRegisterable={nonRegisterable}
       />
     </div>
   );

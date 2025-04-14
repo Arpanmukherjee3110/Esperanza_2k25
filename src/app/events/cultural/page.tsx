@@ -89,12 +89,11 @@ const Cultural = async() => {
                     reverseAlign
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={img}
-                    redirect={""}
                     key={i}
                     DateContent={event.eventDate}
                     uniqueId={event.uniqueId!}
                     userEmail={session?.user?.email as string}
+                    nonRegisterable={event.nonRegisterable}
                   />
                 );
               } else {
@@ -102,12 +101,11 @@ const Cultural = async() => {
                   <CardDiv
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={img}
-                    redirect={""}
                     key={i}
                     DateContent={event.eventDate}
                     uniqueId={event.uniqueId!}
                     userEmail={session?.user?.email as string}
+                    nonRegisterable={event.nonRegisterable}
                   />
                 );
               }

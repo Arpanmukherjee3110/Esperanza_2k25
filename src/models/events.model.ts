@@ -46,6 +46,9 @@ const eventSchema = new Schema({
       contact : String
     },
   ],
+  nonRegisterable : {
+    type : Boolean
+  },
   participants: [
     {
       type: Schema.Types.ObjectId,

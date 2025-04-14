@@ -9,7 +9,6 @@ import TechnicalHeading from "@/assets/images/TechnicalHeading.png";
 import { CardDiv } from "@/components/Shared/Card";
 
 import { fetchAllEvents } from "@/actions/fetch.action";
-import img from "@/assets/images/banner.png"; // Temp
 import { auth } from "@/auth";
 
 

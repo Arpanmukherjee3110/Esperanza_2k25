@@ -15,5 +15,6 @@ export interface Event {
     department: "CSE" | "ECE" | "EE" | "ME" | "CE";
     contact: string;
   }[];
+  nonRegisterable? : boolean
   participants: any[];
 }
