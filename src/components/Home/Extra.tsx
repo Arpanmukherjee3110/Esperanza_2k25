@@ -1,6 +1,6 @@
 const Extra = ()=>{
     return(
-        <div className="">
+        <div className="h-0">
             
 
             

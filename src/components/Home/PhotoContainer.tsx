@@ -23,14 +23,15 @@ const PhotoContainer = () => {
         <Image src={banner} alt="" />
       </span>
       </div>
-      <div className="relative h-full w-full md:h-[30%] md:w-[30%] ml-5 mb-5 top-[4%] right-[-9%]">
-        <div className="relative right-[0%] md:right-[8%] pb-[18%] pt-[8%] md:pt-[0%] md:pb-[18%] w-[45%] md:w-[60%]">
+      <div className="relative h-full w-full md:h-[30%] md:w-[30%] px-7 mb-5 top-[4%] right-[] md:right-[-9%]">
+        <div className="relative right-[-5%] md:right-[8%] pb-[18%] pt-[12%] md:pt-[0%] md:pb-[18%] w-[45%] md:w-[60%]">
           <Image src={banner2} alt="" />
         </div>
-        <span className={`${sedgwick.className}relative h-full w-full md:h-[30%] md:w-[30%] ml-5 mb-5 md:mb-5 md:pl-5 top-[4%] underdog`}>
+        <span className={`${sedgwick.className} relative h-full w-[100%] md:h-[30%] md:w-[30%] px-5 mb-5 md:mb-5 md:pl-5 top-[4%]`}>
           We are a dynamic group of tech enthusiasts, innovators, and problem-solvers passionate about shaping the future.we thrive on creativity and collaboration. 
           At Esperanza, we aim to push boundaries, showcase groundbreaking ideas, and inspire innovation. Join us on this exciting journey as we turn bold ideas into reality!
-          
+          </span>
+            <span>
           <a 
   href="/brochure/brochure_merged.pdf"
   target="_blank" 
