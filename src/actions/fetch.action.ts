@@ -19,6 +19,17 @@ const fetchAllEvents = async (eventCategory?: "technical" | "cultural") => {
   }
 };
 
+const fetchEventByUniqueId = async (uniqueId: number) => {
+  try {
+    await connectDB();
+    const event = (await Events.findOne({ uniqueId })) as Event;
+    return event;
+  } catch (error: any) {
+    console.log("Error in fetching events: ", error.message);
+    return null;
+  }
+};
+
 const fetchUserByEmail = async (email?: string) => {
   if (!email) {
     return null;
@@ -39,28 +50,33 @@ const fetchUserByEmail = async (email?: string) => {
 };
 
 const fetchRegisteredEvents = async (eventsIds: any[]) => {
-    if (!eventsIds?.length) {
-      return null;
-    }
-  
-    try {
-      const events = await Promise.all(
-        eventsIds.map(async (eventId) => {
-          const event = await Events.findById(eventId);
-          if (!event) return null;
-          return {
-            eventName: event.eventName,
-            eventDescription: event.eventDescription,
-          };
-        })
-      );
-  
-      // Filter out nulls (if any eventId didn't match)
-      return events.filter((event) => event !== null);
-    } catch (error: any) {
-      console.log("Error fetching registered events: ", error.message);
-      return null;
-    }
-  };
-  
-export { fetchAllEvents, fetchUserByEmail, fetchRegisteredEvents };
+  if (!eventsIds?.length) {
+    return null;
+  }
+
+  try {
+    const events = await Promise.all(
+      eventsIds.map(async (eventId) => {
+        const event = await Events.findById(eventId);
+        if (!event) return null;
+        return {
+          eventName: event.eventName,
+          eventDescription: event.eventDescription,
+        };
+      })
+    );
+
+    // Filter out nulls (if any eventId didn't match)
+    return events.filter((event) => event !== null);
+  } catch (error: any) {
+    console.log("Error fetching registered events: ", error.message);
+    return null;
+  }
+};
+
+export {
+  fetchAllEvents,
+  fetchUserByEmail,
+  fetchRegisteredEvents,
+  fetchEventByUniqueId,
+};
