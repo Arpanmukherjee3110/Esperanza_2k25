@@ -147,7 +147,7 @@ const SignUpForm = () => {
       year: "",
       department: "",
       rollNumber: "",
-      credentials: {
+      "credentials": {
         email: "",
         password: "",
         phoneNumber: "",
@@ -156,6 +156,15 @@ const SignUpForm = () => {
   );
 
   const handleFormSubmit = async()=>{
+    if(signUpCredentials.department==="" || signUpCredentials.year===""){
+      Swal.fire({
+        title : "All fields are requied",
+        text : "Year and Department are requierd",
+        icon : "warning"
+      })
+      return
+    }
+    
     const response = await signUp(signUpCredentials);
     if(response?.success){
       Swal.fire({
@@ -179,7 +188,7 @@ const SignUpForm = () => {
     }else{
       Swal.fire({
         title: "User Creation Failed",
-        text: response?.message || "Something went wrong",
+        text: response?.error || "Something went wrong",
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -217,7 +226,7 @@ const SignUpForm = () => {
           });
         }}
       />
-      <div className={`flex justify-between gap-3 md:items-center flex-col md:flex-row ${sedgwick.className}`}>
+      <div className="flex justify-between gap-3 md:items-center flex-col md:flex-row">
         <span>Year</span>
         <select
           value={signUpCredentials.year}
@@ -226,12 +235,12 @@ const SignUpForm = () => {
           }
           className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         >
+          <option value="">Select Year</option>
           <option value="1st">1st</option>
           <option value="2nd">2nd</option>
           <option value="3rd">3rd</option>
           <option value="4th">4th</option>
         </select>
-        <span>Department</span>
         <select
           value={signUpCredentials.department}
           onChange={(e) =>
@@ -242,6 +251,7 @@ const SignUpForm = () => {
           }
           className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         >
+          <option value="">Select Department</option>
           <option value="CE">CE</option>
           <option value="CSE">CSE</option>
           <option value="ECE">ECE</option>

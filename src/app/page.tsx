@@ -44,10 +44,10 @@ const Home = async() => {
         <div>
           <Band/>
         </div>
-       <div>
+       <div className="mt-30">
           <Tech/>
         </div>
-         <div>
+         <div className="mt-30">
           <Cultural/>
         </div>
         <div>
