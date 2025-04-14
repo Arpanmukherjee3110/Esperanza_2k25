@@ -31,7 +31,7 @@ const ClubGrid = () => {
       </div>
         <div className="absolute w-[60%] items-center justify-center ">
                 <div className="bg-gray-200 w-[60%] h-[100%] absolute bottom-1 right-[-65%] md:right-[-40%]" />
-                <Image src={ourclubs} alt="" className="w-[100%] md:w-[50%] ml-2 md:ml-60"/>
+                <Image src={ourclubs} alt="" className="w-[100%] md:w-[50%] ml-2 md:ml-30 lg:ml-60"/>
                 <div className="bg-gray-200 w-[60%] h-[100%] absolute bottom-1 right-[100%] md:right-[80%] " />
             </div>
 
@@ -212,7 +212,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/nrityanirvana.cgec?igsh=MWRhdjdienBza2I5bA%3D%3D" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[375px] left-[180px]
                 border-[1.5px] border-pink-300/20 rounded-[8px]
                 hover:border-pink-300/60 hover:shadow-[0_0_20px_rgba(236,72,153,0.5)]
@@ -255,7 +255,7 @@ const ClubGrid = () => {
   <div className="absolute inset-0 rounded-[6px] border-[1px] border-white/0
                  group-hover:border-pink-200/40 transition-all duration-1000" />
 
-  {/* Pink corner accents */}
+  
   <div className="absolute top-0 right-0 w-2 h-2 border-t-[1px] border-r-[1px]
                  border-pink-300/0 group-hover:border-pink-300/50
                  transition-all duration-500 delay-100" />
@@ -263,7 +263,7 @@ const ClubGrid = () => {
                  border-pink-300/0 group-hover:border-pink-300/50
                  transition-all duration-500 delay-100" />
 
-  {/* Pink particle effect */}
+  
   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
     <div className="absolute top-1/4 left-1/4 w-1 h-1 rounded-full bg-pink-400/80
                    animate-float" />
@@ -283,7 +283,7 @@ const ClubGrid = () => {
                 overflow-hidden group cursor-pointer shadow-xl shadow-blue-900/20
                 will-change-transform z-[1] katibeh-regular">
 
-  {/* Image with brightness control */}
+  
   <Image 
     src={img5} 
     alt="Tech Portal" 
@@ -520,7 +520,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/cgec_pep_talks?igsh=MXg4YWhmdXA3c3kwNw%3D%3D" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[270px] left-[70px]
                 border-[1.5px] border-fuchsia-300/20 rounded-[8px]
                 hover:border-fuchsia-300/60 hover:shadow-[0_0_20px_rgba(232,121,249,0.5)]
@@ -703,7 +703,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/cgec_sport_club?igsh=MzRrdWdjNGU5N2ps" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[270px] left-[400px]
                 border-[1.5px] border-lime-300/20 rounded-[8px]
                 hover:border-lime-300/60 hover:shadow-[0_0_20px_rgba(190,242,100,0.5)]
