@@ -222,7 +222,6 @@ const SignUpForm = () => {
         }}
       />
       <div className="flex justify-between gap-3 md:items-center flex-col md:flex-row">
-        <span>Year</span>
         <select
           value={signUpCredentials.year}
           onChange={(e) =>
@@ -236,7 +235,6 @@ const SignUpForm = () => {
           <option value="3rd">3rd</option>
           <option value="4th">4th</option>
         </select>
-        <span>Department</span>
         <select
           value={signUpCredentials.department}
           onChange={(e) =>
