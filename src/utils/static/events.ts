@@ -24,6 +24,28 @@ import e123 from "@/assets/events/SOLID WORKS.png"
 import e124 from "@/assets/events/PROMPT.png"
 import e125 from "@/assets/events/PES.png"
 
+// Cultural
+import e201 from "@/assets/events/ART EXHIBITION.png"
+import e202 from "@/assets/events/HANDICRAFT.png"
+import e203 from "@/assets/events/SARGAM.png"
+import e204 from "@/assets/events/DEBATE COMPETITION.png"
+import e205 from "@/assets/events/CALLIGRAPHY.png"
+import e206 from "@/assets/events/ART EXHIBITION.png"
+import e207 from "@/assets/events/SLAM POETRY.png"
+import e208 from "@/assets/events/SANTALI DANCE.png"
+import e209 from "@/assets/events/DRAMA MAIN.png"
+import e210 from "@/assets/events/DANCE PERFORMANCES.png"
+import e211 from "@/assets/events/RECITATION.png"
+import e212 from "@/assets/events/ART EXHIBITION.png"
+import e213 from "@/assets/events/DANCE PERFORMANCES.png"
+import e214 from "@/assets/events/WALL MAGAZINE.png"
+import e215 from "@/assets/events/ART EXHIBITION.png"
+import e216 from "@/assets/events/QUIZ (1).png"
+import e217 from "@/assets/events/ONSPOT WRITING.png"
+import e218 from "@/assets/events/ART EXHIBITION.png"
+import e219 from "@/assets/events/OPEN MIC.png"
+import e220 from "@/assets/events/DANCE PERFORMANCES.png"
+
 
 export const staticEventsData = [
   { uniqueId: 101, poster: e101, redirect: "/events/technical/101" },
@@ -51,4 +73,25 @@ export const staticEventsData = [
   { uniqueId: 123, poster: e123, redirect: "/events/technical/123" },
   { uniqueId: 124, poster: e124, redirect: "/events/technical/124" },
   { uniqueId: 125, poster: e125, redirect: "/events/technical/125" },
+
+  { uniqueId: 201, poster: e201, redirect: "/events/technical/201" },
+  { uniqueId: 202, poster: e202, redirect: "/events/technical/202" },
+  { uniqueId: 203, poster: e203, redirect: "/events/technical/203" },
+  { uniqueId: 204, poster: e204, redirect: "/events/technical/204" },
+  { uniqueId: 205, poster: e205, redirect: "/events/technical/205" },
+  { uniqueId: 206, poster: e206, redirect: "/events/technical/206" },
+  { uniqueId: 207, poster: e207, redirect: "/events/technical/207" },
+  { uniqueId: 208, poster: e208, redirect: "/events/technical/208" },
+  { uniqueId: 209, poster: e209, redirect: "/events/technical/209" },
+  { uniqueId: 210, poster: e210, redirect: "/events/technical/210" },
+  { uniqueId: 211, poster: e211, redirect: "/events/technical/211" },
+  { uniqueId: 212, poster: e212, redirect: "/events/technical/212" },
+  { uniqueId: 213, poster: e213, redirect: "/events/technical/213" },
+  { uniqueId: 214, poster: e214, redirect: "/events/technical/214" },
+  { uniqueId: 215, poster: e215, redirect: "/events/technical/215" },
+  { uniqueId: 216, poster: e216, redirect: "/events/technical/216" },
+  { uniqueId: 217, poster: e217, redirect: "/events/technical/217" },
+  { uniqueId: 218, poster: e218, redirect: "/events/technical/218" },
+  { uniqueId: 219, poster: e219, redirect: "/events/technical/219" },
+  { uniqueId: 220, poster: e220, redirect: "/events/technical/220" },
 ];

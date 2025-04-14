@@ -93,6 +93,7 @@ const Cultural = async() => {
                     DateContent={event.eventDate}
                     uniqueId={event.uniqueId!}
                     userEmail={session?.user?.email as string}
+                    nonRegisterable={event.nonRegisterable}
                   />
                 );
               } else {
@@ -104,6 +105,7 @@ const Cultural = async() => {
                     DateContent={event.eventDate}
                     uniqueId={event.uniqueId!}
                     userEmail={session?.user?.email as string}
+                    nonRegisterable={event.nonRegisterable}
                   />
                 );
               }
