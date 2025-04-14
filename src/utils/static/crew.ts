@@ -24,6 +24,10 @@ export const teamMembers: TeamMember[] = [
         handler: "LinkedIn",
         link: "https://linkedin.com/in/sayan-sutradhar",
       },
+      {
+        handler: "Github",
+        link : "https://github.com/SayanSutradhar1"
+      }
     ],
   },
   {

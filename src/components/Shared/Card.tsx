@@ -4,12 +4,14 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
-import CalenderBlank from "@/assets/icons/CalendarBlank.png";
-import {Saira_Condensed} from "next/font/google";
 import { eventRegister } from "@/actions/eventRegister.action";
-import Swal from "sweetalert2";
+import CalenderBlank from "@/assets/icons/CalendarBlank.png";
+import { staticEventsData } from "@/utils/static/events";
+import { Saira_Condensed, Sedgwick_Ave_Display } from "next/font/google";
 import { useRouter } from "next/navigation";
-import { Katibeh,Sedgwick_Ave_Display } from "next/font/google";
+import Swal from "sweetalert2";
+
+import img from "@/assets/images/ESPERANZA.png"
 
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
@@ -23,15 +25,11 @@ const saira_condensed = Saira_Condensed({
 function Card({
   eventName,
   eventDescription,
-  poster,
-  redirect,
   uniqueId,
   userEmail,
 }: {
   eventName: string;
   eventDescription: string;
-  poster?: string;
-  redirect?: string;
   uniqueId:number;
   userEmail?: string;
 }) {
@@ -70,6 +68,9 @@ function Card({
     console.log(res);
   }
 
+  const poster = staticEventsData.find(e=>e.uniqueId===uniqueId)?.poster
+  const redirect = staticEventsData.find(e=>e.uniqueId===uniqueId)?.redirect
+
   return (
     <CardContainer className="inter-var">
       <CardBody className=" relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/50 border-white/[0.1] w-auto sm:w-[18rem] md:w-[20rem] lg:w-[25rem] h-auto rounded-xl p-5 border-[1px]  ">
@@ -88,7 +89,7 @@ function Card({
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <Image
-            src={poster as string}
+            src={poster ? poster : img}
             className=" w-[250px] object-contain rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
@@ -97,7 +98,7 @@ function Card({
           <CardItem
             translateZ={20}
             as={Link}
-            href={redirect}
+            href={redirect? redirect : ""}
             className={`${sedgwick.className} px-4 py-2 rounded-xl text-white  text-xs font-bold bg-gradient-to-r from-blue-600 to-purple-600  shadow-md hover:from-purple-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-purple-500`}
           >
             Read More ...
@@ -120,8 +121,6 @@ export const CardDiv = ({
   DateContent,
   eventName,
   eventDescription,
-  poster,
-  redirect,
   uniqueId,
   userEmail,
 }: {
@@ -129,8 +128,6 @@ export const CardDiv = ({
   DateContent: any;
   eventName: string;
   eventDescription: string;
-  poster?: StaticImageData | string;
-  redirect?: string;
   uniqueId:number;
   userEmail?: string;
 }) => {
@@ -155,8 +152,6 @@ export const CardDiv = ({
       <Card
         eventDescription={eventDescription}
         eventName={eventName}
-        poster={poster as string}
-        redirect={redirect}
         uniqueId={uniqueId}
         userEmail={userEmail}
       />

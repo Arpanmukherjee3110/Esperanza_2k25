@@ -63,8 +63,6 @@ const Technical = async() => {
                     reverseAlign
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={img}
-                    redirect={""}
                     key={i}
                     DateContent={event.eventDate}
                     uniqueId={event.uniqueId!}
@@ -76,8 +74,6 @@ const Technical = async() => {
                   <CardDiv
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
-                    poster={img}
-                    redirect={""}
                     key={i}
                     DateContent={event.eventDate}
                     uniqueId={event.uniqueId!}
