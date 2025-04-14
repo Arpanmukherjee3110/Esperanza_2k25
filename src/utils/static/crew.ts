@@ -21,7 +21,7 @@ import rajdeep from "@/assets/crew/rajdeep.jpg"
 import rishi from "@/assets/crew/rishi.jpg"
 import sashi from "@/assets/crew/sashi.jpg"
 import samrat from "@/assets/crew/samrat.jpg"
-import vp from "@/assets/crew/vp.jpg"
+import vp from "@/assets/crew/vp_.jpg"
 import tanmay from "@/assets/crew/tanmay.jpg"
 import verma from "@/assets/crew/verma.jpg"
 import upasana from "@/assets/crew/upasana.jpg"
@@ -30,7 +30,7 @@ import sudip from "@/assets/crew/sudip.jpg"
 import sruti from "@/assets/crew/sruti.jpg"
 import srijit from "@/assets/crew/srijit.jpg"
 import souvik from "@/assets/crew/souvik.jpg"
-// import soukarya from "@/assets/crew/soukarya.jpg"
+import soukarya from "@/assets/crew/soukaryaPic.jpg"
 import sadhu from "@/assets/crew/sadhu.jpeg"
 import pinku from "@/assets/crew/pinku.jpg"
 import payel from "@/assets/crew/payel.jpg"
@@ -42,6 +42,10 @@ import js from "@/assets/crew/js.jpg"
 import dishan from "@/assets/crew/dishan.jpg"
 import rakhi from "@/assets/crew/civilYelloGirl.jpg"
 import mritunjay from "@/assets/crew/mrittunjay.jpg"
+import tushar from "@/assets/crew/tushar.jpg"
+import rahul from "@/assets/crew/rahul.jpg"
+import paban from "@/assets/crew/paban.jpg"
+import kewat from "@/assets/crew/kewat.jpg"
 export const teamMembers: TeamMember[] = [
   {
     name: "Arpan Mukherjee",
@@ -108,7 +112,7 @@ export const teamMembers: TeamMember[] = [
       },
       {
         handler: "Instagram",
-        link: "https://www.instagram.com/koustov_02?igsh=N2FzZmttOTBtYjlt"
+        link: "https://www.instagram.com/mrittika__d/"
       }
     ],
   },
@@ -133,7 +137,7 @@ export const teamMembers: TeamMember[] = [
     name: "Paban Chowhan ",
     department: "CE",
     year: "3rd",
-    avatar: ayan,
+    avatar: paban,
     category: ["technical"],
     socials: [
       {
@@ -260,23 +264,23 @@ export const teamMembers: TeamMember[] = [
 
     ],
   },
-  {
-    name: "Soukarya Samanta",
-    department: "CSE",
-    year: "3rd",
-    avatar: ayan,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "http://www.linkedin.com/in/soukarya-samanta",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/thezoom110"
-      }
-    ],
-  },
+  // {
+  //   name: "Soukarya Samanta",
+  //   department: "CSE",
+  //   year: "3rd",
+  //   avatar: soukarya,
+  //   category: ["technical"],
+  //   socials: [
+  //     {
+  //       handler: "LinkedIn",
+  //       link: "http://www.linkedin.com/in/soukarya-samanta",
+  //     },
+  //     {
+  //       handler: "Instagram",
+  //       link: "https://www.instagram.com/thezoom110"
+  //     }
+  //   ],
+  // },
   {
     name: "Nishan Dey",
     department: "EE",
@@ -381,7 +385,7 @@ export const teamMembers: TeamMember[] = [
     name: "Saurav Kewat ",
     department: "EE",
     year: "3rd",
-    avatar: ayan,
+    avatar: kewat,
     category: ["finance"],
     socials: [
       {
@@ -504,7 +508,7 @@ export const teamMembers: TeamMember[] = [
     name: "Rahul Prasad ",
     department: "CE",
     year: "3rd",
-    avatar: ayan,
+    avatar: rahul,
     category: ["technical"],
     socials: [
       {
@@ -778,7 +782,7 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
-    name: "NRUPAM GHOSH",
+    name: "RUPAM GHOSH",
     department: "ECE",
     year: "3rd",
     avatar: rupam,
@@ -806,6 +810,20 @@ export const teamMembers: TeamMember[] = [
         link: "https://www.linkedin.com/in/souvik-sarkar-6a73302b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
 
+    ],
+  },
+  {
+    name: "Tushar Roy",
+    department: "CE",
+    year: "3rd",
+    avatar: tushar,
+    category: ["cultural"],
+    socials: [
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/tush.ar655/?igsh=MXY0NnExNzNtZjRycA%3D%3D#",
+      },
+   
     ],
   },
 
