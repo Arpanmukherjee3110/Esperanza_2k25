@@ -39,7 +39,7 @@ const ClubGrid = () => {
                         scale-[0.4] sm:scale-[0.5] md:scale-[0.8] lg:scale-100
                         mt-140 md:mt-300 ">
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/cgec_capture_crew?igsh=YzVyN3hsNzh6dmJx" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[50px] left-[180px]
                 border-[1.5px] border-cyan-300/20 rounded-[8px]
                 hover:border-cyan-300/60 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]
@@ -74,7 +74,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-cyan-100 to-cyan-300 bg-clip-text text-transparent">
-      Capture every moment and share it with Capture Crew
+      Freezing moments and memories through the lens of passion.
     </p>
   </div>
 
@@ -101,7 +101,7 @@ const ClubGrid = () => {
 </a>
 
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/creativepenscgec?igsh=cWlweG13dGNzNXBo" target="_blank" rel="noopener noreferrer">
           <div className="relative w-[100px] h-[100px] top-[50px] left-[290px] 
                 border-[1.5px] border-red-300/20 rounded-[8px] 
                 hover:border-red-300/60 hover:shadow-[0_0_20px_rgba(239,68,68,0.4)]
@@ -134,7 +134,7 @@ const ClubGrid = () => {
     <p className="text-white text-[13px] leading-tight font-medium text-center 
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-red-100 to-red-300 bg-clip-text text-transparent">
-      CGEC's own creative writing club
+      Letting imaginations run wild through words, poetry, and storytelling.
     </p>
   </div>
   
@@ -175,7 +175,7 @@ const ClubGrid = () => {
     layout="fill" 
     objectFit="cover" 
     className="rounded-[6px] transition-all duration-600 ease-out 
-               group-hover:scale-[1.2] group-hover:brightness-[0.85]" 
+               group-hover:scale-[1.3] group-hover:brightness-[0.85]" 
     priority
   />
   
@@ -190,7 +190,7 @@ const ClubGrid = () => {
     <p className="text-white text-[15px] leading-tight font-medium text-center 
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-emerald-100 to-emerald-300 bg-clip-text text-transparent">
-      Use technology to solve real world issue with CGEC's own Google Developer Student Club
+      Empowering students to grow and innovate through real-world tech solutions.
     </p>
   </div>
   
@@ -247,7 +247,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-pink-100 to-pink-300 bg-clip-text text-transparent">
-      Ignite your passion for dancing with Nritya Nirvana
+      Expressing emotions through graceful moves and vibrant dance forms
     </p>
   </div>
 
@@ -273,7 +273,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/cgecdebateclub?igsh=MWd0djFpcDY2YnJrOQ%3D%3D" target="_blank" rel="noopener noreferrer">
 <div className="absolute w-[100px] h-[100px] top-[580px] left-[399px]
                 border-[1.5px] border-blue-300/20 rounded-[8px]
                 hover:border-blue-300/60 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]
@@ -308,7 +308,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-blue-100 to-blue-300 bg-clip-text text-transparent">
-      CGEC's Debate Club offers a platform to debate upon your thoughts and ideas
+      Sharpening minds with the art of argument, logic, and reasoning
     </p>
   </div>
 
@@ -335,7 +335,7 @@ const ClubGrid = () => {
 </a>
 
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/gamers_creed_cgec_?igsh=MTdwZWdsZXliOXhnZA%3D%3D" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[470px] left-[510px]
                 border-[1.5px] border-amber-300/20 rounded-[8px]
                 hover:border-amber-300/60 hover:shadow-[0_0_20px_rgba(245,158,11,0.5)]
@@ -345,7 +345,7 @@ const ClubGrid = () => {
                 overflow-hidden group cursor-pointer shadow-xl shadow-amber-900/20
                 will-change-transform z-[1] katibeh-regular">
 
-  {/* Image with brightness control */}
+  
   <Image 
     src={img6} 
     alt="Creative Studio" 
@@ -370,7 +370,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-amber-100 to-amber-300 bg-clip-text text-transparent">
-      Delve into the realm of gaming with CGEC's own Gamers Creed
+      Uniting gaming enthusiasts for epic virtual battles and strategy showdowns
     </p>
   </div>
 
@@ -414,7 +414,7 @@ const ClubGrid = () => {
     layout="fill" 
     objectFit="cover" 
     className="rounded-[8px] transition-all duration-500 ease-out
-    group-hover:scale-[1.3]
+    group-hover:scale-[1.4]
                group-hover:brightness-[0.95]" 
     priority
   />
@@ -432,7 +432,7 @@ const ClubGrid = () => {
     <p className="text-white text-sm font-medium text-center
                  drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-indigo-100 to-indigo-300 bg-clip-text text-transparent">
-      Resolve all your doubts in a peer to peer environment with CGEC DoubtHub
+      A collaborative space where queries meet clarity and concepts become crystal clear
     </p>
   </div>
 
@@ -459,7 +459,7 @@ const ClubGrid = () => {
 </a>
 
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/melodies_of_cgec?igsh=OHAwbjByZ3l1ejIz" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[165px] left-[70px]
                 border-[1.5px] border-teal-300/20 rounded-[8px]
                 hover:border-teal-300/60 hover:shadow-[0_0_20px_rgba(45,212,191,0.5)]
@@ -494,7 +494,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-teal-100 to-teal-300 bg-clip-text text-transparent">
-      Give wings to your passion for music with Melodies of CGEC
+      Weaving magic with music, one soulful note at a time
     </p>
   </div>
 
@@ -555,7 +555,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-fuchsia-100 to-fuchsia-300 bg-clip-text text-transparent">
-      Build your communication skills with CGEC's own Pep Talks
+      Igniting minds through powerful speeches and thought-provoking discussions
     </p>
   </div>
 
@@ -581,7 +581,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/quilaxycgec?igsh=MXNoMGF3YjR4anl5aA%3D%3D" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[200px] h-[200px] top-[260px] left-[510px]
                 border-[1.5px] border-sky-300/20 rounded-[10px]
                 hover:border-sky-300/60 hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]
@@ -598,7 +598,7 @@ const ClubGrid = () => {
     layout="fill" 
     objectFit="cover" 
     className="rounded-[8px] transition-all duration-500 ease-out
-    group-hover:scale-[1.22]
+    group-hover:scale-[1.3]
                group-hover:brightness-[0.95]" 
     priority
   />
@@ -616,7 +616,7 @@ const ClubGrid = () => {
     <p className="text-white text-sm font-medium text-center
                  drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-sky-100 to-sky-300 bg-clip-text text-transparent">
-      Bolster up your IQ with CGEC's own Quilaxy
+      Exploring the cosmos of quizzing with curiosity and quick wit
     </p>
   </div>
 
@@ -642,7 +642,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/rongmilanti2024?igsh=MWk5ajNnZzNmdzhkMA%3D%3D" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[165px] left-[400px]
                 border-[1.5px] border-rose-300/20 rounded-[8px]
                 hover:border-rose-300/60 hover:shadow-[0_0_20px_rgba(251,113,133,0.5)]
@@ -677,7 +677,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-rose-100 to-rose-300 bg-clip-text text-transparent">
-      Push your ingenuity and creativity to the next level with Rongmilanti
+      Celebrating diversity and creativity through colorful cultural fusions
     </p>
   </div>
 
@@ -737,7 +737,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-lime-100 to-lime-300 bg-clip-text text-transparent">
-      Carve a strong spirit of sportsmanship with CGEC's Sports Club
+      Fueling passion, discipline, and teamwork through thrilling games and athletic spirit
     </p>
   </div>
 
@@ -798,7 +798,7 @@ const ClubGrid = () => {
     <p className="text-white text-sm font-medium text-center
                  drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-violet-100 to-violet-300 bg-clip-text text-transparent">
-      Learn and build with Tech-O-Nicks
+      Driving innovation and technical brilliance through teamwork and technical extravaganzas
     </p>
   </div>
 
@@ -824,7 +824,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/pratibimba.official__cgec?igsh=YzdxYzdxZ3ljdGpr" target="_blank" rel="noopener noreferrer">
                     <div className="absolute w-[100px] h-[100px] top-[150px] left-[720px]
                 border-[1.5px] border-yellow-300/20 rounded-[8px]
                 hover:border-yellow-300/60 hover:shadow-[0_0_20px_rgba(253,224,71,0.4)]
@@ -863,7 +863,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-yellow-100 to-yellow-300 bg-clip-text text-transparent">
-      CGEC's own Theatre Club
+      Bringing stories to life with powerful performances and theatrical excellence
     </p>
   </div>
 
@@ -889,7 +889,7 @@ const ClubGrid = () => {
 </div>
 </a>
 
-<a href="" target="_blank" rel="noopener noreferrer">
+<a href="https://www.instagram.com/the_cgec_times?igsh=cnBrcGVmNzRxYWt6" target="_blank" rel="noopener noreferrer">
           <div className="absolute w-[100px] h-[100px] top-[260px] left-[720px]
                 border-[1.5px] border-green-300/20 rounded-[8px]
                 hover:border-green-300/60 hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]
@@ -922,7 +922,7 @@ const ClubGrid = () => {
     <p className="text-white text-xs font-medium text-center
                  drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] tracking-wide
                  bg-gradient-to-r from-green-100 to-green-300 bg-clip-text text-transparent">
-      Get all updates with CGEC Times
+      The heartbeat of campus news, capturing every moment, voice, and vibe of CGEC
     </p>
   </div>
 
