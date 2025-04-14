@@ -1,11 +1,15 @@
 import rocket from "@/assets/images/rocket.png";
 import LoginSignUpForm from "@/components/Login/LoginSignUpForm";
 import Container from "@/components/Shared/Container";
-import { Karla } from "next/font/google";
+import { Karla,Sedgwick_Ave_Display } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 const karla = Karla({
   subsets: ["latin"],
   weight: "700",
@@ -19,7 +23,7 @@ const Login = () => {
           <Link href="/">
             <Button
               variant="ghost"
-              className="text-white hover:text-red-400 cursor-pointer"
+              className={`${sedgwick.className} text-white hover:text-red-400 cursor-pointer`}
             >
               <ArrowLeft className=" h-4 w-4" />
               HOME
@@ -36,11 +40,11 @@ const Login = () => {
         <div className={` flex flex-col md:flex-row justify-between`}>
           <div className="flex flex-col h-[70vh] justify-center flex-1 relative z-[10] gap-5">
             <h1
-              className={`${karla.className} text-3xl md:text-4xl lg:text-7xl text-red-700`}
+              className={`${sedgwick.className} text-3xl md:text-4xl lg:text-7xl text-red-700`}
             >
               Welcome to our <br /> community!
             </h1>
-            <p>
+            <p className={`${sedgwick.className}`}>
               Start your new journey with us and <br /> join our community
             </p>
           </div>

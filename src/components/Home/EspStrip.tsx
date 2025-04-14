@@ -3,7 +3,11 @@
 import { useEffect, useState } from "react";
 import logoesp from "@/assets/logo.png";
 import Image from "next/image";
-
+import { Underdog } from "next/font/google";
+const underdog = Underdog({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 export default function MarqueeText() {
   const text = "#ESPERANZA '25 "; 
   const letters = text.split(""); 
@@ -19,7 +23,7 @@ export default function MarqueeText() {
 
   return (
     <div className="w-full overflow-hidden bg-black py-4">
-      <div className="marquee text-white text-4xl font-bold tracking-wider flex items-center underdog">
+      <div className={`marquee text-white text-4xl font-bold tracking-wider flex items-center  ${underdog.className}`}>
         {[...Array(8)].map((_, i) => (
           <span key={i} className="flex whitespace-nowrap items-center">
             {letters.map((letter, index) => (

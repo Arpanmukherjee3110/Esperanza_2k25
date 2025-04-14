@@ -4,8 +4,13 @@ import { login } from "@/actions/login.action";
 import { signUp } from "@/actions/signup.action";
 import { signIn } from "@/auth";
 import { SignUpFormPayload } from "@/interfaces/signup.interface";
+import { Sedgwick_Ave_Display } from "next/font/google";
 import { redirect } from "next/navigation";
 import { useState } from "react";
+const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
 import {
   FaEye,
   FaEyeSlash,
@@ -23,7 +28,7 @@ const LoginSignUpForm = () => {
         <button
           className={`p-4 text-white cursor-pointer ${
             loginTabActive ? "border-b-2 border-red-400" : "border-transparent"
-          }`}
+          } ${sedgwick.className}`}
           onClick={() => SetLoginTabActive(true)}
         >
           Login
@@ -31,7 +36,7 @@ const LoginSignUpForm = () => {
         <button
           className={`p-4 text-white cursor-pointer ${
             !loginTabActive ? "border-b-2 border-red-400" : "border-transparent"
-          }`}
+          } ${sedgwick.className}`}
           onClick={() => SetLoginTabActive(false)}
         >
           Sign Up
@@ -79,7 +84,7 @@ const LoginForm = () => {
         type="email"
         placeholder="Enter your Email address"
         required
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         value={loginCredentials.email}
         onChange={(e) => {
           setLoginCredentials({ ...loginCredentials, email: e.target.value });
@@ -89,7 +94,7 @@ const LoginForm = () => {
         <input
           type={showPassword ? "text" : "password"}
           placeholder="Enter Password"
-          className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full"
+          className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full ${sedgwick.className}`}
           required
           value={loginCredentials.password}
           onChange={(e) => {
@@ -101,7 +106,7 @@ const LoginForm = () => {
         />
         <button
           type="button"
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black"
+          className={`absolute right-4 top-1/2 transform -translate-y-1/2 text-black ${sedgwick.className}`}
           onClick={() => setShowPassword(!showPassword)}
         >
           {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -109,23 +114,23 @@ const LoginForm = () => {
       </div>
       <button
         type="submit"
-        className="bg-red-700 rounded-2xl cursor-pointer px-6 py-4"
+        className={`bg-red-700 rounded-2xl cursor-pointer px-6 py-4 ${sedgwick.className}`}
       >
         Login
       </button>
-      <div className="flex items-center gap-2">
+      <div className={`flex items-center gap-2 ${sedgwick.className}`}>
         <span className="h-[1px] flex flex-1 bg-red-400"></span>
         <span>Or Connect With</span>
         <span className="h-[1px] flex flex-1 bg-red-400"></span>
       </div>
       <div className="flex justify-around">
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer" >
+        <button className={`text-4xl bg-white p-2 rounded cursor-pointer ${sedgwick.className}`}>
           <FaGoogle color="black" />
         </button>
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer">
+        <button className={`text-4xl bg-white p-2 rounded cursor-pointer ${sedgwick.className}`}>
           <FaGithub color="black" />
         </button>
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer">
+        <button className={`text-4xl bg-white p-2 rounded cursor-pointer ${sedgwick.className}`}>
           <FaLinkedin color="black" />
         </button>
       </div>
@@ -196,7 +201,7 @@ const SignUpForm = () => {
         type="email"
         placeholder="Email"
         required
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         value={signUpCredentials?.credentials.email}
         onChange={(e) => {
           setSignUpCredentials({
@@ -212,7 +217,7 @@ const SignUpForm = () => {
         type="text"
         placeholder="Full Name"
         required
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         value={signUpCredentials.name}
         onChange={(e) => {
           setSignUpCredentials({
@@ -222,12 +227,13 @@ const SignUpForm = () => {
         }}
       />
       <div className="flex justify-between gap-3 md:items-center flex-col md:flex-row">
+        <span>Year</span>
         <select
           value={signUpCredentials.year}
           onChange={(e) =>
             setSignUpCredentials({ ...signUpCredentials, year: e.target.value })
           }
-          className="p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+          className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         >
           <option value="">Select Year</option>
           <option value="1st">1st</option>
@@ -243,7 +249,7 @@ const SignUpForm = () => {
               department: e.target.value,
             })
           }
-          className="p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+          className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         >
           <option value="">Select Department</option>
           <option value="CE">CE</option>
@@ -257,7 +263,7 @@ const SignUpForm = () => {
         type="text"
         placeholder="Roll Number"
         required
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         value={signUpCredentials.rollNumber}
         onChange={(e) =>
           setSignUpCredentials({
@@ -270,7 +276,7 @@ const SignUpForm = () => {
         type="text"
         placeholder="Phone Number"
         required
-        className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none"
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
         value={signUpCredentials.credentials.phoneNumber}
         onChange={(e) =>
           setSignUpCredentials({
@@ -286,7 +292,7 @@ const SignUpForm = () => {
         <input
           type={showPassword ? "text" : "password"}
           placeholder="Password"
-          className="bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full"
+          className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full ${sedgwick.className}`}
           required
           value={signUpCredentials.credentials.password}
           onChange={(e) =>
@@ -301,7 +307,7 @@ const SignUpForm = () => {
         />
         <button
           type="button"
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black"
+          className={`absolute right-4 top-1/2 transform -translate-y-1/2 text-black ${sedgwick.className}`}
           onClick={() => setShowPassword(!showPassword)}
         >
           {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -309,23 +315,23 @@ const SignUpForm = () => {
       </div>
       <button
         type="submit"
-        className="bg-red-700 rounded-2xl cursor-pointer px-6 py-4"
+        className={`bg-red-700 rounded-2xl cursor-pointer px-6 py-4 ${sedgwick.className}`}
       >
         Sign Up
       </button>
-      <div className="flex items-center gap-2">
+      <div className={`flex items-center gap-2 ${sedgwick.className}`}>
         <span className="h-[1px] flex flex-1 bg-red-400"></span>
         <span>Or Connect With</span>
         <span className="h-[1px] flex flex-1 bg-red-400"></span>
       </div>
       <div className="flex justify-around">
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer">
+        <button className={`text-4xl bg-white p-2 rounded cursor-pointer ${sedgwick.className}`}>
           <FaGoogle color="black" />
         </button>
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer">
+        <button className={`text-4xl bg-white p-2 rounded cursor-pointer ${sedgwick.className}`}>
           <FaGithub color="black" />
         </button>
-        <button className="text-4xl bg-white p-2 rounded cursor-pointer">
+        <button className={`text-4xl bg-white p-2 rounded cursor-pointer ${sedgwick.className}`}>
           <FaLinkedin color="black" />
         </button>
       </div>
