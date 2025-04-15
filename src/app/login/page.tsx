@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { auth } from "@/auth";
+import { redirect } from "next/navigation";
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
   weight: ["400"],
@@ -14,7 +16,10 @@ const karla = Karla({
   subsets: ["latin"],
   weight: "700",
 });
-const Login = () => {
+const Login = async() => {
+
+  const session = await auth()
+  if(session?.user?.email) redirect("/")
 
   return (
     <div className="min-h-[90vh] bg-black text-white relative">
