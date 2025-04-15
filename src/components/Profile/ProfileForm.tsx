@@ -182,6 +182,7 @@ const ProfileForm = ({
                   placeholder="Enter contact number"
                   className="bg-gray-800/50 text-sm sm:text-base"
                   {...field}
+                  readOnly
                 />
               </FormControl>
               <FormMessage className="text-xs sm:text-sm" />
@@ -231,7 +232,7 @@ const ProfileForm = ({
           />
         </div>
 
-        <FormField
+        {/* <FormField
           control={form.control}
           name="password"
           render={({ field }) => (
@@ -261,7 +262,7 @@ const ProfileForm = ({
               <FormMessage className="text-xs sm:text-sm" />
             </FormItem>
           )}
-        />
+        /> */}
 
         {submitSuccess && (
           <div className="bg-green-500/20 text-green-400 p-3 rounded-md text-sm">
@@ -269,7 +270,7 @@ const ProfileForm = ({
           </div>
         )}
 
-        <div className="flex flex-col sm:flex-row justify-end space-y-3 sm:space-y-0 sm:space-x-4">
+        {/* <div className="flex flex-col sm:flex-row justify-end space-y-3 sm:space-y-0 sm:space-x-4">
           <Button
             variant="outline"
             type="button"
@@ -285,7 +286,7 @@ const ProfileForm = ({
           >
             {isSubmitting ? "Saving..." : "Save Changes"}
           </Button>
-        </div>
+        </div> */}
       </form>
     </Form>
   );

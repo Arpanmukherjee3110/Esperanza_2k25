@@ -4,7 +4,10 @@ import { signOut } from "@/auth";
 
 const logout = async () => {
   try {
-    await signOut();
+    await signOut({
+      redirect : false,
+      redirectTo : "/"
+    });
     return {
       success: true,
       status: "S",
@@ -17,7 +20,7 @@ const logout = async () => {
       success: false,
       status: "F",
       message: "Logout failed",
-      error: error,
+      error: error.message,
     };
   }
 };
