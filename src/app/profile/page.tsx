@@ -1,5 +1,6 @@
 import { fetchRegisteredEvents, fetchUserByEmail } from "@/actions/fetch.action";
 import { auth } from "@/auth";
+import LogOutButton from "@/components/Profile/LogOutButton";
 import ProfileForm from "@/components/Profile/ProfileForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, UserCircle2 } from "lucide-react";
@@ -9,6 +10,7 @@ const sedgwick = Sedgwick_Ave_Display({
   weight: ["400"],
 })
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 const karla = Karla({
   subsets: ["latin"],
@@ -19,6 +21,7 @@ const karla = Karla({
 export default async function Profile() {
 
   const session = await auth()
+  if(!session?.user?.email) redirect("/login")
   const user = await fetchUserByEmail(session?.user?.email as string)
   const registeredEvents = await fetchRegisteredEvents(user?.registeredEvents as any[])
 
@@ -33,7 +36,7 @@ export default async function Profile() {
             <ArrowLeft className="mr-2 h-4 w-4" />
             <span className={`${sedgwick.className} hidden sm:inline`}>HOME</span>
           </Link>
-          {/* <LogOutButton/> */}
+          <LogOutButton/>
         </div>
         <div className="mb-4 sm:mb-8 flex items-center justify-center flex-col gap-2">
           <h1
@@ -61,7 +64,7 @@ export default async function Profile() {
               <CardTitle
                 className={`${sedgwick.className} text-4xl sm:text-2xl font-extrabold`}
               >
-                Edit profile
+                Welcome Back <span className="text-red-300">{user?.name}</span>
               </CardTitle>
               <div className="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-gray-800 flex items-center justify-center">
                 <UserCircle2 className="h-8 w-8 sm:h-12 sm:w-12" />
