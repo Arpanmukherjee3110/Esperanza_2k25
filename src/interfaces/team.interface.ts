@@ -12,7 +12,8 @@ export interface TeamMember {
     | "management"
     | "hospitality"
     | "finance"
-  >;
+    | "content"
+    >;
   avatar: StaticImageData;
   lead?:
     | "tech-lead"
@@ -22,7 +23,9 @@ export interface TeamMember {
     | "tech-head"
     | "cultural-head"
     | "president"
-    | "secretary";
+    | "secretary"
+    | "web content writer"
+    | "video editor";
   socials?: {
     handler: "LinkedIn" | "Instagram" | "Github" | "Facebook";
     link: string;

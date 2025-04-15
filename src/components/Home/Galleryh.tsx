@@ -2,23 +2,38 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-
-import img1 from "@/assets/developers/arpan.jpg";
-import img2 from "@/assets/developers/ayan.jpg";
-import img3 from "@/assets/developers/sayan.jpg";
-import img4 from "@/assets/developers/rupam.jpg";
-import img5 from "@/assets/developers/nabadipta.jpg";
 import ploygon54 from "@/assets/images/Polygon54.png";
 import ploygon52 from "@/assets/images/Polygon52.png";
 
+import img2 from "@/assets/Gallery/cultural/band3.jpg";
+import img1 from "@/assets/Gallery/tech/view.jpg";
+import img3 from "@/assets/Gallery/cultural/singer1.jpg";
+import img4 from "@/assets/Gallery/cultural/robo1.png";
+import img11 from "@/assets/Gallery/cultural/band1.jpg";
+import img6 from "@/assets/Gallery/cultural/drums.jpg";
+import img7 from "@/assets/Gallery/tech/plane1.jpg";
+import img8 from "@/assets/Gallery/tech/robo2.jpg";
+import img10 from "@/assets/Gallery/tech/teacher.jpg";
+import img9 from "@/assets/Gallery/cultural/band2.jpg";
+import img5 from "@/assets/Gallery/tech/hackathon.jpg";
+import img12 from "@/assets/Gallery/tech/sc.jpg";
+import img13 from "@/assets/Gallery/tech/tower.jpg";
+
+
 const galleryImages = [
-  { id: 1, img: img1, alt: "Arpan", role: "Developer" },
-  { id: 2, img: img2, alt: "Ayan", role: "Designer" },
-  { id: 3, img: img3, alt: "Sayan", role: "Developer" },
-  { id: 4, img: img4, alt: "Rupam", role: "Developer" },
-  { id: 5, img: img5, alt: "Nabadipto", role: "Designer" },
-  { id: 6, img: img1, alt: "Arpan", role: "Developer" },
-  { id: 7, img: img2, alt: "Ayan", role: "Designer" }
+  { id: 1, img: img1, alt: "", role: "r" },
+  { id: 2, img: img2, alt: "", role: "" },
+  { id: 3, img: img3, alt: "", role: "" },
+  { id: 4, img: img4, alt: "", role: "" },
+  { id: 5, img: img5, alt: "", role: "" },
+  { id: 6, img: img6, alt: "", role: "" },
+  { id: 7, img: img7, alt: "", role: "" },
+  { id: 8, img: img8, alt: "", role: "" },
+  { id: 9, img: img9, alt: "", role: "" },
+  { id: 10, img: img10, alt: "", role: "" },
+  { id: 11, img: img11, alt: "", role: "" },
+  { id: 12, img: img12, alt: "", role: "" },
+  { id: 13, img: img13, alt: "", role: "" }
 ];
 
 const cardVariants = {
@@ -56,7 +71,7 @@ const hoverVariants = {
 export default function Gallery() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, {
-    amount: 0.23,
+    amount: 0.2,
     once: false,
     margin: "0px 0px -100px 0px"
   });
@@ -64,7 +79,7 @@ export default function Gallery() {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-16 md:py-60 md:mt-40 lg:mt-120 px-4 sm:px-6 lg:px-8" 
+      className="w-full py-16 md:py-60 mt-20 sm:mt-15 md:mt-40 lg:mt-125 px-6 sm:px-10 lg:px-12" 
     >
       <div className="relative inline-block mb-8 mx-auto w-full">
         <motion.h1 
@@ -73,7 +88,7 @@ export default function Gallery() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          GALLERY
+          Memories
         </motion.h1>
 
         <motion.svg
@@ -98,7 +113,7 @@ export default function Gallery() {
               transition: "stroke-dashoffset 1.5s ease-in-out"
             }}
           >
-            GALLERY
+            Memories
           </text>
         </motion.svg>
       </div>
@@ -115,7 +130,7 @@ export default function Gallery() {
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5 mb-8 mt-60" 
+        className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-5 mb-8 mt-40" 
       >
         {galleryImages.map((item, idx) => (
           <motion.div
@@ -124,7 +139,7 @@ export default function Gallery() {
             whileHover={hoverVariants.hover}
             whileTap={{ scale: 0.98 }}
             className={`relative rounded-xl overflow-hidden shadow-lg ${
-              idx % 4 === 0 ? "col-span-2 row-span-2 aspect-[2/1]" : "aspect-square"
+              idx % 5 === 0 ? "col-span-3 row-span-3 aspect-[2/1]" : "aspect-square"
             }`}
           >
             <motion.div

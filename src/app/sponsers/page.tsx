@@ -34,14 +34,14 @@ const Sponsers = () => {
     </div>
     {/* Cards Section */}
     
-      {/* <Container>
+      <Container>
         <CardContainer>
           {cards.map((card, index) => (
             <Card key={index} {...card} />
           ))}
         </CardContainer>
-      </Container>       */}
-      <h1 className="">Comming Soon....</h1>
+      </Container>      
+      {/* <h1 className="">Comming Soon....</h1> */}
 
     </div>
   )
