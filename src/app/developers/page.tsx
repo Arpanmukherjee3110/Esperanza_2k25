@@ -4,7 +4,7 @@ import Hexagon from "@/assets/images/Hexagon.png";
 import { CarouselCompoment } from "@/components/Shared/Carousel";
 import Container from "@/components/Shared/Container";
 import { Carousel } from "@/components/ui/carousel";
-import { developers } from "@/utils/dummy-data/developers";
+import { developers } from "@/utils/static/developers";
 import { Katibeh } from "next/font/google";
 import Image from "next/image";
 
