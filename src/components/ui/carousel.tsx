@@ -1,14 +1,15 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { StaticImageData } from "next/image";
-import Link from "next/link";
-import { useState, useRef, useId, useEffect } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 interface SlideData {
   name: string;
   avatar: StaticImageData;
   profile: string;
   role?: string;
+  year:string
+  department : string
 }
 
 interface SlideProps {
@@ -65,7 +66,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { name, avatar, profile } = slide;
+  const { name, avatar, department,year } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -118,12 +119,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             {name}
           </h2>
           <div className="">
-            <Link
-              href={profile}
+            <div
               className="mt-2 px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
             >
-              See Profile
-            </Link>
+              {year} {department} 
+            </div>
           </div>
         </article>
       </li>

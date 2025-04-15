@@ -1,3 +1,4 @@
+"use client"
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import AboutUs from "@/assets/images/sponsors.png";
 
@@ -40,10 +41,12 @@ const Sponsers = () => {
             <Card key={index} {...card} />
           ))}
         </CardContainer>
+
       </Container>      
       {/* <h1 className="">Comming Soon....</h1> */}
 
-      {/* <div className="relative overflow-hidden">
+
+{/* <div className="relative overflow-hidden">
   <h1 className="text-center text-4xl font-bold text-white animate-pulse">
     <span className="inline-block animate-bounce">C</span>
     <span className="inline-block animate-bounce delay-100">o</span>
@@ -60,8 +63,10 @@ const Sponsers = () => {
   </h1>
   
 
-</div> */}  
-      
+</div> */}
+
+
+
     </div>
   )
 }

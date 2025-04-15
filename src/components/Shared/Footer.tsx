@@ -151,6 +151,7 @@ import logo from "../../assets/logo.png";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Sedgwick_Ave_Display } from "next/font/google";
+import Link from "next/link";
 
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
@@ -162,7 +163,7 @@ const Footer = () => {
     "https://www.google.com/maps/place/Cooch+Behar+Government+Engineering+College/data=!4m2!3m1!1s0x0:0xe4952b5891bb2389?sa=X&ved=1t:2428&ictx=111";
 
   return (
-    <footer className="bg-#242424 text-#DEDEDE py-3 px-2 sm:py-4 sm:px-3 border-t border-gray-200">
+    <footer className="bg-black text-[#DEDEDE] py-3 px-2 sm:py-4 sm:px-3 border-t border-gray-200 relative z-10">
       <div className="container mx-auto">
         {/* Main Footer Section */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 sm:gap-8">
@@ -221,6 +222,12 @@ const Footer = () => {
               >
                 Teams Committee
               </li>
+              <Link href={"/developers"}
+                className="text-xs sm:text-sm text-#DEDEDE"
+                style={{ fontFamily: sedgwick.style.fontFamily }}
+              >
+                Meet Our Developers
+              </Link>
             </ul>
           </div>
 

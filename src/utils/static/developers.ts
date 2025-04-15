@@ -10,30 +10,40 @@ export const developers = [
     name: "Sayan Sutradhar",
     avatar: sayan,
     profile: "",
-    role : "full-stack"
+    role : "full-stack",
+    year : "3rd",
+    department : "CSE"
   },
   {
     name: "Ayan Das",
     avatar: ayan,
     profile: "",
-    role : "full-stack"
+    role : "full-stack",
+    year : "3rd",
+    department : "CSE"
   },
   {
     name: "Arpan Mukherjee",
     avatar: arpan,
     profile: "",
-    role : "full-stack"
+    role : "full-stack",
+    year : "3rd",
+    department : "ECE"
   },
   {
     name: "Rupam Ghosh",
     avatar: rupam,
     profile: "",
-    role : "ui-ux"
+    role : "ui-ux",
+    year : "3rd",
+    department : "ECE"
   },
   {
     name: "Nabadipta Roy",
     avatar: nabadipta,
     profile: "",
-    role : "ui-ux"
+    role : "ui-ux",
+    year : "3rd",
+    department : "ECE"
   }
 ];
