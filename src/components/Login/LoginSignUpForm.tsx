@@ -2,7 +2,6 @@
 
 import { login } from "@/actions/login.action";
 import { signUp } from "@/actions/signup.action";
-import { signIn } from "@/auth";
 import { SignUpFormPayload } from "@/interfaces/signup.interface";
 import { redirect } from "next/navigation";
 import { useState } from "react";
