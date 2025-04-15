@@ -2,50 +2,56 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import pic1 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.49_a2993b86.jpg";
+import pic2 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.50_5222b856.jpg";
+import pic3 from "@/assets/galary/cultural/pic7.jpg";
+import pic4 from "@/assets/galary/cultural/WhatsApp Image 2025-04-07 at 20.09.08_87185433.jpg";
+import pic5 from "@/assets/galary/cultural/WhatsApp Image 2025-04-07 at 20.09.15_7bf6a830.jpg";
+import pic6 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.51_f4a3566c.jpg";
+import pic7 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
 const galleryItems = [
   // Row 1
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1740",
+    src: pic1,
     span: "col-span-1 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1740",
+    src: pic2,
     span: "col-span-1 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1740",
+    src:pic3,
     span: "col-span-2 sm:col-span-2",
     height: "h-[200px] sm:h-[250px]"
   },
   // Row 2
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1740",
+    src: pic4,
     span: "col-span-2 sm:col-span-2",
     height: "h-[250px] sm:h-[300px]"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1740",
+    src: pic5,
     span: "col-span-2 sm:col-span-2",
     height: "h-[250px] sm:h-[300px]"
   },
   // Row 3
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1740",
+    src: pic6,
     span: "col-span-2 sm:col-span-2",
     height: "h-[250px] sm:h-[300px]"
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?auto=format&fit=crop&w=1740",
+    src: pic7,
     span: "col-span-2 sm:col-span-1",
     height: "h-[250px] sm:h-[300px]"
   },
