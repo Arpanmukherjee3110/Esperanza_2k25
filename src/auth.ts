@@ -1,15 +1,15 @@
-import NextAuth, { CredentialsSignin } from "next-auth";
-import CredentialProvider from "next-auth/providers/credentials";
-import GoogleProvider from "next-auth/providers/google";
 import { User } from "@/models/user.model";
 import { connectDB } from "@/utils/db/connect";
 import { compare } from "bcryptjs";
+import NextAuth, { CredentialsSignin } from "next-auth";
+import CredentialProvider from "next-auth/providers/credentials";
+import GithubProvider from "next-auth/providers/github"
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    GithubProvider({
+      clientId : process.env.GITHUB_CLIENT_ID,
+      clientSecret : process.env.GITHUB_CLIENT_SECRET
     }),
     CredentialProvider({
       name: "Credentials",
@@ -23,39 +23,41 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
         if (!email || !password) {
           throw new CredentialsSignin({
-            cause : "Missing credentials",
-          })
+            cause: "Missing credentials",
+          });
         }
         await connectDB();
-        
-        const user = await User.findOne({ "credentials.email": email }).select("+credentials.password");
-        
+
+        const user = await User.findOne({ "credentials.email": email }).select(
+          "+credentials.password"
+        );
+
         if (!user) {
           throw new CredentialsSignin({
-            cause : "User not found",
-          })
+            cause: "User not found",
+          });
         }
         if (!user.credentials?.password) {
           throw new CredentialsSignin({
-            cause : "Password not found",
-          })
+            cause: "Password not found",
+          });
         }
         const isMatch = await compare(password, user.credentials.password);
         if (!isMatch) {
           console.log("Wrong Password");
           throw new CredentialsSignin({
-            cause : "Wrong Password",
-          })
+            cause: "Wrong Password",
+          });
         } else {
           return {
-            name : user.name,
-            email : user.credentials.email,
+            name: user.name,
+            email: user.credentials.email,
           };
         }
       },
     }),
   ],
   pages: {
-    signIn : "/login"
+    signIn: "/login",
   },
 });
