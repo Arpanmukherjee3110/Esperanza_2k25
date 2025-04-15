@@ -15,13 +15,13 @@ const katibeh = Katibeh({
 export const cards: CardData[] = [
   {
     id: 1,
-    title: "Mountain Adventure",
-    imageUrl: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=500"
+    title: "KFC",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b8/KFC_logo.png?20110221003908"
   },
   {
     id: 2,
-    title: "Tropical Paradise",
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=500"
+    title: "Coca Cola",
+    imageUrl: "https://www.coca-cola.com/content/dam/onexp/ie/en/article-lead/coca-cola-logo-history-article-lead-desktop-1020x420.jpg/width1960.jpg"
   },
   {
     id: 3,

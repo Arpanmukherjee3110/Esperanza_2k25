@@ -35,15 +35,18 @@ const Sponsers = () => {
     </div>
     {/* Cards Section */}
     
-      {/* <Container>
+      <Container>
         <CardContainer>
           {cards.map((card, index) => (
             <Card key={index} {...card} />
           ))}
         </CardContainer>
-      </Container>       */}
 
-<div className="relative overflow-hidden">
+      </Container>      
+      {/* <h1 className="">Comming Soon....</h1> */}
+
+
+{/* <div className="relative overflow-hidden">
   <h1 className="text-center text-4xl font-bold text-white animate-pulse">
     <span className="inline-block animate-bounce">C</span>
     <span className="inline-block animate-bounce delay-100">o</span>
@@ -60,7 +63,7 @@ const Sponsers = () => {
   </h1>
   
 
-</div>
+</div> */}
 
 
 

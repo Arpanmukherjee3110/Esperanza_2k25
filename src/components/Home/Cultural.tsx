@@ -6,8 +6,13 @@ import cultural from "@/assets/images/Group50.png";
 import explore from "@/assets/images/Group45.png";
 import rectangle from "@/assets/images/Rectangle81.png";
 import { Sedgwick_Ave_Display } from "next/font/google";
+import { Katibeh } from "next/font/google";
 
 const sedgwick = Sedgwick_Ave_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+})
+const katibeh = Katibeh({
   subsets: ["latin"],
   weight: ["400"],
 })
@@ -48,12 +53,13 @@ const Cultural = () => {
   return (
     <section ref={sectionRef} className="py-16 px-8 max-w-6xl mx-auto">
       <div className="relative inline-block mb-12 mx-auto w-full">
-      <h1 className={`${sedgwick.className} text-5xl md:text-8xl font-bold text-gray-200 text-center relative z-10 katibeh-regular`}>          Cultural Events
+      <h1 className={`${katibeh.className} text-5xl md:text-8xl font-bold text-gray-200 text-center relative z-10`}>          
+        Cultural Events
         </h1>
         
         <svg
           ref={shadowRef}
-          className={`${sedgwick.className} absolute top-7 left-4 w-full h-full katibeh-regular`}
+          className={`${katibeh.className} absolute top-7 left-4 w-full h-full`}
           style={{
             strokeDasharray: 1000,
             strokeDashoffset: 1000,

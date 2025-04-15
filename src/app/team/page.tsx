@@ -7,11 +7,11 @@ import Container from "@/components/Shared/Container";
 
 import { TeamMemebrsCard } from "@/components/Teams/TeamMembersCard";
 import { teamMembers } from "@/utils/static/crew";
-import { Sedgwick_Ave_Display } from "next/font/google";
+import { Katibeh } from "next/font/google";
 import Image from "next/image";
 
-const sedgwick = Sedgwick_Ave_Display({
-  subsets: ["latin-ext"],
+const sedgwick = Katibeh({
+  subsets: ["latin"],
   weight: "400",
 });
 
@@ -50,7 +50,7 @@ const Team = () => {
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
       <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
           {teamMembers
             .filter((m) => m.category.includes("technical"))
             .map((m, j) => {
@@ -74,7 +74,7 @@ const Team = () => {
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
       <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
           {teamMembers
             .filter((m) => m.category.includes("cultural"))
             .map((m, j) => {
@@ -86,6 +86,82 @@ const Team = () => {
             })}
         </div>
       </Container>
+      
+      <div className="flex justify-between items-center">
+        {/* Sponsor */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          Management Team
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("management"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  <TeamMemebrsCard member={m} />
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+      
+      <div className="flex justify-between items-center">
+        {/* Sponsor */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          PR Team
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("pr"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  <TeamMemebrsCard member={m} />
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+
+      <div className="flex justify-between items-center">
+        {/* Sponsor */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          Content & Videography
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("content"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  <TeamMemebrsCard member={m} />
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+
       <div className="flex justify-between items-center">
         {/* Sponsor */}
 
@@ -98,7 +174,7 @@ const Team = () => {
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
       <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
           {teamMembers
             .filter((m) => m.category.includes("sponsor"))
             .map((m, j) => {
@@ -117,36 +193,12 @@ const Team = () => {
         <h1
           className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
         >
-          Management Team
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-      </div>
-      <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
-          {teamMembers
-            .filter((m) => m.category.includes("management"))
-            .map((m, j) => {
-              return (
-                <div className="overflow-hidden" key={j}>
-                  <TeamMemebrsCard member={m} />
-                </div>
-              );
-            })}
-        </div>
-      </Container>
-      <div className="flex justify-between items-center">
-        {/* Sponsor */}
-
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
           Finance Team
         </h1>
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
       <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
           {teamMembers
             .filter((m) => m.category.includes("finance"))
             .map((m, j) => {
@@ -158,30 +210,7 @@ const Team = () => {
             })}
         </div>
       </Container>
-      <div className="flex justify-between items-center">
-        {/* Sponsor */}
 
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
-          PR Team
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-      </div>
-      <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
-          {teamMembers
-            .filter((m) => m.category.includes("pr"))
-            .map((m, j) => {
-              return (
-                <div className="overflow-hidden" key={j}>
-                  <TeamMemebrsCard member={m} />
-                </div>
-              );
-            })}
-        </div>
-      </Container>
       <div className="flex justify-between items-center">
         {/* Sponsor */}
 
@@ -194,7 +223,7 @@ const Team = () => {
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
       <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full">
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
           {teamMembers
             .filter((m) => m.category.includes("hospitality"))
             .map((m, j) => {

@@ -30,7 +30,7 @@ import sudip from "@/assets/crew/sudip.jpg"
 import sruti from "@/assets/crew/sruti.jpg"
 import srijit from "@/assets/crew/srijit.jpg"
 import souvik from "@/assets/crew/souvik.jpg"
-import soukarya from "@/assets/crew/soukaryaPic.jpg"
+//import soukarya from "@/assets/crew/soukaryaPic.jpg"
 import sadhu from "@/assets/crew/sadhu.jpeg"
 import pinku from "@/assets/crew/pinku.jpg"
 import payel from "@/assets/crew/payel.jpg"
@@ -46,7 +46,30 @@ import tushar from "@/assets/crew/tushar.jpg"
 import rahul from "@/assets/crew/rahul.jpg"
 import paban from "@/assets/crew/paban.jpg"
 import kewat from "@/assets/crew/kewat.jpg"
+import chayanda from "@/assets/crew/chayanda.jpg"
+import ayushi from "@/assets/crew/ayushi.jpg"
+import sumouli from "@/assets/crew/soumili.jpg"
+import sagnik from "@/assets/crew/sagnik.jpg"
+
 export const teamMembers: TeamMember[] = [
+  {
+    name: "Chayan Ghosh",
+    department: "CSE",
+    year: "4th",
+    avatar: chayanda,
+    category: ["technical"],
+    lead: "tech-head",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/chayan-ghosh-752574241/",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/defeated.victory/"
+      }
+    ],
+  },
   {
     name: "Arpan Mukherjee",
     department: "ECE",
@@ -100,6 +123,24 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
+    name: "RUPAM GHOSH",
+    department: "ECE",
+    year: "3rd",
+    avatar: rupam,
+    category: ["technical"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/rupam-ghosh-867a66325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/mr_heart_enginee.r/profilecard/?igsh=MTM4MTZ6bTA0c3cycQ=="
+      }
+    ],
+  },
+  
+  {
     name: "Mrittika Dutta",
     department: "CSE",
     year: "3rd",
@@ -148,11 +189,25 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
+    name: "Tushar Roy",
+    department: "CE",
+    year: "3rd",
+    avatar: tushar,
+    category: ["technical"],
+    socials: [
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/tush.ar655/?igsh=MXY0NnExNzNtZjRycA%3D%3D#",
+      },
+   
+    ],
+  },
+  {
     name: "Diptangshu Das ",
     department: "EE",
     year: "3rd",
     avatar: diptangshu,
-    category: ["technical"],
+    category: ["pr"],
     socials: [
       {
         handler: "LinkedIn",
@@ -440,7 +495,7 @@ export const teamMembers: TeamMember[] = [
     department: "ECE",
     year: "3rd",
     avatar: payel,
-    category: ["pr"],
+    category: ["content"],
     socials: [
       {
         handler: "LinkedIn",
@@ -781,23 +836,7 @@ export const teamMembers: TeamMember[] = [
 
     ],
   },
-  {
-    name: "RUPAM GHOSH",
-    department: "ECE",
-    year: "3rd",
-    avatar: rupam,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/rupam-ghosh-867a66325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/mr_heart_enginee.r/profilecard/?igsh=MTM4MTZ6bTA0c3cycQ=="
-      }
-    ],
-  },
+ 
   {
     name: "Souvik  Sarkar",
     department: "CE",
@@ -812,19 +851,57 @@ export const teamMembers: TeamMember[] = [
 
     ],
   },
+
   {
-    name: "Tushar Roy",
-    department: "CE",
-    year: "3rd",
-    avatar: tushar,
-    category: ["cultural"],
+  name: "Ayushi Sarkar ",
+    department: "ECE",
+    year: "2nd",
+    avatar: ayushi,
+    category: ["content"],
+    lead: "web content writer",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/ayushi-sarkar-98a023283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/naturallyayushi?igsh=MWk4ZWZlazk2YXhsZQ=="
+      }
+    ],
+  },
+{
+  name: "Sumouli Bannerjee ",
+    department: "ECE",
+    year: "1st",
+    avatar: sumouli,
+    category: ["content"],
+    lead: "web content writer",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/sumouli-banerjee-248407244"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/sumouli_07?igsh=d3Z6ejhiMHhzNTNs"
+      }
+    ],
+  },
+
+{
+  name: "Sagnik Roy",
+    department: "ME",
+    year: "2nd",
+    avatar: sagnik,
+    category: ["content"],
+    lead: "video editor",
     socials: [
       {
         handler: "Instagram",
-        link: "https://www.instagram.com/tush.ar655/?igsh=MXY0NnExNzNtZjRycA%3D%3D#",
-      },
-   
+        link: "https://www.instagram.com/sagu7718?igsh=MTZlcHVudjIzeHZqMw=="
+      }
     ],
-  },
+  }
 
 ];
