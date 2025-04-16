@@ -100,11 +100,8 @@ const Cultural = () => {
 
         <div className="flex-1 min-w-[300px] relative top-20 left-[0] md:left-[40]">
           <p className={`${sedgwick.className} text-lg text-gray-200 leading-relaxed underdog`}>
-            Our technical events showcase the latest innovations and provide a platform for 
-            enthusiasts to demonstrate their skills. From hackathons to robotics competitions, 
-            these events challenge participants to push the boundaries of technology. Join us 
-            for an exciting lineup of workshops, competitions, and networking opportunities 
-            with industry leaders.
+          A mesmerizing cultural extravaganza awaits you from April 25th–26th where creativity and artistry takes center stage! 
+          Brace up for music, dance, drama and much more.
           </p>
           <Link href="/events/cultural" passHref legacyBehavior>
           <a target="_blank" className="inline-block">
@@ -112,7 +109,7 @@ const Cultural = () => {
           src={explore}
           alt=""
           width={270}
-          className='pt-[50] hover:scale-108 transition-transform duration-300 cursor-pointer'
+          className='pt-[50] w-[75%] md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer'
           />
           </a>
           </Link>

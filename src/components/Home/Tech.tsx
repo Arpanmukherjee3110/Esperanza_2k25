@@ -85,11 +85,11 @@ const Tech = () => {
 
         <div className="flex-1 min-w-[300px] relative top-20">
           <p className={`${sedgwick.className} text-lg text-gray-200 leading-relaxed underdog`}>
-            Our technical events showcase the latest innovations and provide a platform for
-            enthusiasts to demonstrate their skills. From hackathons to robotics competitions,
-            these events challenge participants to push the boundaries of technology. Join us
-            for an exciting lineup of workshops, competitions, and networking opportunities
-            with industry leaders.
+          Step into the electrifying Tech Phase of Esperanza 2025—a three-day extravaganza (April 22nd–24th) where innovation takes center stage! 
+          Gear up for adrenaline-pumping hackathons, brain-teasing coding challenges, intricate bridge-making battles, mind-blowing robotics competitions, and many more events designed to test your creativity, logic, and engineering prowess. 
+          Whether you're a seasoned coder, an aspiring engineer, or a curious learner, there’s a challenge waiting just for you. 
+          This is more than a competition—it’s a celebration of ideas, collaboration, and pushing the boundaries of what’s possible. 
+          Come build, break, innovate, and ignite the future—because tech isn't just an event here, it's an experience!
           </p>
           <Link href="/events/technical" passHref legacyBehavior>
           <a  target="_blank" className="inline-block">
@@ -97,7 +97,7 @@ const Tech = () => {
             src={explore}
             alt=""
             width={270}
-            className='pt-[50] hover:scale-108 transition-transform duration-300 cursor-pointer'
+            className='pt-[50] w-[75%] md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer'
           />
           </a>
           </Link>
