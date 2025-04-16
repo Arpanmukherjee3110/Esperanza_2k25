@@ -12,6 +12,7 @@ import Cultural from "@/components/Home/Cultural";
 import ClubGrid from "@/components/Home/Club";
 import Gallery from "@/components/Home/Galleryh";
 import Extra from "@/components/Home/Extra";
+import Timer from "@/components/Shared/Timer";
 
 
 const Home = async() => {
@@ -57,7 +58,7 @@ const Home = async() => {
           <Gallery/>
         </div>
         <div>
-          <Extra/>
+        <Timer/>
         </div>
     </div>
     
