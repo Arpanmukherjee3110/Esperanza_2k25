@@ -1,15 +1,21 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 interface SlideData {
   name: string;
   avatar: StaticImageData;
   profile: string;
   role?: string;
-  year:string
-  department : string
+  year: string;
+  department: string;
+  socials: {
+    handler: string;
+    link: string;
+  }[];
 }
 
 interface SlideProps {
@@ -66,7 +72,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { name, avatar, department,year } = slide;
+  const { name, avatar, department, year, socials } = slide;
 
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -94,7 +100,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                 : "none",
           }}
         >
-          <img
+          <Image
             className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
@@ -102,6 +108,8 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             alt={name}
             src={avatar.src}
             onLoad={imageLoaded}
+            width={500}
+            height={500}
             loading="eager"
             decoding="sync"
           />
@@ -119,11 +127,22 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             {name}
           </h2>
           <div className="">
-            <div
-              className="mt-2 px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
-            >
-              {year} {department} 
+            <div className="mt-2 px-4 w-fit mx-auto text-white border border-transparent text-xl flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+              {year} {department}
             </div>
+          </div>
+          <div className="flex flex-row gap-2 justify-center mt-2">
+            {socials?.map((s, i) => {
+              let icon = null;
+              if (s.handler === "Github") {
+                icon = <FaGithub size={40}/>;
+              } else if (s.handler === "LinkedIn") {
+                icon = <FaLinkedin size={40}/>;
+              } else {
+                icon = <FaInstagram size={40}/>;
+              }
+              return <Link href={s.link} key={i}>{icon}</Link>;
+            })}
           </div>
         </article>
       </li>

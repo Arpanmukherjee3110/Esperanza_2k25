@@ -12,6 +12,10 @@ export function CarouselCompoment({
     role?: string;
     year: string;
     department: string;
+    socials : {
+      handler : string;
+      link : string
+    }[]
   }[];
 }) {
   return (
