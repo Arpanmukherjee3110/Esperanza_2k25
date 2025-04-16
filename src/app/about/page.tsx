@@ -75,7 +75,7 @@ const About = () => {
                 </h3>
               </div>
 
-              <div className="bg-gray-900 text-white px-3 py-6 sm:p-8 rounded-lg w-full">
+              <div className=" text-white px-3 py-6 sm:p-8 rounded-lg w-full">
                 <h2 className={`${sedgwick.className} text-2xl sm:text-3xl font-bold mb-4 `}>
                   GET IN TOUCH
                 </h2 >

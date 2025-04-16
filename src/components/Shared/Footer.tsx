@@ -216,12 +216,14 @@ const Footer = () => {
               ABOUT US
             </h3>
             <ul className="space-y-0.5">
-              <li
+              <Link
+                href={"/terms-condition/t&c.pdf"}
                 className="text-xs sm:text-sm text-#DEDEDE"
                 style={{ fontFamily: sedgwick.style.fontFamily }}
               >
-                Teams Committee
-              </li>
+                Terms & Conditions
+              </Link>
+              <br />
               <Link
                 href={"/developers"}
                 className="text-xs sm:text-sm text-#DEDEDE text-red-400 font-bold animate-pulse"

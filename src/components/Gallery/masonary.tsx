@@ -9,6 +9,14 @@ import pic4 from "@/assets/galary/cultural/WhatsApp Image 2025-04-07 at 20.09.08
 import pic5 from "@/assets/galary/cultural/WhatsApp Image 2025-04-07 at 20.09.15_7bf6a830.jpg";
 import pic6 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.51_f4a3566c.jpg";
 import pic7 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic8 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic9 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic10 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic11 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic12 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic13 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic14 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic15 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
 const galleryItems = [
   // Row 1
   {
@@ -57,51 +65,51 @@ const galleryItems = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?auto=format&fit=crop&w=1740",
+    src: pic8,
     span: "col-span-2 sm:col-span-1",
     height: "h-[125px] sm:h-[150px]"
   },
   // Row 4
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1740",
+    src: pic9,
     span: "col-span-2 sm:col-span-2",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1740",
+    src: pic10,
     span: "col-span-2 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1740",
+    src: pic11,
     span: "col-span-2 sm:col-span-1",
     height: "h-[100px] sm:h-[125px]"
   },
   // Row 5
   {
     id: 12,
-    src: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1740",
+    src: pic12,
     span: "col-span-2 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 13,
-    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1740",
+    src: pic13,
     span: "col-span-2 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 14,
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1740",
+    src: pic14,
     span: "col-span-2 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   },
   {
     id: 15,
-    src: "https://images.unsplash.com/photo-1682686581854-5e71f58e7e3f?auto=format&fit=crop&w=1740",
+    src: pic15,
     span: "col-span-2 sm:col-span-1",
     height: "h-[200px] sm:h-[250px]"
   }

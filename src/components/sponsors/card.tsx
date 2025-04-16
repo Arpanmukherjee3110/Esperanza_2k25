@@ -121,7 +121,7 @@ const Card: React.FC<CardData> = ({ title, imageUrl, redirectURL }) => {
 export const CardContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="w-full px-3 py-4 sm:px-4 sm:py-6">
-      <div className="flex flex-cols-1 xs:flex-cols-2 sm:flex-cols-2 md:flex-cols-3 lg:flex-cols-4 xl:flex-cols-5 gap-4 sm:gap-6">
+      <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
         {children}
       </div>
     </div>
@@ -129,3 +129,5 @@ export const CardContainer: React.FC<{ children: React.ReactNode }> = ({ childre
 };
 
 export default Card;
+
+//flex-cols-1 xs:flex-cols-2 sm:flex-cols-2 md:flex-cols-3 lg:flex-cols-4 xl:flex-cols-5
