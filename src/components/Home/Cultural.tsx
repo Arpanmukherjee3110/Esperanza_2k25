@@ -100,8 +100,10 @@ const Cultural = () => {
 
         <div className="flex-1 min-w-[300px] relative top-20 left-[0] md:left-[40]">
           <p className={`${sedgwick.className} text-lg text-gray-200 leading-relaxed underdog`}>
-          A mesmerizing cultural extravaganza awaits you from April 25th–26th where creativity and artistry takes center stage! 
-          Brace up for music, dance, drama and much more.
+          The cultural squad is all set to present a wondrous cultural extravaganza replete with creativity and artistry. 
+          brace up to get the spark of melodies, beats, rhythm, steps and arts ignited altogether.
+          We welcome everyone to the cultural melting pot to showcase your recreative and extra-curricular talents and 
+          inspire the young minds to step beyond the box and fuel the passion - and celebrate all beautiful souls of arts .
           </p>
           <Link href="/events/cultural" passHref legacyBehavior>
           <a target="_blank" className="inline-block">
