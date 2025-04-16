@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import pic1 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.49_a2993b86.jpg";
 import pic2 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.50_5222b856.jpg";
-import pic3 from "@/assets/galary/cultural/pic7.jpg";
+import pic3 from "@/assets/galary/cultural/bhut1.jpg";
 import pic4 from "@/assets/galary/cultural/WhatsApp Image 2025-04-07 at 20.09.08_87185433.jpg";
-import pic5 from "@/assets/galary/cultural/WhatsApp Image 2025-04-07 at 20.09.15_7bf6a830.jpg";
+import pic5 from "@/assets/galary/cultural/grp2.jpg";
 import pic6 from "@/assets/galary/cultural/WhatsApp Image 2025-03-31 at 22.22.51_f4a3566c.jpg";
-import pic7 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic8 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic9 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic10 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic11 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic12 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic13 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic14 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
-import pic15 from "@/assets/galary/cultural/41643706_170059960579670_314263805020340224_n.jpg";
+import pic7 from "@/assets/galary/cultural/bhut3.jpg";
+import pic8 from "@/assets/galary/cultural/melody.jpg";
+import pic9 from "@/assets/galary/cultural/grp1.jpg";
+import pic10 from "@/assets/galary/cultural/drummer.jpg";
+import pic11 from "@/assets/galary/cultural/dance1.jpg";
+import pic12 from "@/assets/galary/cultural/dance2.jpg";
+import pic13 from "@/assets/galary/cultural/esp.jpg";
+import pic14 from "@/assets/galary/cultural/bhut2.jpg";
+import pic15 from "@/assets/galary/cultural/grp3.jpg";
 const galleryItems = [
   // Row 1
   {
