@@ -14,9 +14,9 @@ const katibeh = Katibeh({
   weight: ["400"],
 });
 
-// ✅ Optional styling overrides — kept valid
-const galleryHeadingStyle = "translate-y-43 "; // no translation for fixed center
-const techGalleryStyle = "mt-73"; // consistent and compact
+
+const galleryHeadingStyle = "translate-y-43 "; 
+const techGalleryStyle = "mt-73"; 
 
 const About = () => {
   return (

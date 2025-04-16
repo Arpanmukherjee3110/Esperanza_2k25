@@ -47,11 +47,21 @@ import rahul from "@/assets/crew/rahul.jpg"
 import paban from "@/assets/crew/paban.jpg"
 import kewat from "@/assets/crew/kewat.jpg"
 import chayanda from "@/assets/crew/chayanda.jpg"
-import ayushi from "@/assets/crew/ayushi.jpg"
-import sumouli from "@/assets/crew/soumili.jpg"
-import sagnik from "@/assets/crew/sagnik.jpg"
+import ananya from "@/assets/crew/ananya.jpg"
+import shrijeeta from "@/assets/crew/shrijeeta.jpg"
+import manprit from "@/assets/crew/manprit.jpg"
+import koushik from "@/assets/crew/koushik.jpg"
+import adi from "@/assets/crew/adi.jpg"
+import avideep from "@/assets/crew/avideep.jpg"
+import debasish from "@/assets/crew/debasish.jpg"
+import prokriti from "@/assets/crew/prokriti.jpg"
+import subhamita from "@/assets/crew/subhamita.jpg"
+
 
 export const teamMembers: TeamMember[] = [
+
+
+  //<...................................................... Technical Team .............................................................>
   {
     name: "Chayan Ghosh",
     department: "CSE",
@@ -67,6 +77,24 @@ export const teamMembers: TeamMember[] = [
       {
         handler: "Instagram",
         link: "https://www.instagram.com/defeated.victory/"
+      }
+    ],
+  },
+  {
+    name: "Shrijeeta Dutta",
+    department: "CSE",
+    year: "4th",
+    avatar: shrijeeta,
+    category: ["technical"],
+    lead: "tech Co-head",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/shrijeeta-dutta-78b19230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/shrijeetadutta17?igsh=aWd2bW5qbDdsaHRy&utm_source=qr"
       }
     ],
   },
@@ -203,41 +231,6 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
-    name: "Diptangshu Das ",
-    department: "EE",
-    year: "3rd",
-    avatar: diptangshu,
-    category: ["pr"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/diptangshu-das-6a48b1257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/ig.diptangshu_?igsh=MWNsdTI5NjZubGl5YQ=="
-      }
-    ],
-  },
-  {
-    name: "Nabin Sarkar",
-    department: "ME",
-    year: "3rd",
-    avatar: nabin,
-    category: ["cultural"],
-
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/nabin-sarkar-3b8665252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/nabin.js?igsh=bmZmMzlzYzU5a21m"
-      }
-    ],
-  },
-  {
     name: "Pinku Mondal",
     department: "CE",
     year: "3rd",
@@ -270,87 +263,6 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
-    name: "Subhajit Sadhu ",
-    department: "EE",
-    year: "3rd",
-    avatar: sadhu,
-    category: ["finance"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/subhajit-sadhu-237a61257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/hakuna_matata_154?igsh=a2s4c2w4Mmc5YWxi"
-      }
-    ],
-  },
-  {
-    name: "ABHISEK VERMA",
-    department: "CE",
-    year: "3rd",
-    avatar: verma,
-    category: ["management"],
-
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/abhisek-verma-071751229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/_enigma_here_?igsh=cHNmZmxtdDI2ZTdr"
-      }
-    ],
-  },
-  {
-    name: "Ankan Mondal ",
-    department: "CE",
-    year: "3rd",
-    avatar: js,
-    category: ["management"],
-    lead: "joint-secretary",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://in.linkedin.com/in/ankan-mondal-1432b0256",
-      },
-
-    ],
-  },
-  // {
-  //   name: "Soukarya Samanta",
-  //   department: "CSE",
-  //   year: "3rd",
-  //   avatar: soukarya,
-  //   category: ["technical"],
-  //   socials: [
-  //     {
-  //       handler: "LinkedIn",
-  //       link: "http://www.linkedin.com/in/soukarya-samanta",
-  //     },
-  //     {
-  //       handler: "Instagram",
-  //       link: "https://www.instagram.com/thezoom110"
-  //     }
-  //   ],
-  // },
-  {
-    name: "Nishan Dey",
-    department: "EE",
-    year: "3rd",
-    avatar: nishan,
-    category: ["cultural"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "",
-      },
-
-    ],
-  },
-  {
     name: "Samrat Mondal",
     department: "ME",
     year: "3rd",
@@ -367,92 +279,7 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
-  {
-    name: "Arman Mia",
-    department: "CSE",
-    year: "3rd",
-    avatar: vp,
-    category: ["management"],
-    lead: "vice-president",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/arman-mia-940aa6254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/arman_ansari.13?igsh=MXd1NDlzcTc3eHh3MA=="
-      }
-    ],
-  },
-  {
-    name: "Sruti Basu Roy Chowdhury",
-    department: "ECE",
-    year: "3rd",
-    avatar: sruti,
-    category: ["finance"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/sruti-basu-roy-chowdhury-087129282",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/arman_ansari.13?igsh=MXd1NDlzcTc3eHh3MA=="
-      }
-    ],
-  },
-  {
-    name: "ARITRI DAS",
-    department: "CE",
-    year: "3rd",
-    avatar: aritri,
-    category: ["cultural"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/aritri-das-16a866257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/twilight_butterfly_7890?igsh=MWF3emZ6a25pZWV3cw=="
-      }
-    ],
-  },
-  {
-    name: "Subhayan Kamila",
-    department: "CSE",
-    year: "3rd",
-    avatar: kamila,
-    category: ["management"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/subhayan-kamila-7907b7256",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/___mr__subha___?igsh=N3diZ2Z5bXBsNmJs"
-      }
-    ],
-  },
-  {
-    name: "Saurav Kewat ",
-    department: "EE",
-    year: "3rd",
-    avatar: kewat,
-    category: ["finance"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://in.linkedin.com/in/saurav-kewat-009702256",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/mr_varaus?igsh=MTZ2ajR3MHJ5NDVyMQ=="
-      }
-    ],
-  },
+
   {
     name: "Dishan Dey",
     department: "EE",
@@ -471,94 +298,6 @@ export const teamMembers: TeamMember[] = [
     ],
   },
 
-
-
-  {
-    name: "Abir Chattaraj",
-    department: "CSE",
-    year: "3rd",
-    avatar: abir,
-    category: ["sponsor"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/abir-chattaraj-abb257237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/abirrrrrrrrrr_?igsh=OHNob25iamFtYmJl&utm_source=qr"
-      }
-    ],
-  },
-  {
-    name: "Payel Das ",
-    department: "ECE",
-    year: "3rd",
-    avatar: payel,
-    category: ["content"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/payel-das-b4160b257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/disouzaranix?igsh=MW41YmVrc3BldjB3dQ=="
-      }
-    ],
-  },
-  {
-    name: "EJIKEL KERKETTA",
-    department: "EE",
-    year: "3rd",
-    avatar: ejikel,
-    category: ["cultural"],
-    lead: "cultural-lead",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: ""
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/e.k._music?igsh=MTZoOGpodDk4MXI2MA=="
-      }
-    ],
-  },
-  {
-    name: "KRISHNANGEE DEBNATH",
-    department: "ECE",
-    year: "4th",
-    avatar: krish,
-    category: ["hospitality"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=krishnangee-debnath-ee-81938335a"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
-      }
-    ],
-  },
-  {
-    name: "Debanjan Chowdhury ",
-    department: "ECE",
-    year: "4th",
-    avatar: debanjan,
-    category: ['sponsor'],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/debanjan-chowdhury-"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
-      }
-    ],
-  },
   {
     name: "Rahul Prasad ",
     department: "CE",
@@ -627,23 +366,7 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
-  {
-    name: "Sudip Bhandari",
-    department: "CSE",
-    year: "3rd",
-    avatar: sudip,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/sudip-bhandari-766871257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/sbsudip8/"
-      }
-    ],
-  },
+  
   {
     name: "Rajdeep Roy",
     department: "ECE",
@@ -678,23 +401,7 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
-  {
-    name: "Sashi Gupta",
-    department: "CSE",
-    year: "3rd",
-    avatar: sashi,
-    category: ["sponsor"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/sashi-gupta-055524303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/i.am.sashi?igsh=ajJzYXNjcDdramlp"
-      }
-    ],
-  },
+  
   {
     name: "Tanmoy Daripa",
     department: "CSE",
@@ -729,20 +436,59 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
+  
   {
-    name: "Srijit Chakraborty ",
-    department: "CE",
+    name: "Koustav Ghosh ",
+    department: "CSE",
     year: "3rd",
-    avatar: srijit,
-    category: ["sponsor"],
+    avatar: koustov,
+    category: ["technical"],
     socials: [
       {
         handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/srijit-chakraborty-c-e-44348b301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        link: "https://www.linkedin.com/in/koustav-ghosh-abba73257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
       {
         handler: "Instagram",
-        link: "https://www.instagram.com/srijit_.chakraborty/profilecard/?igsh=ankweXlwcHNpcHdj"
+        link: "https://www.instagram.com/koustav_ghosh_02?igsh=a3ZxOWhkZ25vZWVh"
+      }
+    ],
+  },
+  
+  {
+    name: "Souvik  Sarkar",
+    department: "CE",
+    year: "3rd",
+    avatar: souvik,
+    category: ["technical"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/souvik-sarkar-6a73302b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+
+    ],
+  },
+
+  //<.............................................Technical Team Ends.....................................................................>
+
+  //<..............................................Cultural Team...........................................................................>
+
+  {
+    name: "EJIKEL KERKETTA",
+    department: "EE",
+    year: "3rd",
+    avatar: ejikel,
+    category: ["cultural"],
+    lead: "cultural-lead",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: ""
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/e.k._music?igsh=MTZoOGpodDk4MXI2MA=="
       }
     ],
   },
@@ -758,6 +504,78 @@ export const teamMembers: TeamMember[] = [
         handler: "Instagram",
         link: "https://www.instagram.com/_uppsss__?igsh=MThwbzh0ODV3ejE1bw=="
       }
+    ],
+  },
+
+  //<..............................................Cultural Team Ends......................................................................>
+
+  //<................................................Management Team......................................................................>
+
+  {
+    name: "Arman Mia",
+    department: "CSE",
+    year: "3rd",
+    avatar: vp,
+    category: ["management"],
+    lead: "vice-president",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/arman-mia-940aa6254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/arman_ansari.13?igsh=MXd1NDlzcTc3eHh3MA=="
+      }
+    ],
+  },
+
+  {
+    name: "Ankan Mondal ",
+    department: "CE",
+    year: "3rd",
+    avatar: js,
+    category: ["management"],
+    lead: "joint-secretary",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://in.linkedin.com/in/ankan-mondal-1432b0256",
+      },
+
+    ],
+  },
+
+  {
+    name: "ABHISEK VERMA",
+    department: "CE",
+    year: "3rd",
+    avatar: verma,
+    category: ["management"],
+
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/abhisek-verma-071751229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/_enigma_here_?igsh=cHNmZmxtdDI2ZTdr"
+      }
+    ],
+  },
+  {
+    name: "Ankit Kumar Ojha",
+    department: "ECE",
+    year: "3rd",
+    avatar: ankit,
+    category: ["management"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/ankit-kumar-ojha-9209322b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+  
     ],
   },
   {
@@ -777,131 +595,466 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
-  {
-    name: "Koustav Ghosh ",
-    department: "CSE",
-    year: "3rd",
-    avatar: koustov,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/koustav-ghosh-abba73257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/koustav_ghosh_02?igsh=a3ZxOWhkZ25vZWVh"
-      }
-    ],
-  },
-  {
-    name: "Rishi Mahato",
-    department: "CSE",
-    year: "3rd",
-    avatar: rishi,
-    category: ["finance"],
-    socials: [
+   
+    {
+      name: "Subhayan Kamila",
+      department: "CSE",
+      year: "3rd",
+      avatar: kamila,
+      category: ["management"],
+      socials: [
+        {
+          handler: "LinkedIn",
+          link: "https://www.linkedin.com/in/subhayan-kamila-7907b7256",
+        },
+        {
+          handler: "Instagram",
+          link: "https://www.instagram.com/___mr__subha___?igsh=N3diZ2Z5bXBsNmJs"
+        }
+      ],
+    },
 
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/____rish_________?igsh=MTN0aGJzNWhtZm54NA=="
-      }
-    ],
-  },
+  //<..............................................Management Team Ends....................................................................>
+  
+  //<...............................................PR Team...............................................................................>
+  
   {
-    name: "Adarsh Shukla",
+    name: "Diptangshu Das ",
     department: "EE",
     year: "3rd",
-    avatar: adarsh,
-    category: ["finance"],
+    avatar: diptangshu,
+    category: ["pr"],
     socials: [
-
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/diptangshu-das-6a48b1257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
       {
         handler: "Instagram",
-        link: "https://www.instagram.com/adarsh_03.09?igsh=MThyamI3aWs1bGM4YQ=="
+        link: "https://www.instagram.com/ig.diptangshu_?igsh=MWNsdTI5NjZubGl5YQ=="
       }
     ],
   },
   {
-    name: "Ankit Kumar Ojha",
-    department: "ECE",
-    year: "3rd",
-    avatar: ankit,
-    category: ["management"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/ankit-kumar-ojha-9209322b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-
-    ],
-  },
- 
-  {
-    name: "Souvik  Sarkar",
-    department: "CE",
-    year: "3rd",
-    avatar: souvik,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/souvik-sarkar-6a73302b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-
-    ],
-  },
-
-  {
-  name: "Ayushi Sarkar ",
-    department: "ECE",
-    year: "2nd",
-    avatar: ayushi,
-    category: ["content"],
-    lead: "web content writer",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/ayushi-sarkar-98a023283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/naturallyayushi?igsh=MWk4ZWZlazk2YXhsZQ=="
-      }
-    ],
-  },
-{
-  name: "Sumouli Bannerjee ",
-    department: "ECE",
-    year: "1st",
-    avatar: sumouli,
-    category: ["content"],
-    lead: "web content writer",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/sumouli-banerjee-248407244"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/sumouli_07?igsh=d3Z6ejhiMHhzNTNs"
-      }
-    ],
-  },
-
-{
-  name: "Sagnik Roy",
+    name: "Nabin Sarkar",
     department: "ME",
-    year: "2nd",
-    avatar: sagnik,
-    category: ["content"],
-    lead: "video editor",
+    year: "3rd",
+    avatar: nabin,
+    category: ["pr"],
+
     socials: [
       {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/nabin-sarkar-3b8665252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
         handler: "Instagram",
-        link: "https://www.instagram.com/sagu7718?igsh=MTZlcHVudjIzeHZqMw=="
+        link: "https://www.instagram.com/nabin.js?igsh=bmZmMzlzYzU5a21m"
       }
     ],
-  }
+  },
+
+  //<...................................................PR Team Ends.......................................................................>
+
+ //<...................................................Sponsor Team........................................................................>
+
+ {
+  name: "Debanjan Chowdhury ",
+  department: "ECE",
+  year: "4th",
+  avatar: debanjan,
+  category: ['sponsor'],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/debanjan-chowdhury-"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
+    }
+  ],
+},
+
+ {
+  name: "Sashi Gupta",
+  department: "CSE",
+  year: "3rd",
+  avatar: sashi,
+  category: ["sponsor"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/sashi-gupta-055524303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/i.am.sashi?igsh=ajJzYXNjcDdramlp"
+    }
+  ],
+},
+
+{
+  name: "Srijit Chakraborty ",
+  department: "CE",
+  year: "3rd",
+  avatar: srijit,
+  category: ["sponsor"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/srijit-chakraborty-c-e-44348b301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/srijit_.chakraborty/profilecard/?igsh=ankweXlwcHNpcHdj"
+    }
+  ],
+},
+
+{
+  name: "Abir Chattaraj",
+  department: "CSE",
+  year: "3rd",
+  avatar: abir,
+  category: ["sponsor"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/abir-chattaraj-abb257237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/abirrrrrrrrrr_?igsh=OHNob25iamFtYmJl&utm_source=qr"
+    }
+  ],
+},
+
+
+
+ //<..................................................Spnsor Team Ends.....................................................................>
+
+ //<....................................................Finance Team.......................................................................>
+
+ {
+  name: "Subhamita Naskar ",
+  department: "ME",
+  year: "4th",
+  avatar: subhamita,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/subhamita-naskar-a83b97220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/subhamita_29?igsh=aGIwbjE1Y2MzOG5z"
+    }
+  ],
+},
+{
+  name: "Manprit Kaur ",
+  department: "ECE",
+  year: "4th",
+  avatar: manprit,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/manprit-kaur-728784282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/manprit921/"
+    }
+  ],
+},
+ {
+  name: "Subhajit Sadhu ",
+  department: "EE",
+  year: "3rd",
+  avatar: sadhu,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/subhajit-sadhu-237a61257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/hakuna_matata_154?igsh=a2s4c2w4Mmc5YWxi"
+    }
+  ],
+},
+{
+  name: "Sudip Bhandari",
+  department: "CSE",
+  year: "3rd",
+  avatar: sudip,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/sudip-bhandari-766871257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/sbsudip8/"
+    }
+  ],
+},
+{
+  name: "Rishi Mahato",
+  department: "CSE",
+  year: "3rd",
+  avatar: rishi,
+  category: ["finance"],
+  socials: [
+
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/____rish_________?igsh=MTN0aGJzNWhtZm54NA=="
+    }
+  ],
+},
+{
+  name: "Adarsh Shukla",
+  department: "EE",
+  year: "3rd",
+  avatar: adarsh,
+  category: ["finance"],
+  socials: [
+
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/adarsh_03.09?igsh=MThyamI3aWs1bGM4YQ=="
+    }
+  ],
+},
+{
+  name: "Saurav Kewat ",
+  department: "EE",
+  year: "3rd",
+  avatar: kewat,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://in.linkedin.com/in/saurav-kewat-009702256",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/mr_varaus?igsh=MTZ2ajR3MHJ5NDVyMQ=="
+    }
+  ],
+},
+{
+  name: "Adi",
+  department: "EE",
+  year: "3rd",
+  avatar: adi,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/mahibur-sardar-560bab255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/rk.adi.106?igsh=ZWRrdmk4eGcwNGhr&utm_source=ig_contact_invite"
+    },
+
+  ],
+},
+{
+  name: "Sruti Basu Roy Chowdhury",
+  department: "ECE",
+  year: "3rd",
+  avatar: sruti,
+  category: ["finance"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/sruti-basu-roy-chowdhury-087129282",
+    },
+    // {
+    //   handler: "Instagram",
+    //   link: "https://www.instagram.com/arman_ansari.13?igsh=MXd1NDlzcTc3eHh3MA=="
+    // }
+  ],
+},
+
+ //<....................................................Finance Team Ends..................................................................>
+ 
+ //<....................................................Content Team.......................................................................>
+ {
+  name: "Payel Das ",
+  department: "ECE",
+  year: "3rd",
+  avatar: payel,
+  category: ["content"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/payel-das-b4160b257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/disouzaranix?igsh=MW41YmVrc3BldjB3dQ=="
+    }
+  ],
+},
+
+ //<....................................................Content Team Ends..................................................................>
+
+ //<...................................................Decoration Team.....................................................................>
+ {
+  name: "AVIDEEP MUKHERJEE",
+  department: "EE",
+  year: "4th",
+  avatar: avideep,
+  category: ["decoration"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/avideep-mukherjee-255928315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/fallen_onee?igsh=ZHp4ZHU4cnVhcWR0"
+    }
+  ],
+},
+
+{
+  name: "Koushik Das",
+  department: "ECE",
+  year: "3rd",
+  avatar: koushik,
+  category: ["decoration"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/koushik-das-619979257/",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/koudas861?igsh=Y3VzaGF5dXoycTls"
+    },
+
+  ],
+},
+
+{
+  name: "ARITRI DAS",
+  department: "CE",
+  year: "3rd",
+  avatar: aritri,
+  category: ["decoration"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/aritri-das-16a866257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/twilight_butterfly_7890?igsh=MWF3emZ6a25pZWV3cw=="
+    }
+  ],
+},
+{
+  name: "Nishan Dey",
+  department: "EE",
+  year: "3rd",
+  avatar: nishan,
+  category: ["decoration"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "",
+    },
+
+  ],
+},
+ //<...................................................Decoration Team Ends................................................................>
+
+ //<...................................................Hospitality Team....................................................................>
+
+ {
+  name: "KRISHNANGEE DEBNATH",
+  department: "ECE",
+  year: "4th",
+  avatar: krish,
+  category: ["hospitality"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=krishnangee-debnath-ee-81938335a"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
+    }
+  ],
+},
+{
+  name: "Ananya Sen",
+  department: "CSE",
+  year: "4th",
+  avatar: ananya,
+  category: ["hospitality"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/ananyasen25"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/ananyaasen?igsh=MWp4YmlpdXNsZWoxbw=="
+    }
+  ],
+},
+{
+  name: "PROKRITI DEBNATH",
+  department: "CE",
+  year: "4th",
+  avatar: prokriti,
+  category: ["hospitality"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://in.linkedin.com/in/prokriti-debnath-ce-0b379a24a"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/irene_dishu?igsh=MWFsdGZ3N2VlM3loaw=="
+    }
+  ],
+},
+
+ //<...................................................Hospitality Team Ends...............................................................>
+
+ //<...................................................Security Team.......................................................................>
+
+ {
+  name: "Debasish Sarkar",
+  department: "ECE",
+  year: "4th",
+  avatar: debasish,
+  category: ["security"],
+  socials: [
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/debasish_sarkar_7384/"
+    }
+  ],
+}
+
+ //<..................................................Security Team Ends..................................................................>
+
+ 
+
+ 
 
 ];

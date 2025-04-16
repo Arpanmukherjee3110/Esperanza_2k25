@@ -2,10 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import bg from "@/assets/background/HexagonWhite.png";
 import { Katibeh } from "next/font/google";
+import { StaticImageData } from 'next/image';
+import kfc from "@/assets/sponsors/KFC.jpg"
+import devine from "@/assets/sponsors/Devine.jpg"
+import torsha from "@/assets/sponsors/Torsha.jpg"
+import cocacola from "@/assets/sponsors/cocacola.png"
 export interface CardData {
   id: number;
   title: string;
-  imageUrl: string;
+  imageUrl: StaticImageData;
+  redirectURL?: string;
 }
 
 const katibeh = Katibeh({
@@ -16,64 +22,74 @@ export const cards: CardData[] = [
   {
     id: 1,
     title: "KFC",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b8/KFC_logo.png?20110221003908"
+    imageUrl: kfc,
+    redirectURL:"https://online.kfc.co.in/"
   },
   {
     id: 2,
     title: "Coca Cola",
-    imageUrl: "https://www.coca-cola.com/content/dam/onexp/ie/en/article-lead/coca-cola-logo-history-article-lead-desktop-1020x420.jpg/width1960.jpg"
+    imageUrl: cocacola,
+    redirectURL:"https://www.coca-colacompany.com/"
   },
   {
     id: 3,
-    title: "Urban Night Life",
-    imageUrl: "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=500"
+    title: "Devine",
+    imageUrl: devine,
+    redirectURL:"https://www.instagram.com/devinefamilysalon/"
   },
   {
     id: 4,
-    title: "Desert Safari",
-    imageUrl: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=500"
-  },
-  {
-    id: 5,
-    title: "Forest Retreat",
-    imageUrl: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=500"
-  },
-  {
-    id: 6,
-    title: "Cultural Festival",
-    imageUrl: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=500"
-  },
-  {
-    id: 7,
-    title: "Snowboard Paradise",
-    imageUrl: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=500"
-  },
-  {
-    id: 8,
-    title: "Lakeside Camping",
-    imageUrl: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=500"
-  },
-  {
-    id: 9,
-    title: "Historical Tour",
-    imageUrl: "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=500"
-  },
-  {
-    id: 10,
-    title: "Culinary Journey",
-    imageUrl: "https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&q=80&w=500"
+    title: "Torsha Cafeteria",
+    imageUrl: torsha,
+    redirectURL:"https://www.facebook.com/p/Torsha-Cafeteria-61553648939828/"
   }
+  // {
+  //   id: 5,
+  //   title: "Forest Retreat",
+  //   imageUrl: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=500"
+  // },
+  // {
+  //   id: 6,
+  //   title: "Cultural Festival",
+  //   imageUrl: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=500"
+  // },
+  // {
+  //   id: 7,
+  //   title: "Snowboard Paradise",
+  //   imageUrl: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&q=80&w=500"
+  // },
+  // {
+  //   id: 8,
+  //   title: "Lakeside Camping",
+  //   imageUrl: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=500"
+  // },
+  // {
+  //   id: 9,
+  //   title: "Historical Tour",
+  //   imageUrl: "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=500"
+  // },
+  // {
+  //   id: 10,
+  //   title: "Culinary Journey",
+  //   imageUrl: "https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&q=80&w=500"
+  // }
 ];{/*rgba(124,58,237,0.7)*/}
 
-const Card: React.FC<CardData> = ({ title, imageUrl }) => {
+const Card: React.FC<CardData> = ({ title, imageUrl, redirectURL }) => {
+  const handleclick=()=>{
+    window.open(redirectURL, "_blank" );
+  }
   return (
-    <div className="group bg-gray-650 rounded-lg sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden transform transition-all duration-350 hover:shadow-[0_5px_20px_rgba(128,2,196,0.7)] hover:-translate-y-1 sm:hover:-translate-y-2 w-full hover:cursor-pointer">
+    <div
+    onClick = {handleclick}
+     className="group bg-gray-650 rounded-lg sm:rounded-2xl shadow-md sm:shadow-lg overflow-hidden transform transition-all duration-350 hover:shadow-[0_5px_20px_rgba(128,2,196,0.7)] hover:-translate-y-1 sm:hover:-translate-y-2 w-full hover:cursor-pointer">
       {/* Image Container */}
+      
       <div className="relative aspect-[3/4] sm:aspect-[4/3] overflow-hidden">
-        <img 
+        <Image 
           src={imageUrl} 
           alt={title}
-          className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 sm:group-hover:scale-110"
+          className="w-full h-full transform transition-transform duration-500 group-hover:scale-105 sm:group-hover:scale-110"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-red-600/90 via-gray-400/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-350"/>
@@ -105,7 +121,7 @@ const Card: React.FC<CardData> = ({ title, imageUrl }) => {
 export const CardContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="w-full px-3 py-4 sm:px-4 sm:py-6">
-      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
+      <div className="flex flex-cols-1 xs:flex-cols-2 sm:flex-cols-2 md:flex-cols-3 lg:flex-cols-4 xl:flex-cols-5 gap-4 sm:gap-6">
         {children}
       </div>
     </div>

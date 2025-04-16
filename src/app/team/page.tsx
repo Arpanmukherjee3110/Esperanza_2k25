@@ -144,7 +144,7 @@ const Team = () => {
         <h1
           className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
         >
-          Content & Videography
+          Content Team
         </h1>
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
