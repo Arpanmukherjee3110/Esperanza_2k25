@@ -8,6 +8,7 @@ import GalleryHeading from "@/assets/images/GALLERY.png";
 import TechGalary from "@/assets/images/techGalary.png";
 import { Katibeh } from "next/font/google";
 import MasonryGallery from "@/components/Gallery/masonary";
+import MasonryGalleryt from "@/components/Gallery/masonaryt";
 import CulturalGalary from "@/assets/images/culturalGalary.png";
 const katibeh = Katibeh({
   subsets: ["arabic"],
@@ -67,7 +68,7 @@ const About = () => {
 
       {/* Masonry Gallery */}
       <div className="w-full mx-auto px-4 sm:px-8 pt-0 pb-10 relative z-10">
-        <MasonryGallery />
+        <MasonryGalleryt />
       </div>
       <div>
       <Image

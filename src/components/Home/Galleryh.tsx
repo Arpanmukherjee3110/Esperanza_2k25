@@ -12,7 +12,7 @@ import img4 from "@/assets/Gallery/cultural/robo1.png";
 import img11 from "@/assets/Gallery/cultural/band1.jpg";
 import img6 from "@/assets/Gallery/cultural/drums.jpg";
 import img7 from "@/assets/Gallery/tech/plane1.jpg";
-import img8 from "@/assets/Gallery/tech/robo2.jpg";
+import img8 from "@/assets/Gallery/tech/robo6.jpg";
 import img10 from "@/assets/Gallery/tech/teacher.jpg";
 import img9 from "@/assets/Gallery/cultural/band2.jpg";
 import img5 from "@/assets/Gallery/tech/hackathon.jpg";

@@ -12,7 +12,7 @@ import debanjan from "@/assets/crew/debanjan.jpg"
 import debosmita from "@/assets/crew/debosmita.jpg"
 import ejikel from "@/assets/crew/ejikkle.jpg"
 import aritri from "@/assets/crew/aritri.jpeg"
-import fahamida from "@/assets/crew/fahmida.jpg"
+import fahamida from "@/assets/crew/fahamida2.jpg"
 import koustov from "@/assets/crew/koustav.png"
 import koustavMondal from "@/assets/crew/koustab mondal.jpg"
 import mrittika from "@/assets/crew/mrittika.jpg"
@@ -56,6 +56,8 @@ import avideep from "@/assets/crew/avideep.jpg"
 import debasish from "@/assets/crew/debasish.jpg"
 import prokriti from "@/assets/crew/prokriti.jpg"
 import subhamita from "@/assets/crew/subhamita.jpg"
+import ratna from "@/assets/crew/ratna.jpg"
+import pal from "@/assets/crew/pal.jpg"
 
 
 export const teamMembers: TeamMember[] = [
@@ -351,7 +353,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Fahamida Parveen",
-    department: "ME",
+    department: "CE",
     year: "3rd",
     avatar: fahamida,
     category: ["technical"],
@@ -473,7 +475,25 @@ export const teamMembers: TeamMember[] = [
   //<.............................................Technical Team Ends.....................................................................>
 
   //<..............................................Cultural Team...........................................................................>
-
+  {
+    name: "Ratnadeep Saha",
+    department: "EE",
+    year: "4th",
+    avatar: ratna,
+    category: ["cultural"],
+    lead: "cultural-head",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/ratnadeep-saha-078044225/"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/r_at_no.rapture?utm_source=qr&igsh=Ynk1b3dueDR4NjM2"
+      }
+    ],
+  },
+  
   {
     name: "EJIKEL KERKETTA",
     department: "EE",
@@ -511,6 +531,24 @@ export const teamMembers: TeamMember[] = [
 
   //<................................................Management Team......................................................................>
 
+  {
+    name: "SOUMADWIP PAUL",
+    department: "ME",
+    year: "4th",
+    avatar: pal,
+    category: ["management"],
+    lead: "president",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/soumadwippaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/soumadwippaul?utm_source=qr&igsh=MTU4ZG5ibnA5czg5Zw=="
+      }
+    ],
+  },
   {
     name: "Arman Mia",
     department: "CSE",
