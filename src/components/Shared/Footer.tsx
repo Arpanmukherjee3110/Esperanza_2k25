@@ -26,7 +26,7 @@
 //               className="object-contain w-16 sm:w-20"
 //             />
 //             <div className="text-center md:text-left">
-//               <div 
+//               <div
 //                 className="font-bold text-#DEDEDE"
 //                 style={{
 //                   fontFamily: 'Inter, sans-serif',
@@ -37,7 +37,7 @@
 //               >
 //                 ESPERANZA'25
 //               </div>
-//               <div 
+//               <div
 //                 className="font-bold text-#DEDEDE"
 //                 style={{
 //                   fontFamily: 'Inter, sans-serif',
@@ -53,7 +53,7 @@
 
 //           {/* About Us Section */}
 //           <div className="text-center md:text-left">
-//             <h3 
+//             <h3
 //               className="font-semibold mb-1 sm:mb-2 text-#DEDEDE underline"
 //               style={{
 //                 fontFamily: 'Inter, sans-serif',
@@ -71,7 +71,7 @@
 
 //           {/* Address Section */}
 //           <div className="text-center md:text-left">
-//             <h3 
+//             <h3
 //               className="font-semibold mb-1 sm:mb-2 text-#DEDEDE underline"
 //               style={{
 //                 fontFamily: 'Inter, sans-serif',
@@ -98,7 +98,7 @@
 
 //           {/* Social Media Section */}
 //           <div className="text-center md:text-left">
-//             <h3 
+//             <h3
 //               className="font-semibold mb-1 sm:mb-2 text-#DEDEDE underline"
 //               style={{
 //                 fontFamily: 'Inter, sans-serif',
@@ -156,7 +156,7 @@ import Link from "next/link";
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
   weight: ["400"],
-})
+});
 
 const Footer = () => {
   const locationInfo =
@@ -177,24 +177,24 @@ const Footer = () => {
               className="object-contain w-16 sm:w-20"
             />
             <div className="text-center md:text-left">
-              <div 
+              <div
                 className="font-bold text-#DEDEDE"
                 style={{
                   fontFamily: sedgwick.style.fontFamily,
                   fontWeight: 400,
-                  fontSize: '1.5rem',
-                  lineHeight: '1.2'
+                  fontSize: "1.5rem",
+                  lineHeight: "1.2",
                 }}
               >
                 ESPERANZA'25
               </div>
-              <div 
+              <div
                 className="font-bold text-#DEDEDE"
                 style={{
                   fontFamily: sedgwick.style.fontFamily,
                   fontWeight: 400,
-                  fontSize: '1rem',
-                  lineHeight: '1.2'
+                  fontSize: "1rem",
+                  lineHeight: "1.2",
                 }}
               >
                 © Esperanza CGEC
@@ -204,26 +204,27 @@ const Footer = () => {
 
           {/* About Us Section */}
           <div className="text-center md:text-left">
-            <h3 
+            <h3
               className="font-semibold mb-1 sm:mb-2 text-#DEDEDE underline"
               style={{
                 fontFamily: sedgwick.style.fontFamily,
                 fontWeight: 400,
-                fontSize: '0.875rem',
-                lineHeight: '1.2'
+                fontSize: "0.875rem",
+                lineHeight: "1.2",
               }}
             >
               ABOUT US
             </h3>
             <ul className="space-y-0.5">
-              <li 
+              <li
                 className="text-xs sm:text-sm text-#DEDEDE"
                 style={{ fontFamily: sedgwick.style.fontFamily }}
               >
                 Teams Committee
               </li>
-              <Link href={"/developers"}
-                className="text-xs sm:text-sm text-#DEDEDE"
+              <Link
+                href={"/developers"}
+                className="text-xs sm:text-sm text-#DEDEDE text-red-400 font-bold animate-pulse"
                 style={{ fontFamily: sedgwick.style.fontFamily }}
               >
                 Meet Our Developers
@@ -233,18 +234,18 @@ const Footer = () => {
 
           {/* Address Section */}
           <div className="text-center md:text-left">
-            <h3 
+            <h3
               className="font-semibold mb-1 sm:mb-2 text-#DEDEDE underline"
               style={{
                 fontFamily: sedgwick.style.fontFamily,
                 fontWeight: 400,
-                fontSize: '0.875rem',
-                lineHeight: '1.2'
+                fontSize: "0.875rem",
+                lineHeight: "1.2",
               }}
             >
               ADDRESS
             </h3>
-            <address 
+            <address
               className="text-xs sm:text-sm text-#DEDEDE not-italic"
               style={{ fontFamily: sedgwick.style.fontFamily }}
             >
@@ -263,13 +264,13 @@ const Footer = () => {
 
           {/* Social Media Section */}
           <div className="text-center md:text-left">
-            <h3 
+            <h3
               className="font-semibold mb-1 sm:mb-2 text-#DEDEDE underline"
               style={{
                 fontFamily: sedgwick.style.fontFamily,
                 fontWeight: 400,
-                fontSize: '0.875rem',
-                lineHeight: '1.2'
+                fontSize: "0.875rem",
+                lineHeight: "1.2",
               }}
             >
               SOCIAL
@@ -304,6 +305,16 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div className={`flex justify-center items-center ${sedgwick.className} flex-col gap-2`}>
+        <div>
+          Made With {" "}
+          <span className="text-red-500">&#x2764;</span>
+          {" "}by Next JS
+        </div>
+        <div>
+          Esperanza 2k25 | All Right Reserved 
         </div>
       </div>
     </footer>
