@@ -102,16 +102,6 @@ const Tech = () => {
           />
           </a>
           </Link>
-          <Link href="/developers" passHref legacyBehavior>
-          <a  target="_blank" className="inline-block">
-          <Image
-            src={meetOurDevelopers}
-            alt=""
-            width={270}
-            className='pt-[20] w-[75%] md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer'
-          />
-          </a>
-          </Link>
         </div>
 
         <div className="flex-1 min-w-[250px] relative top-20 left-0 md:left-40">

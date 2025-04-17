@@ -1,6 +1,6 @@
 import RadialBgRed from "@/assets/background/RadialBgRed.png";
 import TeamBg from "@/assets/images/Group 163057[1].png";
-
+import meetOurDevelopers from "@/assets/images/meetOurDevelopers.png";
 import Hexagon from "@/assets/images/Hexagon.png";
 
 import Container from "@/components/Shared/Container";
@@ -9,6 +9,7 @@ import { TeamMemebrsCard } from "@/components/Teams/TeamMembersCard";
 import { teamMembers } from "@/utils/static/crew";
 import { Katibeh } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const sedgwick = Katibeh({
   subsets: ["latin"],
@@ -37,6 +38,21 @@ const Team = () => {
           </div>
         </Container>
       </div>
+      <Container>
+        <div className="flex justify-center relative z-50">
+          <Link href="/developers" passHref legacyBehavior className="">
+            <a target="_blank" className="inline-block m-auto">
+              <Image
+                src={meetOurDevelopers}
+                alt=""
+                width={270}
+                className="pt-[20] w-[75%] m-auto md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer"
+              />
+            </a>
+          </Link>
+        </div>
+      </Container>
+
       {/* Cards Section */}
       <div className="flex justify-between items-center">
         {/* Technical */}
@@ -86,7 +102,7 @@ const Team = () => {
             })}
         </div>
       </Container>
-      
+
       <div className="flex justify-between items-center">
         {/* Sponsor */}
 
@@ -111,7 +127,7 @@ const Team = () => {
             })}
         </div>
       </Container>
-      
+
       <div className="flex justify-between items-center">
         {/* Sponsor */}
 
