@@ -13,6 +13,7 @@ import { CardDiv } from "@/components/Shared/Card";
 import { Katibeh, Sedgwick_Ave_Display } from "next/font/google";
 
 import img from "@/assets/images/banner.png"; // Temp
+import BandSwiper from "@/components/Cultural/BandSwiper";
 
 const katibeh = Katibeh({
   subsets: ["arabic"],
@@ -58,6 +59,7 @@ const Cultural = async() => {
         </h1>
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
       </div>
+      <BandSwiper/>
       {/* <div className="mt-4 md:mt-10 relative">
         <Image src={BandPic} alt="" className="object-cover" />
         <Image src={RevolutionImg} alt="" className="absolute bottom-4 left-[50%] translate-x-[-50%]" />
