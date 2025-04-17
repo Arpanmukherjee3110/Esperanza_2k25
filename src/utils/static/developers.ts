@@ -4,7 +4,7 @@ import sumouli  from '@/assets/crew/soumili.jpg';
 import sayan from "@/assets/developers/sayan.jpg";
 import rupam from "@/assets/developers/rupam.jpg";
 import nabadipta from "@/assets/developers/nabadipta.jpg";
-import ayan from "@/assets/developers/ayan.jpg";
+import ayan from "@/assets/crew/ayan.jpg";
 import arpan from "@/assets/developers/arpan.jpg";
 
 
