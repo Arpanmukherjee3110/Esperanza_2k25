@@ -7,12 +7,12 @@ import Image from "next/image";
 import ContactUsForm from "@/components/About/ContactUsForm";
 import Container from "@/components/Shared/Container";
 import Map from "@/components/Shared/Map";
-import { Katibeh,Sedgwick_Ave_Display } from "next/font/google";
+import { Katibeh, Sedgwick_Ave_Display } from "next/font/google";
 
 const sedgwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
   weight: ["400"],
-})
+});
 const katibeh = Katibeh({
   subsets: ["arabic"],
   weight: ["400"],
@@ -41,7 +41,56 @@ const About = () => {
           </div>
         </Container>
       </div>
-
+      <Container>
+        <div className={`${katibeh.className} text-3xl`}>
+          <h1 className={`text-6xl`}>
+            About <span className="text-red-600">CGEC</span>
+          </h1>
+          <div className="mt-2">
+            Cooch Behar Government Engineering College (CGEC), established in
+            2016, is a premier institution under the Department of Higher
+            Education, Government of West Bengal. Affiliated with the Maulana
+            Abul Kalam Azad University of Technology (MAKAUT), CGEC offers
+            cutting-edge undergraduate programs in various branches of
+            engineering and technology.
+            <br />
+            <br />
+            With a focus on academic excellence, research, and holistic
+            development, CGEC empowers students to become industry-ready
+            professionals and responsible innovators. The campus fosters a
+            vibrant environment that blends technical learning with
+            extracurricular pursuits, promoting growth both inside and
+            outside the classroom.
+          </div>
+        </div>
+        <Container>
+          <video autoPlay loop muted playsInline controls width={1000} className="m-auto py-3">
+            <source src="/videos/espcgec.mp4" type="video/mp4" />
+          </video>
+        </Container>
+        <div className={`${katibeh.className} text-3xl mt-4`}>
+          <h1 className={`text-6xl`}>
+            About <span className="text-red-600">Esperanza</span>
+          </h1>
+          <div className="mt-2">
+            Esperanza is the official annual techno-cultural fest of CGEC — a
+            vibrant celebration of innovation, creativity, and talent. It serves
+            as a dynamic platform where students from diverse backgrounds come
+            together to showcase their skills in technology, culture, and art.
+            <br />
+            <br />
+            With a wide array of events ranging from coding competitions,
+            robotics challenges, and project expos to music, dance, drama, and
+            literary contests — Esperanza reflects the spirit of CGEC: a
+            community that thrives on passion, diversity, and collaboration.
+            <br />
+            <br />
+            Each edition of Esperanza brings new energy, new ideas, and
+            unforgettable experiences, making it the most anticipated
+            event of the year.
+          </div>
+        </div>
+      </Container>
       {/* Contact Us Section */}
       <div className="px-4 sm:px-8 py-10 relative z-10">
         <Container>
@@ -70,15 +119,16 @@ const About = () => {
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-current"></span>
                 </h3>
                 <h3 className={`${sedgwick.className} `}>
-                  PH.NO - 1234567891 <br />
-                  MAIL - ABCD@GMAIL.COM
+                  MAIL - contact@esperanza.org.in
                 </h3>
               </div>
 
               <div className=" text-white px-3 py-6 sm:p-8 rounded-lg w-full">
-                <h2 className={`${sedgwick.className} text-2xl sm:text-3xl font-bold mb-4 `}>
+                <h2
+                  className={`${sedgwick.className} text-2xl sm:text-3xl font-bold mb-4 `}
+                >
                   GET IN TOUCH
-                </h2 >
+                </h2>
                 <p className={`${sedgwick.className} text-lg sm:text-xl mb-6 `}>
                   We are here for you! How can we help?
                 </p>
