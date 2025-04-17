@@ -6,6 +6,7 @@ import techImg from "@/assets/images/Group49.png";
 import babyrobot from "@/assets/images/babyrobot.png";
 import explore from "@/assets/images/Group45.png";
 import star3 from "@/assets/images/Star 2.png";
+import meetOurDevelopers from "@/assets/images/meetOurDevelopers.png"
 import { Sedgwick_Ave_Display } from "next/font/google";
 import { Katibeh } from "next/font/google";
 
@@ -98,6 +99,16 @@ const Tech = () => {
             alt=""
             width={270}
             className='pt-[50] w-[75%] md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer'
+          />
+          </a>
+          </Link>
+          <Link href="/developers" passHref legacyBehavior>
+          <a  target="_blank" className="inline-block">
+          <Image
+            src={meetOurDevelopers}
+            alt=""
+            width={270}
+            className='pt-[20] w-[75%] md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer'
           />
           </a>
           </Link>
