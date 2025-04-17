@@ -41,65 +41,15 @@ const Team = () => {
       <Container>
         <div className="flex justify-center relative z-50">
           <Link href="/developers" passHref legacyBehavior className="">
-            <a target="_blank" className="inline-block m-auto">
+            <a target="_blank" className="inline-block w-[90%] md:w-auto pb-15 m-auto animate-pulse duration-200 hover:animate-none">
               <Image
                 src={meetOurDevelopers}
                 alt=""
                 width={270}
-                className="pt-[20] w-[75%] m-auto md:w-full hover:scale-108 transition-transform duration-300 cursor-pointer"
+                className="pt-[20] w-full m-auto hover:scale-108 transition-transform duration-300 cursor-pointer"
               />
             </a>
           </Link>
-        </div>
-      </Container>
-
-      {/* Cards Section */}
-      <div className="flex justify-between items-center">
-        {/* Technical */}
-
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
-          Technical Team
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-      </div>
-      <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
-          {teamMembers
-            .filter((m) => m.category.includes("technical"))
-            .map((m, j) => {
-              return (
-                <div className="overflow-hidden" key={j}>
-                  {<TeamMemebrsCard member={m} />}
-                </div>
-              );
-            })}
-        </div>
-      </Container>
-      <div className="flex justify-between items-center">
-        {/* Cultural */}
-
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
-          Cultural Team
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-      </div>
-      <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
-          {teamMembers
-            .filter((m) => m.category.includes("cultural"))
-            .map((m, j) => {
-              return (
-                <div className="overflow-hidden" key={j}>
-                  {<TeamMemebrsCard member={m} />}
-                </div>
-              );
-            })}
         </div>
       </Container>
 
@@ -128,7 +78,59 @@ const Team = () => {
         </div>
       </Container>
 
-      <div className="flex justify-between items-center">
+      {/* Cards Section */}
+      <div className="flex justify-between items-center pt-10">
+        {/* Technical */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          Technical Team
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("technical"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  {<TeamMemebrsCard member={m} />}
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+      <div className="flex justify-between items-center pt-10">
+        {/* Cultural */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          Cultural Team
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("cultural"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  {<TeamMemebrsCard member={m} />}
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+
+      
+
+      <div className="flex justify-between items-center pt-10">
         {/* Sponsor */}
 
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
@@ -153,7 +155,7 @@ const Team = () => {
         </div>
       </Container>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pt-10">
         {/* Sponsor */}
 
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
@@ -178,7 +180,7 @@ const Team = () => {
         </div>
       </Container>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pt-10">
         {/* Sponsor */}
 
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
@@ -202,7 +204,7 @@ const Team = () => {
             })}
         </div>
       </Container>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pt-10">
         {/* Sponsor */}
 
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
@@ -227,7 +229,7 @@ const Team = () => {
         </div>
       </Container>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pt-10">
         {/* Sponsor */}
 
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
