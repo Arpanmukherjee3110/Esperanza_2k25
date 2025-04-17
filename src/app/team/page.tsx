@@ -162,31 +162,6 @@ const Team = () => {
         <h1
           className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
         >
-          Content Team
-        </h1>
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-      </div>
-      <Container>
-        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
-          {teamMembers
-            .filter((m) => m.category.includes("content"))
-            .map((m, j) => {
-              return (
-                <div className="overflow-hidden" key={j}>
-                  <TeamMemebrsCard member={m} />
-                </div>
-              );
-            })}
-        </div>
-      </Container>
-
-      <div className="flex justify-between items-center pt-10">
-        {/* Sponsor */}
-
-        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
-        <h1
-          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
-        >
           Sponsor Team
         </h1>
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
@@ -219,6 +194,54 @@ const Team = () => {
         <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
           {teamMembers
             .filter((m) => m.category.includes("finance"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  <TeamMemebrsCard member={m} />
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+      <div className="flex justify-between items-center pt-10">
+        {/* Sponsor */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          Content Team
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("content"))
+            .map((m, j) => {
+              return (
+                <div className="overflow-hidden" key={j}>
+                  <TeamMemebrsCard member={m} />
+                </div>
+              );
+            })}
+        </div>
+      </Container>
+      <div className="flex justify-between items-center pt-10">
+        {/* Sponsor */}
+
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+        <h1
+          className={`${sedgwick.className} text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-center `}
+        >
+          Decoration Team
+        </h1>
+        <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
+      </div>
+      <Container>
+        <div className="flex gap-3 justify-center flex-wrap w-full mt-15">
+          {teamMembers
+            .filter((m) => m.category.includes("decoration"))
             .map((m, j) => {
               return (
                 <div className="overflow-hidden" key={j}>
