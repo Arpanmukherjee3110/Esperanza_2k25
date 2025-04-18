@@ -139,3 +139,4 @@ Join us for Esperanza 2025 – where technology sparks innovation, and culture b
 export default PhotoContainer;
 
 //flex flex-col relative md:flex-row items-center justify-center pt-[8%]
+

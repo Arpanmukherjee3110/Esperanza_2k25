@@ -87,7 +87,7 @@ const LoginForm = () => {
         type="email"
         placeholder="Enter your Email address"
         required
-        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         value={loginCredentials.email}
         onChange={(e) => {
           setLoginCredentials({ ...loginCredentials, email: e.target.value });
@@ -97,7 +97,7 @@ const LoginForm = () => {
         <input
           type={showPassword ? "text" : "password"}
           placeholder="Enter Password"
-          className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full ${sedgwick.className}`}
+          className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full ${karla.className}`}
           required
           value={loginCredentials.password}
           onChange={(e) => {
@@ -117,7 +117,7 @@ const LoginForm = () => {
       </div>
       <button
         type="submit"
-        className={`bg-red-700 rounded-2xl cursor-pointer px-6 py-4 ${sedgwick.className}`}
+        className={`bg-red-700 rounded-2xl cursor-pointer px-6 py-4 ${karla.className}`}
       >
         Login
       </button>
@@ -204,7 +204,7 @@ const SignUpForm = () => {
         type="email"
         placeholder="Email"
         required
-        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         value={signUpCredentials?.credentials.email}
         onChange={(e) => {
           setSignUpCredentials({
@@ -220,7 +220,7 @@ const SignUpForm = () => {
         type="text"
         placeholder="Full Name"
         required
-        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         value={signUpCredentials.name}
         onChange={(e) => {
           setSignUpCredentials({
@@ -235,7 +235,7 @@ const SignUpForm = () => {
           onChange={(e) =>
             setSignUpCredentials({ ...signUpCredentials, year: e.target.value })
           }
-          className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+          className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         >
           <option value="">Select Year</option>
           <option value="1st">1st</option>
@@ -251,7 +251,7 @@ const SignUpForm = () => {
               department: e.target.value,
             })
           }
-          className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+          className={`p-2 flex flex-1 bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         >
           <option value="">Select Department</option>
           <option value="CE">CE</option>
@@ -265,7 +265,7 @@ const SignUpForm = () => {
         type="text"
         placeholder="Roll Number"
         required
-        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         value={signUpCredentials.rollNumber}
         onChange={(e) =>
           setSignUpCredentials({
@@ -278,7 +278,7 @@ const SignUpForm = () => {
         type="text"
         placeholder="Phone Number"
         required
-        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${sedgwick.className}`}
+        className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none ${karla.className}`}
         value={signUpCredentials.credentials.phoneNumber}
         onChange={(e) =>
           setSignUpCredentials({
@@ -294,7 +294,7 @@ const SignUpForm = () => {
         <input
           type={showPassword ? "text" : "password"}
           placeholder="Password"
-          className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full ${sedgwick.className}`}
+          className={`bg-white/70 placeholder:text-black/65 px-6 py-4 rounded-2xl text-black outline-none w-full ${karla.className}`}
           required
           value={signUpCredentials.credentials.password}
           onChange={(e) =>
@@ -317,7 +317,7 @@ const SignUpForm = () => {
       </div>
       <button
         type="submit"
-        className={`bg-red-700 rounded-2xl cursor-pointer px-6 py-4 ${sedgwick.className}`}
+        className={`bg-red-700 rounded-2xl cursor-pointer px-6 py-4 ${karla.className}`}
       >
         Sign Up
       </button>

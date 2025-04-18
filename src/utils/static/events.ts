@@ -6,7 +6,7 @@ import e105 from "@/assets/events/PES.png"
 import e106 from "@/assets/events/AUTOCAD 2D CE.png"
 import e107 from "@/assets/events/BRIDGE MAKING.png"
 import e108 from "@/assets/events/CGEC MEME MADNESS.png"
-import e109 from "@/assets/events/PES.png"
+import e109 from "@/assets/events/fix the error.jpg"
 import e110 from "@/assets/events/CODE A THON.png"
 import e111 from "@/assets/events/HACK O VATION.png"
 import e112 from "@/assets/events/AUTOCAD 2D ME.png"
@@ -73,6 +73,10 @@ export const staticEventsData = [
   { uniqueId: 123, poster: e123, redirect: "/events/technical/123" },
   { uniqueId: 124, poster: e124, redirect: "/events/technical/124" },
   { uniqueId: 125, poster: e125, redirect: "/events/technical/125" },
+  { uniqueId: 126, poster: e125, redirect: "/events/technical/126" },
+  { uniqueId: 127, poster: e125, redirect: "/events/technical/127" },
+  { uniqueId: 128, poster: e125, redirect: "/events/technical/128" },
+  { uniqueId: 129, poster: e125, redirect: "/events/technical/129" },
 
   { uniqueId: 201, poster: e201, redirect: "/events/cultural/201" },
   { uniqueId: 202, poster: e202, redirect: "/events/cultural/202" },

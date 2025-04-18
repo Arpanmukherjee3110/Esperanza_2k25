@@ -17,7 +17,6 @@ const LogOutButton = () => {
 
   const handleLogOut = async () => {
     const response = await logout();
-    console.log(response);
     Swal.fire({
       icon: response.error ? "error" : "success",
       title: response.message,
