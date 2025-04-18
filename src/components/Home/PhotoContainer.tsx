@@ -44,7 +44,7 @@ Join us for Esperanza 2025 – where technology sparks innovation, and culture b
           </span>
             <span>
           <a 
-  href="/brochure/brochure_merged.pdf"
+  href=""
   target="_blank" 
   rel="noopener noreferrer"
 >
