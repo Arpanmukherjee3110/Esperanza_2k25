@@ -6,7 +6,7 @@ import techImg from "@/assets/images/Group49.png";
 import babyrobot from "@/assets/images/babyrobot.png";
 import explore from "@/assets/images/Group45.png";
 import star3 from "@/assets/images/Star 2.png";
-import meetOurDevelopers from "@/assets/images/meetOurDevelopers.png"
+//import meetOurDevelopers from "@/assets/images/meetOurDevelopers.png"
 import { Sedgwick_Ave_Display } from "next/font/google";
 import { Katibeh } from "next/font/google";
 

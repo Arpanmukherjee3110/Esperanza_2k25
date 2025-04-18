@@ -85,7 +85,7 @@ const Cultural = () => {
         <div className='absolute z-[-1] w-[120%] top-[-70] left-[-100]'> 
           <Image
           src={rectangle}
-          alt=""          
+          alt=""
           className=''
           />
           </div>
