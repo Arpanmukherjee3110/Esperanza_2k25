@@ -119,7 +119,7 @@ Join us for Esperanza 2025 – where technology sparks innovation, and culture b
 
 <p>Let’s make memories. Let’s make history.</p>
   </div>
-  <Link href="" passHref legacyBehavior>
+  <Link href="brochure/brochure.pdf" passHref legacyBehavior>
   <a target="_blank" className="inline-block">
   <Image
   src={group12}
