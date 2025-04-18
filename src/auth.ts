@@ -44,7 +44,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         }
         const isMatch = await compare(password, user.credentials.password);
         if (!isMatch) {
-          console.log("Wrong Password");
           throw new CredentialsSignin({
             cause: "Wrong Password",
           });
