@@ -45,7 +45,6 @@ const RegisterButton = ({
         })
       }
     }
-    console.log(res);
   };
 
   return (

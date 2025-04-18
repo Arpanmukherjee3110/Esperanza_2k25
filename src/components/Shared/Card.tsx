@@ -67,7 +67,6 @@ function Card({
         })
       }
     }
-    console.log(res);
   }
 
   const poster = staticEventsData.find(e=>e.uniqueId===uniqueId)?.poster
