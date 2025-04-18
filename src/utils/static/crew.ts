@@ -57,7 +57,8 @@ import debasish from "@/assets/crew/debasish.jpg"
 import prokriti from "@/assets/crew/prokriti.jpg"
 import subhamita from "@/assets/crew/subhamita.jpg"
 import ratna from "@/assets/crew/ratna.jpg"
-import pal from "@/assets/crew/pal.jpg"
+import pal from "@/assets/crew/pal2.jpg"
+import asif from "@/assets/crew/asif.jpg"
 
 
 export const teamMembers: TeamMember[] = [
@@ -1087,12 +1088,28 @@ export const teamMembers: TeamMember[] = [
       link: "https://www.instagram.com/debasish_sarkar_7384/"
     }
   ],
-}
+},
 
  //<..................................................Security Team Ends..................................................................>
-
- 
-
+//<...................................................Stage Management Team...............................................................>
+{
+  name: "Asif Shamim",
+  department: "EE",
+  year: "4th",
+  avatar: asif,
+  category: ["stage management"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/asif-shamim-03958b215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/the_weak.end?igsh=bGE3NXpka3R2eDdm"
+    }
+  ]
+}
+//<...................................................Stage Management Team...............................................................>
  
 
 ];

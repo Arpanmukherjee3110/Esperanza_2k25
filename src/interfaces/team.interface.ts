@@ -15,6 +15,7 @@ export interface TeamMember {
     | "content"
     | "decoration"
     | "security"
+    | "stage management"
     >;
   avatar: StaticImageData;
   lead?:

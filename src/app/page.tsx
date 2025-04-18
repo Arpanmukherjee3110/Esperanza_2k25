@@ -11,7 +11,7 @@ import Tech from "@/components/Home/Tech";
 import Cultural from "@/components/Home/Cultural";
 import ClubGrid from "@/components/Home/Club";
 import Gallery from "@/components/Home/Galleryh";
-import Extra from "@/components/Home/Extra";
+//import Extra from "@/components/Home/Extra";
 import Timer from "@/components/Shared/Timer";
 
 
@@ -42,7 +42,7 @@ const Home = async() => {
         <div>
           <PhotoContainer />
         </div>
-        <div>
+        <div className="mt-30">
           <Band/>
         </div>
        <div className="mt-30">
