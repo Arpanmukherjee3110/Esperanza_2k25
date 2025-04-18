@@ -64,9 +64,9 @@ const Header = async() => {
             <span className={underline}></span>
           </Link>
         </nav>
-        <div>
+        <Link href={"/"}>
           <Logo />
-        </div>
+        </Link>
         <nav className="hidden md:flex flex-1 justify-around items-center gap-4">
           <Link
             href={"/events/technical"}

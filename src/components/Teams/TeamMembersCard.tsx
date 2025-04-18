@@ -18,6 +18,8 @@ export function TeamMemebrsCard({ member }: { member: TeamMember }) {
           src={member.avatar}
           alt="image"
           className="w-[300px] p-4 h-[250px] object-cover rounded-2xl"
+          priority
+          placeholder="blur"
         />
       </div>
       <p className="text-neutral-300 text-xl mt-2 relative z-20 capitalize">

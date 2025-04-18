@@ -59,6 +59,8 @@ import subhamita from "@/assets/crew/subhamita.jpg"
 import ratna from "@/assets/crew/ratna.jpg"
 import pal from "@/assets/crew/pal2.jpg"
 import asif from "@/assets/crew/asif.jpg"
+import banashree from "@/assets/crew/banashree.jpg"
+
 
 
 export const teamMembers: TeamMember[] = [
@@ -1070,6 +1072,23 @@ export const teamMembers: TeamMember[] = [
       link: "https://www.instagram.com/irene_dishu?igsh=MWFsdGZ3N2VlM3loaw=="
     }
   ],
+},
+{
+  name : "Banashree Purakait",
+  department : "CSE",
+  year : "3rd",
+  avatar : banashree,
+  category : ["hospitality"],
+  socials : [
+    {
+      handler : "Instagram",
+      link : "https://www.instagram.com/reeeee_kook/profilecard/?igsh=NXpxd3h1YTFsMDBh"
+    },
+    {
+      handler : "LinkedIn",
+      link : "https://www.linkedin.com/in/banashree-purakait-2a1865257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  ]
 },
 
  //<...................................................Hospitality Team Ends...............................................................>

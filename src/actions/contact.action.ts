@@ -23,7 +23,6 @@ const contactMessage = async (name: string, email: string, message: string) => {
       };
     }
   } catch (error:any) {
-    console.log("Error sending message: ", error.message);
     return {
       success: false,
       message: "Internal Server Error",

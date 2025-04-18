@@ -31,7 +31,6 @@ const eventRegister = async (uniqueId:number,userEmail?:string) => {
             message: `${user.name} registered for ${event.eventName}`,
         }
     } catch (error:any) {
-        console.log("Error registering for event: ", error.message);
         return {
             message: "Error registering for event",
             error: error.message,

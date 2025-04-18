@@ -18,7 +18,6 @@ export const signUp = async (payload: SignUpFormPayload) => {
         phoneNumber: payload.credentials.phoneNumber,
       },
     });
-    console.log(signUpResponse);
     
     if (signUpResponse) {
       return {
