@@ -252,8 +252,8 @@ const Team = () => {
         </div>
       </Container>
 
-      <div className="flex justify-between items-center pt-10">
-        {/* Sponsor */}
+      {/* <div className="flex justify-between items-center pt-10">
+        
 
         <div className="md:h-[80px] md:w-[200px] lg:h-[100px] lg:w-[350px] bg-white"></div>
         <h1
@@ -275,7 +275,7 @@ const Team = () => {
               );
             })}
         </div>
-      </Container>
+      </Container> */}
 
       <div className="flex justify-between items-center pt-10">
         {/* Sponsor */}
