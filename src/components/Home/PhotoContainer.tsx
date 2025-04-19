@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import banner from "@/assets/images/image8.png";
-import banner2 from "@/assets/images/ESPERANZA.png";
+//import banner2 from "@/assets/images/ESPERANZA.png";
 import star3 from "@/assets/images/Star 3.png";
 import group12 from "@/assets/images/Group12.png";
 //import { section } from "framer-motion/client";
