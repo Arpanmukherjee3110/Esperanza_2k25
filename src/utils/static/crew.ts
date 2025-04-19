@@ -91,7 +91,6 @@ export const teamMembers: TeamMember[] = [
     year: "4th",
     avatar: shrijeeta,
     category: ["technical"],
-    lead: "tech Co-head",
     socials: [
       {
         handler: "LinkedIn",
