@@ -13,7 +13,7 @@ import e112 from "@/assets/events/AUTOCAD 2D ME.png"
 import e113 from "@/assets/events/APTI QUIZ.png"
 import e114 from "@/assets/events/AUTOCAD 3D CE.png"
 import e115 from "@/assets/events/CUBE SOLVING.png"
-import e116 from "@/assets/events/PES.png"
+import e116 from "@/assets/events/PHOTOGRAPHY.png"
 import e117 from "@/assets/events/ROBO SOCCER.png"
 import e118 from "@/assets/events/CHESS.png"
 import e119 from "@/assets/events/MATH.png"
@@ -22,27 +22,30 @@ import e121 from "@/assets/events/PHYSICS OLYMPIAD.png"
 import e122 from "@/assets/events/MODEL MAKING.png"
 import e123 from "@/assets/events/SOLID WORKS.png"
 import e124 from "@/assets/events/PROMPT.png"
-import e125 from "@/assets/events/PES.png"
-
+import e125 from "@/assets/events/web&app.jpg"
+import e126 from "@/assets/events/LINE FOLLOWING.png"
+import e127 from "@/assets/events/VIDEOMAKING & VIDEO EDITING.png"
+import e128 from "@/assets/events/DROID BLITZ.png"
+import e129 from "@/assets/events/BGMI.jpg"
 // Cultural
 import e201 from "@/assets/events/ART EXHIBITION.png"
 import e202 from "@/assets/events/HANDICRAFT.png"
 import e203 from "@/assets/events/SARGAM.png"
 import e204 from "@/assets/events/DEBATE COMPETITION.png"
 import e205 from "@/assets/events/CALLIGRAPHY.png"
-import e206 from "@/assets/events/ART EXHIBITION.png"
+import e206 from "@/assets/events/glam_(Instagram_Post_(45))_20250405_160740_0000_upscaled.png"
 import e207 from "@/assets/events/SLAM POETRY.png"
 import e208 from "@/assets/events/SANTALI DANCE.png"
-import e209 from "@/assets/events/DRAMA MAIN.png"
+import e209 from "@/assets/events/DRAMA2.jpg"
 import e210 from "@/assets/events/DANCE PERFORMANCES.png"
 import e211 from "@/assets/events/RECITATION.png"
 import e212 from "@/assets/events/ART EXHIBITION.png"
 import e213 from "@/assets/events/DANCE PERFORMANCES.png"
 import e214 from "@/assets/events/WALL MAGAZINE.png"
-import e215 from "@/assets/events/ART EXHIBITION.png"
+import e215 from "@/assets/events/ACTING.jpg"
 import e216 from "@/assets/events/QUIZ (1).png"
 import e217 from "@/assets/events/ONSPOT WRITING.png"
-import e218 from "@/assets/events/ART EXHIBITION.png"
+import e218 from "@/assets/events/glam_(Instagram_Post_(45))_20250405_160740_0000_upscaled.png"
 import e219 from "@/assets/events/OPEN MIC.png"
 import e220 from "@/assets/events/DANCE PERFORMANCES.png"
 
@@ -73,10 +76,10 @@ export const staticEventsData = [
   { uniqueId: 123, poster: e123, redirect: "/events/technical/123" },
   { uniqueId: 124, poster: e124, redirect: "/events/technical/124" },
   { uniqueId: 125, poster: e125, redirect: "/events/technical/125" },
-  { uniqueId: 126, poster: e125, redirect: "/events/technical/126" },
-  { uniqueId: 127, poster: e125, redirect: "/events/technical/127" },
-  { uniqueId: 128, poster: e125, redirect: "/events/technical/128" },
-  { uniqueId: 129, poster: e125, redirect: "/events/technical/129" },
+  { uniqueId: 126, poster: e126, redirect: "/events/technical/126" },
+  { uniqueId: 127, poster: e127, redirect: "/events/technical/127" },
+  { uniqueId: 128, poster: e128, redirect: "/events/technical/128" },
+  { uniqueId: 129, poster: e129, redirect: "/events/technical/129" },
 
   { uniqueId: 201, poster: e201, redirect: "/events/cultural/201" },
   { uniqueId: 202, poster: e202, redirect: "/events/cultural/202" },
