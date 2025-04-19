@@ -64,9 +64,26 @@ import banashree from "@/assets/crew/banashree.jpg"
 
 
 export const teamMembers: TeamMember[] = [
+  //<...................................................... Leads .............................................................>
 
-
-  //<...................................................... Technical Team .............................................................>
+  {
+    name: "SOUMADWIP PAUL",
+    department: "ME",
+    year: "4th",
+    avatar: pal,
+    category: ["management"],
+    lead: "president",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/soumadwippaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/soumadwippaul?utm_source=qr&igsh=MTU4ZG5ibnA5czg5Zw=="
+      }
+    ],
+  },
   {
     name: "Chayan Ghosh",
     department: "CSE",
@@ -86,21 +103,57 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
-    name: "Shrijeeta Dutta",
-    department: "CSE",
+    name: "Ratnadeep Saha",
+    department: "EE",
     year: "4th",
-    avatar: shrijeeta,
-    category: ["technical"],
-    lead: "tech Co-head",
+    avatar: ratna,
+    category: ["cultural"],
+    lead: "cultural-head",
     socials: [
       {
         handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/shrijeeta-dutta-78b19230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        link: "https://www.linkedin.com/in/ratnadeep-saha-078044225/"
       },
       {
         handler: "Instagram",
-        link: "https://www.instagram.com/shrijeetadutta17?igsh=aWd2bW5qbDdsaHRy&utm_source=qr"
+        link: "https://www.instagram.com/r_at_no.rapture?utm_source=qr&igsh=Ynk1b3dueDR4NjM2"
       }
+    ],
+  },
+  
+  
+  {
+    name: "Arman Mia",
+    department: "CSE",
+    year: "3rd",
+    avatar: vp,
+    category: ["management"],
+    lead: "vice-president",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/arman-mia-940aa6254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/arman_ansari.13?igsh=MXd1NDlzcTc3eHh3MA=="
+      }
+    ],
+  },
+
+  {
+    name: "Ankan Mondal ",
+    department: "CE",
+    year: "3rd",
+    avatar: js,
+    category: ["management"],
+    lead: "joint-secretary",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://in.linkedin.com/in/ankan-mondal-1432b0256",
+      },
+
     ],
   },
   {
@@ -121,6 +174,46 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
+  {
+    name: "EJIKEL KERKETTA",
+    department: "EE",
+    year: "3rd",
+    avatar: ejikel,
+    category: ["cultural"],
+    lead: "cultural-lead",
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: ""
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/e.k._music?igsh=MTZoOGpodDk4MXI2MA=="
+      }
+    ],
+  },
+
+
+  //<...................................................... Technical Team .............................................................>
+  
+  {
+    name: "Shrijeeta Dutta",
+    department: "CSE",
+    year: "4th",
+    avatar: shrijeeta,
+    category: ["technical"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/shrijeeta-dutta-78b19230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/shrijeetadutta17?igsh=aWd2bW5qbDdsaHRy&utm_source=qr"
+      }
+    ],
+  },
+  
   {
     name: "Sayan Sutradhar",
     department: "CSE",
@@ -478,43 +571,7 @@ export const teamMembers: TeamMember[] = [
   //<.............................................Technical Team Ends.....................................................................>
 
   //<..............................................Cultural Team...........................................................................>
-  {
-    name: "Ratnadeep Saha",
-    department: "EE",
-    year: "4th",
-    avatar: ratna,
-    category: ["cultural"],
-    lead: "cultural-head",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/ratnadeep-saha-078044225/"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/r_at_no.rapture?utm_source=qr&igsh=Ynk1b3dueDR4NjM2"
-      }
-    ],
-  },
   
-  {
-    name: "EJIKEL KERKETTA",
-    department: "EE",
-    year: "3rd",
-    avatar: ejikel,
-    category: ["cultural"],
-    lead: "cultural-lead",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: ""
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/e.k._music?igsh=MTZoOGpodDk4MXI2MA=="
-      }
-    ],
-  },
   {
     name: "Upasana Talukdar",
     department: "ECE",
@@ -534,58 +591,7 @@ export const teamMembers: TeamMember[] = [
 
   //<................................................Management Team......................................................................>
 
-  {
-    name: "SOUMADWIP PAUL",
-    department: "ME",
-    year: "4th",
-    avatar: pal,
-    category: ["management"],
-    lead: "president",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/soumadwippaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/soumadwippaul?utm_source=qr&igsh=MTU4ZG5ibnA5czg5Zw=="
-      }
-    ],
-  },
-  {
-    name: "Arman Mia",
-    department: "CSE",
-    year: "3rd",
-    avatar: vp,
-    category: ["management"],
-    lead: "vice-president",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/arman-mia-940aa6254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/arman_ansari.13?igsh=MXd1NDlzcTc3eHh3MA=="
-      }
-    ],
-  },
-
-  {
-    name: "Ankan Mondal ",
-    department: "CE",
-    year: "3rd",
-    avatar: js,
-    category: ["management"],
-    lead: "joint-secretary",
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://in.linkedin.com/in/ankan-mondal-1432b0256",
-      },
-
-    ],
-  },
+  
 
   {
     name: "ABHISEK VERMA",
