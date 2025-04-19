@@ -8,7 +8,7 @@ import abir from "@/assets/crew/abir.jpeg"
 import adarsh from "@/assets/crew/adarsh.jpg"
 import ankit from "@/assets/crew/ankit.jpg"
 import diptangshu from "@/assets/crew/diptangshu.jpg"
-import debanjan from "@/assets/crew/debanjan.jpg"
+//import debanjan from "@/assets/crew/debanjan.jpg"
 import debosmita from "@/assets/crew/debosmita.jpg"
 import ejikel from "@/assets/crew/ejikkle.jpg"
 import aritri from "@/assets/crew/aritri.jpeg"
@@ -156,6 +156,26 @@ export const teamMembers: TeamMember[] = [
 
     ],
   },
+  
+ 
+  {
+    name: "Shrijeeta Dutta",
+    department: "CSE",
+    year: "4th",
+    avatar: shrijeeta,
+    category: ["technical"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/shrijeeta-dutta-78b19230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/shrijeetadutta17?igsh=aWd2bW5qbDdsaHRy&utm_source=qr"
+      }
+    ],
+  },
+
   {
     name: "Arpan Mukherjee",
     department: "ECE",
@@ -193,26 +213,7 @@ export const teamMembers: TeamMember[] = [
     ],
   },
 
-
   //<...................................................... Technical Team .............................................................>
-  
-  {
-    name: "Shrijeeta Dutta",
-    department: "CSE",
-    year: "4th",
-    avatar: shrijeeta,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/shrijeeta-dutta-78b19230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/shrijeetadutta17?igsh=aWd2bW5qbDdsaHRy&utm_source=qr"
-      }
-    ],
-  },
   
   {
     name: "Sayan Sutradhar",
@@ -705,23 +706,7 @@ export const teamMembers: TeamMember[] = [
 
  //<...................................................Sponsor Team........................................................................>
 
- {
-  name: "Debanjan Chowdhury ",
-  department: "ECE",
-  year: "4th",
-  avatar: debanjan,
-  category: ['sponsor'],
-  socials: [
-    {
-      handler: "LinkedIn",
-      link: "https://www.linkedin.com/in/debanjan-chowdhury-"
-    },
-    {
-      handler: "Instagram",
-      link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
-    }
-  ],
-},
+ 
 
  {
   name: "Sashi Gupta",
@@ -1016,13 +1001,7 @@ export const teamMembers: TeamMember[] = [
   year: "3rd",
   avatar: nishan,
   category: ["decoration"],
-  socials: [
-    {
-      handler: "LinkedIn",
-      link: "",
-    },
-
-  ],
+  
 },
  //<...................................................Decoration Team Ends................................................................>
 
