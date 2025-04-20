@@ -23,7 +23,7 @@ export function TeamMemebrsCard({ member }: { member: TeamMember }) {
         />
       </div>
       <p className="text-neutral-300 text-xl mt-2 relative z-20 capitalize">
-        {member.lead ? member.lead : member.category + " Team"}
+        {member.lead || (member.role ? member.role : member.category + " Team")}
       </p>
       <div className="flex justify-center gap-5 my-3 relative z-20">
         {member.socials?.map((s,i) => {

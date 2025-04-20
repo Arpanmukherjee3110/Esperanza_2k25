@@ -4,7 +4,7 @@ import sayan from "@/assets/developers/sayan.jpg";
 import naba from "@/assets/developers/nabadipta.jpg";
 import rupam from "@/assets/developers/rupam.jpg";
 import { TeamMember } from "@/interfaces/team.interface";
-import abir from "@/assets/crew/abir.jpeg"
+//import abir from "@/assets/crew/abir.jpeg"
 import adarsh from "@/assets/crew/adarsh.jpg"
 import ankit from "@/assets/crew/ankit.jpg"
 import diptangshu from "@/assets/crew/diptangshu.jpg"
@@ -19,7 +19,7 @@ import mrittika from "@/assets/crew/mrittika.jpg"
 import nishan from "@/assets/crew/Copy of Screenshot_2024-12-08-19-34-25-136_com.instagram.android~2 - Nishan dey.jpg"
 import rajdeep from "@/assets/crew/rajdeep.jpg"
 import rishi from "@/assets/crew/rishi.jpg"
-import sashi from "@/assets/crew/sashi.jpg"
+import sashi from "@/assets/crew/sashi2.jpg"
 import samrat from "@/assets/crew/samrat.jpg"
 import vp from "@/assets/crew/vp_.jpg"
 import tanmay from "@/assets/crew/tanmay.jpg"
@@ -36,7 +36,7 @@ import pinku from "@/assets/crew/pinku.jpg"
 import payel from "@/assets/crew/payel.jpg"
 import nihal from "@/assets/crew/nihal.jpg"
 import nabin from "@/assets/crew/nabin.jpg"
-import krish from "@/assets/crew/krisnangi di.jpg"
+//import krish from "@/assets/crew/krisnangi di.jpg"
 import kamila from "@/assets/crew/kamila.jpg"
 import js from "@/assets/crew/js.jpg"
 import dishan from "@/assets/crew/dishan.jpg"
@@ -47,19 +47,20 @@ import rahul from "@/assets/crew/rahul.jpg"
 import paban from "@/assets/crew/paban.jpg"
 import kewat from "@/assets/crew/kewat.jpg"
 import chayanda from "@/assets/crew/chayanda.jpg"
-import ananya from "@/assets/crew/ananya.jpg"
+//import ananya from "@/assets/crew/ananya.jpg"
 import shrijeeta from "@/assets/crew/shrijeeta.jpg"
 import manprit from "@/assets/crew/manprit.jpg"
 import koushik from "@/assets/crew/koushik.jpg"
 import adi from "@/assets/crew/adi.jpg"
 import avideep from "@/assets/crew/avideep.jpg"
 import debasish from "@/assets/crew/debasish.jpg"
-import prokriti from "@/assets/crew/prokriti.jpg"
+//import prokriti from "@/assets/crew/prokriti.jpg"
 import subhamita from "@/assets/crew/subhamita.jpg"
 import ratna from "@/assets/crew/ratna.jpg"
 import pal from "@/assets/crew/pal2.jpg"
 import asif from "@/assets/crew/asif.jpg"
-import banashree from "@/assets/crew/banashree.jpg"
+//import banashree from "@/assets/crew/banashree.jpg"
+import sid from "@/assets/crew/sid.jpg"
 
 
 
@@ -164,6 +165,7 @@ export const teamMembers: TeamMember[] = [
     year: "4th",
     avatar: shrijeeta,
     category: ["technical"],
+    role: "Tech Co-Head",
     socials: [
       {
         handler: "LinkedIn",
@@ -706,7 +708,20 @@ export const teamMembers: TeamMember[] = [
 
  //<...................................................Sponsor Team........................................................................>
 
- 
+ {
+  name: "Siddhartha Pal",
+  department: "CE",
+  year: "4th",
+  avatar: sid,
+  category: ["sponsor"],
+  role: "Sponsorship Head",
+  socials: [
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/siddhartha4812?igsh=MWZiNjk1Y2xrcHFueg=="
+    }
+  ],
+},
 
  {
   name: "Sashi Gupta",
@@ -714,6 +729,7 @@ export const teamMembers: TeamMember[] = [
   year: "3rd",
   avatar: sashi,
   category: ["sponsor"],
+  role: "Sponsorship Lead",
   socials: [
     {
       handler: "LinkedIn",
@@ -744,23 +760,23 @@ export const teamMembers: TeamMember[] = [
   ],
 },
 
-{
-  name: "Abir Chattaraj",
-  department: "CSE",
-  year: "3rd",
-  avatar: abir,
-  category: ["sponsor"],
-  socials: [
-    {
-      handler: "LinkedIn",
-      link: "https://www.linkedin.com/in/abir-chattaraj-abb257237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-    },
-    {
-      handler: "Instagram",
-      link: "https://www.instagram.com/abirrrrrrrrrr_?igsh=OHNob25iamFtYmJl&utm_source=qr"
-    }
-  ],
-},
+// {
+//   name: "Abir Chattaraj",
+//   department: "CSE",
+//   year: "3rd",
+//   avatar: abir,
+//   category: ["sponsor"],
+//   socials: [
+//     {
+//       handler: "LinkedIn",
+//       link: "https://www.linkedin.com/in/abir-chattaraj-abb257237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+//     },
+//     {
+//       handler: "Instagram",
+//       link: "https://www.instagram.com/abirrrrrrrrrr_?igsh=OHNob25iamFtYmJl&utm_source=qr"
+//     }
+//   ],
+// },
 
 
 
@@ -947,6 +963,7 @@ export const teamMembers: TeamMember[] = [
   year: "4th",
   avatar: avideep,
   category: ["decoration"],
+  role: "Decoration Head",
   socials: [
     {
       handler: "LinkedIn",
@@ -1007,74 +1024,74 @@ export const teamMembers: TeamMember[] = [
 
  //<...................................................Hospitality Team....................................................................>
 
- {
-  name: "KRISHNANGEE DEBNATH",
-  department: "ECE",
-  year: "4th",
-  avatar: krish,
-  category: ["hospitality"],
-  socials: [
-    {
-      handler: "LinkedIn",
-      link: "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=krishnangee-debnath-ee-81938335a"
-    },
-    {
-      handler: "Instagram",
-      link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
-    }
-  ],
-},
-{
-  name: "Ananya Sen",
-  department: "CSE",
-  year: "4th",
-  avatar: ananya,
-  category: ["hospitality"],
-  socials: [
-    {
-      handler: "LinkedIn",
-      link: "https://www.linkedin.com/in/ananyasen25"
-    },
-    {
-      handler: "Instagram",
-      link: "https://www.instagram.com/ananyaasen?igsh=MWp4YmlpdXNsZWoxbw=="
-    }
-  ],
-},
-{
-  name: "PROKRITI DEBNATH",
-  department: "CE",
-  year: "4th",
-  avatar: prokriti,
-  category: ["hospitality"],
-  socials: [
-    {
-      handler: "LinkedIn",
-      link: "https://in.linkedin.com/in/prokriti-debnath-ce-0b379a24a"
-    },
-    {
-      handler: "Instagram",
-      link: "https://www.instagram.com/irene_dishu?igsh=MWFsdGZ3N2VlM3loaw=="
-    }
-  ],
-},
-{
-  name : "Banashree Purakait",
-  department : "CSE",
-  year : "3rd",
-  avatar : banashree,
-  category : ["hospitality"],
-  socials : [
-    {
-      handler : "Instagram",
-      link : "https://www.instagram.com/reeeee_kook/profilecard/?igsh=NXpxd3h1YTFsMDBh"
-    },
-    {
-      handler : "LinkedIn",
-      link : "https://www.linkedin.com/in/banashree-purakait-2a1865257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    }
-  ]
-},
+//  {
+//   name: "KRISHNANGEE DEBNATH",
+//   department: "ECE",
+//   year: "4th",
+//   avatar: krish,
+//   category: ["hospitality"],
+//   socials: [
+//     {
+//       handler: "LinkedIn",
+//       link: "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=krishnangee-debnath-ee-81938335a"
+//     },
+//     {
+//       handler: "Instagram",
+//       link: "https://www.instagram.com/kri._.shsh?igsh=MWdqd3loNTlzcXNuMA=="
+//     }
+//   ],
+// },
+// {
+//   name: "Ananya Sen",
+//   department: "CSE",
+//   year: "4th",
+//   avatar: ananya,
+//   category: ["hospitality"],
+//   socials: [
+//     {
+//       handler: "LinkedIn",
+//       link: "https://www.linkedin.com/in/ananyasen25"
+//     },
+//     {
+//       handler: "Instagram",
+//       link: "https://www.instagram.com/ananyaasen?igsh=MWp4YmlpdXNsZWoxbw=="
+//     }
+//   ],
+// },
+// {
+//   name: "PROKRITI DEBNATH",
+//   department: "CE",
+//   year: "4th",
+//   avatar: prokriti,
+//   category: ["hospitality"],
+//   socials: [
+//     {
+//       handler: "LinkedIn",
+//       link: "https://in.linkedin.com/in/prokriti-debnath-ce-0b379a24a"
+//     },
+//     {
+//       handler: "Instagram",
+//       link: "https://www.instagram.com/irene_dishu?igsh=MWFsdGZ3N2VlM3loaw=="
+//     }
+//   ],
+// },
+// {
+//   name : "Banashree Purakait",
+//   department : "CSE",
+//   year : "3rd",
+//   avatar : banashree,
+//   category : ["hospitality"],
+//   socials : [
+//     {
+//       handler : "Instagram",
+//       link : "https://www.instagram.com/reeeee_kook/profilecard/?igsh=NXpxd3h1YTFsMDBh"
+//     },
+//     {
+//       handler : "LinkedIn",
+//       link : "https://www.linkedin.com/in/banashree-purakait-2a1865257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+//     }
+//   ]
+// },
 
  //<...................................................Hospitality Team Ends...............................................................>
 
@@ -1086,6 +1103,7 @@ export const teamMembers: TeamMember[] = [
   year: "4th",
   avatar: debasish,
   category: ["security"],
+  role: "Security Head",
   socials: [
     {
       handler: "Instagram",
@@ -1102,6 +1120,7 @@ export const teamMembers: TeamMember[] = [
   year: "4th",
   avatar: asif,
   category: ["stage management"],
+  role: "Stage Management Head",
   socials: [
     {
       handler: "LinkedIn",
