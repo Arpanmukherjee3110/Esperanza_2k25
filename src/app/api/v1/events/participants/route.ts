@@ -21,7 +21,8 @@ export async function POST(req: NextRequest) {
             name: user.name,
             year: user.year,
             department: user.department,
-            rollNumber : user.rollNumber
+            rollNumber : user.rollNumber,
+            contact: user.credentials.phoneNumber,
           };
         }
         return null;
