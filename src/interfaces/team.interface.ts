@@ -28,6 +28,13 @@ export interface TeamMember {
     | "president"
     | "secretary"
     | "tech Co-head";
+  role?:
+    | "Sponsorship Head"
+    | "Sponsorship Lead"
+    | "Tech Co-Head"
+    | "Decoration Head"
+    | "Stage Management Head"
+    | "Security Head";
   socials?: {
     handler: "LinkedIn" | "Instagram" | "Github" | "Facebook";
     link: string;
