@@ -708,20 +708,7 @@ export const teamMembers: TeamMember[] = [
 
  //<...................................................Sponsor Team........................................................................>
 
- {
-  name: "Siddhartha Pal",
-  department: "CE",
-  year: "4th",
-  avatar: sid,
-  category: ["sponsor"],
-  role: "Sponsorship Head",
-  socials: [
-    {
-      handler: "Instagram",
-      link: "https://www.instagram.com/siddhartha4812?igsh=MWZiNjk1Y2xrcHFueg=="
-    }
-  ],
-},
+ 
 
  {
   name: "Sashi Gupta",
@@ -739,6 +726,20 @@ export const teamMembers: TeamMember[] = [
       handler: "Instagram",
       link: "https://www.instagram.com/i.am.sashi?igsh=ajJzYXNjcDdramlp"
     }
+  ],
+},
+
+{
+  name: "Siddhartha Pal",
+  department: "CE",
+  year: "4th",
+  avatar: sid,
+  category: ["sponsor"],
+  socials: [
+    // {
+    //   handler: "Instagram",
+    //   link: "https://www.instagram.com/siddhartha4812?igsh=MWZiNjk1Y2xrcHFueg=="
+    // }
   ],
 },
 

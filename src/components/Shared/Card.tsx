@@ -39,34 +39,39 @@ function Card({
   const router = useRouter()
 
   const handleRegisterForEvent = async ()=>{
-    if(!userEmail){
-      Swal.fire({
-        icon: "warning",
-        title: "Oops...",
-        text: "You need to login first!",
-        confirmButtonText: "Okay",
-      }).then(()=>{
-        router.push("/login")
-      })
-    }
-    const res = await eventRegister(uniqueId,userEmail)
-    if(res){
-      if(res.error){
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: res.error,
-          confirmButtonText: "Okay",
-        })
-      }else{
-        Swal.fire({
-          icon: "success",
-          title: "Success",
-          text: res.message,
-          confirmButtonText: "Okay",
-        })
-      }
-    }
+    Swal.fire({
+      title : "Registration is closed",
+      icon : "info",
+      text : "Please contact the event coordinators for more information",
+    })
+    // if(!userEmail){
+    //   Swal.fire({
+    //     icon: "warning",
+    //     title: "Oops...",
+    //     text: "You need to login first!",
+    //     confirmButtonText: "Okay",
+    //   }).then(()=>{
+    //     router.push("/login")
+    //   })
+    // }
+    // const res = await eventRegister(uniqueId,userEmail)
+    // if(res){
+    //   if(res.error){
+    //     Swal.fire({
+    //       icon: "error",
+    //       title: "Oops...",
+    //       text: res.error,
+    //       confirmButtonText: "Okay",
+    //     })
+    //   }else{
+    //     Swal.fire({
+    //       icon: "success",
+    //       title: "Success",
+    //       text: res.message,
+    //       confirmButtonText: "Okay",
+    //     })
+    //   }
+    // }
   }
 
   const poster = staticEventsData.find(e=>e.uniqueId===uniqueId)?.poster
