@@ -16,6 +16,7 @@ export interface TeamMember {
     | "decoration"
     | "security"
     | "stage management"
+    | "audit"
     >;
   avatar: StaticImageData;
   lead?:
@@ -34,7 +35,9 @@ export interface TeamMember {
     | "Tech Co-Head"
     | "Decoration Head"
     | "Stage Management Head"
-    | "Security Head";
+    | "Security Head"
+    | "PR Head"
+    | "Finance Head";
   socials?: {
     handler: "LinkedIn" | "Instagram" | "Github" | "Facebook";
     link: string;
