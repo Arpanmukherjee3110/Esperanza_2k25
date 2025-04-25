@@ -47,20 +47,25 @@ import rahul from "@/assets/crew/rahul.jpg"
 import paban from "@/assets/crew/paban.jpg"
 import kewat from "@/assets/crew/kewat.jpg"
 import chayanda from "@/assets/crew/chayanda.jpg"
-//import ananya from "@/assets/crew/ananya.jpg"
+import ananya from "@/assets/crew/ananya.jpg"
 import shrijeeta from "@/assets/crew/shrijeeta.jpg"
 import manprit from "@/assets/crew/manprit.jpg"
 import koushik from "@/assets/crew/koushik.jpg"
 import adi from "@/assets/crew/adi.jpg"
 import avideep from "@/assets/crew/avideep.jpg"
 import debasish from "@/assets/crew/debasish.jpg"
-//import prokriti from "@/assets/crew/prokriti.jpg"
+import prokriti from "@/assets/crew/prokriti.jpg"
 import subhamita from "@/assets/crew/subhamita.jpg"
 import ratna from "@/assets/crew/ratna.jpg"
 import pal from "@/assets/crew/pal2.jpg"
 import asif from "@/assets/crew/asif.jpg"
-//import banashree from "@/assets/crew/banashree.jpg"
+import banashree from "@/assets/crew/banashree.jpg"
 import sid from "@/assets/crew/sid.jpg"
+import nilu from "@/assets/crew/nilu.jpg"
+import ayantika from "@/assets/crew/ayantika.jpg"
+import ayan2 from "@/assets/crew/ayan_4thyear.jpg"
+import arnab from "@/assets/crew/arnab.jpg"
+import saibal from "@/assets/crew/saibal.jpg"
 
 
 
@@ -177,7 +182,23 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
-
+  {
+    name: "Nayel Biswas",
+    department: "ME",
+    year: "4th",
+    avatar: nihal,
+    category: ["technical"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://www.linkedin.com/in/nayel-biswas-183455252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/biswasnayel?utm_source=qr&igsh=NW5qbnc5bXJ3Njkx"
+      }
+    ],
+  },
   {
     name: "Arpan Mukherjee",
     department: "ECE",
@@ -193,6 +214,23 @@ export const teamMembers: TeamMember[] = [
       {
         handler: "Github",
         link: "https://github.com/Arpanmukherjee3110"
+      }
+    ],
+  },
+  {
+    name: "PROKRITI DEBNATH",
+    department: "CE",
+    year: "4th",
+    avatar: prokriti,
+    category: ["cultural"],
+    socials: [
+      {
+        handler: "LinkedIn",
+        link: "https://in.linkedin.com/in/prokriti-debnath-ce-0b379a24a"
+      },
+      {
+        handler: "Instagram",
+        link: "https://www.instagram.com/irene_dishu?igsh=MWFsdGZ3N2VlM3loaw=="
       }
     ],
   },
@@ -485,23 +523,7 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
-  {
-    name: "Nayel Biswas",
-    department: "ME",
-    year: "4th",
-    avatar: nihal,
-    category: ["technical"],
-    socials: [
-      {
-        handler: "LinkedIn",
-        link: "https://www.linkedin.com/in/nayel-biswas-183455252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-      },
-      {
-        handler: "Instagram",
-        link: "https://www.instagram.com/biswasnayel?utm_source=qr&igsh=NW5qbnc5bXJ3Njkx"
-      }
-    ],
-  },
+  
   
   {
     name: "Tanmoy Daripa",
@@ -589,6 +611,7 @@ export const teamMembers: TeamMember[] = [
       }
     ],
   },
+  
 
   //<..............................................Cultural Team Ends......................................................................>
 
@@ -668,6 +691,17 @@ export const teamMembers: TeamMember[] = [
   
   //<...............................................PR Team...............................................................................>
   
+    {
+    name: "Ayan Kumar Barman ",
+    department: "ME",
+    year: "4th",
+    avatar: ayan2,
+    category: ["pr"],
+    role: "PR Head",
+    socials: [
+     
+    ],
+  },
   {
     name: "Diptangshu Das ",
     department: "EE",
@@ -708,7 +742,24 @@ export const teamMembers: TeamMember[] = [
 
  //<...................................................Sponsor Team........................................................................>
 
- 
+ {
+  name: "Arnab Roy",
+  department: "CSE",
+  year: "4th",
+  avatar: arnab,
+  category: ["sponsor"],
+  // role: "Sponsorship Lead",
+  socials: [
+    // {
+    //   handler: "LinkedIn",
+    //   link: "https://www.linkedin.com/in/sashi-gupta-055524303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    // },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/brombhodoityo/"
+    }
+  ],
+},
 
  {
   name: "Sashi Gupta",
@@ -785,6 +836,24 @@ export const teamMembers: TeamMember[] = [
 
  //<....................................................Finance Team.......................................................................>
 
+ {
+  name: "Neelotpal Roy ",
+  department: "ME",
+  year: "4th",
+  avatar: nilu,
+  category: ["finance"],
+  role: "Finance Head",
+  socials: [
+    // {
+    //   handler: "LinkedIn",
+    //   link: "https://www.linkedin.com/in/subhamita-naskar-a83b97220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // },
+    // {
+    //   handler: "Instagram",
+    //   link: "https://www.instagram.com/subhamita_29?igsh=aGIwbjE1Y2MzOG5z"
+    // }
+  ],
+},
  {
   name: "Subhamita Naskar ",
   department: "ME",
@@ -936,6 +1005,23 @@ export const teamMembers: TeamMember[] = [
 
  //<....................................................Finance Team Ends..................................................................>
  
+ //<....................................................Audit Team........................................................................>
+
+ {
+  name: "Ayantika Roy",
+  department: "EE",
+  year: "4th",
+  avatar: ayantika,
+  category: ["audit"],
+  //role: "Decoration Head",
+  socials: [
+    
+  ],
+},
+
+ //<...................................................Audit Team Ends....................................................................>
+
+
  //<....................................................Content Team.......................................................................>
  {
   name: "Payel Das ",
@@ -974,6 +1060,18 @@ export const teamMembers: TeamMember[] = [
       handler: "Instagram",
       link: "https://www.instagram.com/fallen_onee?igsh=ZHp4ZHU4cnVhcWR0"
     }
+  ],
+},
+
+{
+  name: "Saibal Saha",
+  department: "CE",
+  year: "4th",
+  avatar: saibal,
+  category: ["decoration"],
+  // role: "Decoration Head",
+  socials: [
+    
   ],
 },
 
@@ -1042,40 +1140,24 @@ export const teamMembers: TeamMember[] = [
 //     }
 //   ],
 // },
-// {
-//   name: "Ananya Sen",
-//   department: "CSE",
-//   year: "4th",
-//   avatar: ananya,
-//   category: ["hospitality"],
-//   socials: [
-//     {
-//       handler: "LinkedIn",
-//       link: "https://www.linkedin.com/in/ananyasen25"
-//     },
-//     {
-//       handler: "Instagram",
-//       link: "https://www.instagram.com/ananyaasen?igsh=MWp4YmlpdXNsZWoxbw=="
-//     }
-//   ],
-// },
-// {
-//   name: "PROKRITI DEBNATH",
-//   department: "CE",
-//   year: "4th",
-//   avatar: prokriti,
-//   category: ["hospitality"],
-//   socials: [
-//     {
-//       handler: "LinkedIn",
-//       link: "https://in.linkedin.com/in/prokriti-debnath-ce-0b379a24a"
-//     },
-//     {
-//       handler: "Instagram",
-//       link: "https://www.instagram.com/irene_dishu?igsh=MWFsdGZ3N2VlM3loaw=="
-//     }
-//   ],
-// },
+{
+  name: "Ananya Sen",
+  department: "CSE",
+  year: "4th",
+  avatar: ananya,
+  category: ["hospitality"],
+  socials: [
+    {
+      handler: "LinkedIn",
+      link: "https://www.linkedin.com/in/ananyasen25"
+    },
+    {
+      handler: "Instagram",
+      link: "https://www.instagram.com/ananyaasen?igsh=MWp4YmlpdXNsZWoxbw=="
+    }
+  ],
+},
+
 // {
 //   name : "Banashree Purakait",
 //   department : "CSE",
